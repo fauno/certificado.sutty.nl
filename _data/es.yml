@@ -1,0 +1,141 @@
+---
+date: '%d/%m/%Y'
+adjetivos:
+  - estáticos
+  - coherentes
+  - amables
+  - veloces
+  - accesibles
+  - visibles
+  - invulnerables
+  - ecológicos
+sujetxs:
+  - organizaciones
+  - activistas
+  - campañas
+  - colectivas
+  - luchadoras
+adverbios:
+  - trans-feministas
+  - ecologistas
+  - disidentes
+  - comunitarias
+logo:
+  alt: Logo de Sutty.  Una Y compuesta por una >/, el > cyan y la / magenta
+isologo:
+  alt: Isologo de Sutty.  La Y de Sutty está compuesta por una >/, el > cyan y la / magenta
+index:
+  id: inicio
+  title: Inicio
+  intro: Sutty es una editora de sitios web especial.
+  description:
+    - 'Hace tiempo que sentimos la urgencia de contar con sitios web que garanticen nuestra seguridad, que no sean censurables, que visibilicen nuestras luchas de manera coherente y cuyos contenidos puedan ser auto-gestionados.'
+    - '¡Por eso desarrollamos Sutty!'
+    - 'Trabaja con sitios estáticos generados con Jekyll y les agrega características que los hacen más visibles en la Web.'
+    - 'Sutty está pensada para potenciar la presencia, la seguridad y la libertad de expresión a organizaciones y colectivas activistas.'
+  sections:
+    main:
+      - static
+      - invulnerable
+    secondary:
+      - sustentable
+      - visible
+      - accesible
+      - archivable
+description:
+  id: descripcion
+  title: Descripción
+  sites: sitios web
+  for: 'para:'
+static:
+  id: estaticos
+  title: Los sitios estáticos son la clave
+  symbol: '!'
+  subtitle: Los sitios estáticos son predecibles porque reducen las fallas y las vulnerabilidades.
+  description:
+    - Los sitios estáticos funcionan para siempre.
+    - Los editores dinámicos, como Wordpress y Drupal, habilitan la edición inmediata de los sitios web. Sin embargo, requieren de varios componentes que deben funcionar de manera constante para que el sitio permanezca accesible. Basta que una parte falle, para que el sitio se caiga. Además, sabemos que contienen errores de programación que los hacen vulnerables a distintos ataques.
+    - Un sitio estático es generado de antemano, con lo que se ahorran recursos y disminuyen las fallas y las vulnerabilidades.
+invulnerable:
+  id: invulnerables
+  title: ¡Seamos invulnerables a ataques y bloqueos!
+  symbol: '>'
+  subtitle: Los sitios estáticos son invulnerables
+  description:
+    - La mayor parte de las vulnerabilidades que afectan un sitio web provienen de fallos inherentes a las tecnologías que utilizan. En cambio, los sitios estáticos se valen de otras tecnologías que no producen vulnerabilidades.
+    - Desde una mirada integral de autodefensa digital, se eliminan los riesgos más comunes para un sitio web.
+sustentable:
+  id: sustentables
+  title: Por una web sustentable y ecológica
+  symbol: '#'
+  subtitle: Los sitios estáticos utilizan menos recursos.
+  description:
+    - Los servidores y los dispositivos que usamos cotidianamente utilizan minerales raros que son extraídos del sur global a fuerza de explotación de personas y otras especies.  Cuando un sitio requiere muchos recursos, se agudiza el problema porque el recambio de componentes lleva a la obsolecencia programada.
+    - Los sitios estáticos contribuyen a una Web sustentable y ecológica porque utilizan menos recursos.
+visible:
+  id: visibles
+  symbol: '*'
+  title: Por una web donde quepamos todes
+  subtitle: Sutty genera sitios más veloces y visibles
+  description:
+    - Los buscadores toman en cuenta la velocidad de un sitio, penalizando los más lentos y **priorizando los más veloces**.  Esto produce que los sitios con mayor infraestructura hegemonicen los resultados de búsqueda.  **Con Sutty, los sitios estáticos están optimizados para ser veloces y posicionar mejor el contenido.**
+    - Los sitios livianos y veloces son más accesibles a personas con conexiones a Internet y dispositivos con menores recursos, **aumentando su visibilidad y la cantidad de visitas potenciales.**
+accesible:
+  id: accesibles
+  symbol: '~'
+  title: Por una web de la que todes podamos participar
+  subtitle: Sutty implementa cuidados y técnicas para que la web sea accesible para todes.
+  description:
+    - Una Internet para todes debe contemplar a las personas con diversidad funcional y neurodiversas. Los sitios y sus contenidos deben estar pensados y estructurados para no ser excluyentes.
+    - Los contenidos pueden ser disparadores de traumas o fobias.  Sutty provee herramientas que permiten anticiparlos, empoderando a les usuaries.
+archivable:
+  id: archivables
+  symbol: '^'
+  title: Por una web que preserve la memoria colectiva
+  subtitle: Con Sutty, los sitios estáticos están preparados para que su contenido perdure.
+  description:
+    - Los sitios pueden caer en desuso y su contenido deja de ser accesible para otres compañeres.  También pueden ser censurados por distintos medios técnicos y judiciales que previenen su acceso.
+    - La estrategia frente a estas dos posibilidades es que los sitios sean archivables y transportables, de forma que puedan ser accedidos desde múltiples lugares, incluso _offline_.
+contact:
+  id: contacto
+  title: Nos encanta que nos escriban
+  form:
+    site:
+      type: hidden
+      value: sutty.nl
+    name:
+      type: text
+      label: Pseudónimo, nick, alias, nombre elegido
+    pronoun:
+      type: text
+      label: Pronombres
+    contact:
+      type: text
+      label: Forma de contacto (correo, telegram, etc.)
+      required: true
+    body:
+      type: textarea
+      label: Mensaje
+      required: true
+    gdpr:
+      type: checkbox
+      label: Doy mi consentimiento...
+      required: true
+  submit: Enviar
+form:
+  required: '*'
+blog:
+  id: blog
+  title: ...y nos lean
+footer:
+  links:
+    - href: politica-de-privacidad/
+      title: Luchamos por el derecho a la privacidad
+      text: Política de privacidad
+    - href: código-de-conducta/
+      title: Lee nuestro código de conducta
+      text: Código de conducta
+  design:
+    href: http://cooperativadedisenio.com/
+    title: Visitar el sitio de la Cooperativa de Diseño
+    text: Diseñado por Cooperativa de Diseño

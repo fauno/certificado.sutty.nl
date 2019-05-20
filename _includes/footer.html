@@ -1,0 +1,26 @@
+<footer class="footer">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <ul>
+          {% for link in site.data[site.lang].footer.links %}
+            <li>
+              <a href="{{ link.href }}" title="{{ link.title }}">
+                {{ link.text }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <div class="columns">
+      <div class="column">
+        {% assign design = site.data[site.lang].footer.design %}
+        <a href="{{ design.href }}" title="{{ design.title }}">
+          {{ design.text }}
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

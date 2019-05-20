@@ -1,0 +1,26 @@
+title: Sutty
+title_separator: '-'
+lang: es
+dir: ltr
+
+plugins:
+  - jekyll-commonmark
+  - jekyll-relative-urls
+
+sass:
+  style: compressed
+
+css: assets/css/styles.css
+
+exclude:
+  - package.json
+  - yarn.lock
+  - node_modules
+  - Dockerfile
+  - Gemfile
+  - Gemfile.lock
+
+markdown: CommonMark
+commonmark:
+  options: ['SMART', 'FOOTNOTES']
+  extensions: ['strikethrough', 'autolink', 'table']

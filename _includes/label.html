@@ -1,0 +1,8 @@
+<label class="label"
+       name="{{ include.name }}">{{ include.content }}
+       {% if include.required %}
+         <span class="required">
+           {{ site.data[site.lang].form.required }}
+         </span>
+       {% endif %}
+</label>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}" dir="{{ site.dir }}">
+  <head>
+    <meta charset="UTF-8">
+    <base href="{% base %}" />
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <title>
+      {{ site.title }}
+      {% if page.title %}
+        {{ site.title_separator }}
+        {{ page.title }}
+      {% endif %}
+    </title>
+
+    <!-- TODO Generar un script que encuentre los recursos a
+      precargar... o al menos los podamos especificar en la
+      configuracion -->
+    <link rel='preload' as='style' href='{{ 'assets/css/styles.css' | asset }}'/>
+    <link rel='preload' as='font' type='font/ttf' href='assets/fonts/saira/v3/SairaMedium.ttf'/>
+    <link rel='preload' as='font' type='font/ttf' href='assets/fonts/saira/v3/SairaBold.ttf'/>
+
+    <link href='{{ 'assets/css/styles.css' | asset }}' rel='stylesheet'>
+  </head>
+
+  <body>
+    {{ content }}
+
+    {% include footer.html %}
+  </body>
+</html>
