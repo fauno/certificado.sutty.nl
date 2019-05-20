@@ -10,10 +10,12 @@ module Jekyll
       # pero vamos a homogeneizar en CommonMark porque es el más moderno
       # y veloz
       def markdown(plaintext)
+        return '' unless plaintext
+
         config = @context.registers[:site].config
         parser = Jekyll::Converters::Markdown::CommonMark.new(config)
 
-        parser.convert(plaintext)
+        parser.convert(plaintext.to_s)
       end
     end
   end
