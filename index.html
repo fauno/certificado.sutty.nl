@@ -8,17 +8,8 @@ Esto se va a convertir en el plugin de I18n
 {% endcomment %}
 {% assign i18n = site.data[site.lang] %}
 
-{% comment %}
-Barra de navegación
-{% endcomment %}
-<nav class="level">
-  <div class="level-item">
-    <img src="assets/images/logo.png" alt="{{ i18n.logo.alt }}"/>
-  </div>
-</nav>
-
-<section id="{{ i18n.index.id }}" class="section">
-  <div class="container">
+<section id="{{ i18n.index.id }}" class="hero is-fullheight">
+  <div class="hero-body"><div class="container">
     <div class="columns">
       <div class="column is-vcentered">
         <h1 class="title magenta">{{ i18n.index.intro | escape }}</h1>
@@ -32,11 +23,11 @@ Barra de navegación
         <img src="assets/images/sutty.png" alt="{{ i18n.isologo.alt | escape }}"/>
       </div>
     </div>
-  </div>
+  </div></div>
 </section>
 
-<section id="{{ i18n.description.id }}" class="section">
-  <div class="container">
+<section id="{{ i18n.description.id }}" class="hero is-fullheight black-bg">
+  <div class="hero-body"><div class="container">
     <div class="columns">
       <div class="column is-vcentered">&lt;</div>
 
@@ -58,15 +49,15 @@ Barra de navegación
 
       <div class="column is-vcentered">&gt;</div>
     </div>
-  </div>
+  </div></div>
 </section>
 
 {% comment %}
 Segmentos explicativos principales, uno por pantalla
 {% endcomment %}
 {% for section in i18n.index.sections.main %}
-<section id="{{ i18n[section].id }}" class="section">
-  <div class="container">
+<section id="{{ i18n[section].id }}" class="hero is-fullheight">
+  <div class="hero-body"><div class="container">
     <div class="columns">
       <div class="column is-vcentered">
         {{ i18n[section].symbol | escape }}
@@ -79,7 +70,7 @@ Segmentos explicativos principales, uno por pantalla
         {% endfor %}
       </div>
     </div>
-  </div>
+  </div></div>
 </section>
 {% endfor %}
 
@@ -93,7 +84,7 @@ Segmentos explicativos ocupando una pantalla entera agrupados de a dos.
 Abrir la sección si el segmento es impar
 {% endcomment %}
 {% if new_section == 1 %}
-<section class="section">
+<section class="section is-fullheight">
 {% endif %}
   <div id="{{ i18n[section].id }}" class="container">
     <div class="columns">
@@ -117,8 +108,8 @@ Cerrar la sección si el segmento es par
 {% if new_section == 0 %}</section>{% endif %}
 {% endfor %}
 
-<section class="section">
-  <div class="container">
+<section class="hero is-fullheight">
+  <div class="hero-body"><div class="container">
     <div id="{{ i18n.contact.id }}" class="columns">
       <div class="column is-vcentered">
         <h1 class="title">{{ i18n.contact.title }}</h1>
@@ -136,7 +127,7 @@ Cerrar la sección si el segmento es par
         <div class="columns">
           {% for page in site.posts limit: 3 %}
           <div class="column">
-            <p>{{ page.date | date: i18n.date }}</p>
+            <p class="heading">{{ page.date | date: i18n.date }}</p>
             <h1 class="title">
               <a href="{{ page.url }}">{{ page.title }}</a>
             </h1>
@@ -147,5 +138,5 @@ Cerrar la sección si el segmento es par
         </div>
       </div>
     </div>
-  </div>
+  </div></div>
 </section>
