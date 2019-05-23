@@ -17,6 +17,10 @@ body {
   color: cyan;
 }
 
+.cyan-bg {
+  background-color: cyan;
+}
+
 .black-bg {
   background-color: black;
   color: white;
@@ -24,4 +28,29 @@ body {
 
 .is-fullheight {
   min-height: 100vh;
+}
+
+.symbol {
+  font-size: 5rem;
+}
+
+.is-spread-horizontally {
+  justify-content: space-between;
+}
+
+.is-fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  max-width: 100vw;
+  width: 100%;
+}
+
+/* https://stackoverflow.com/a/5409373 */
+.is-flipped-horizontally {
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+  display: inline-block;
 }

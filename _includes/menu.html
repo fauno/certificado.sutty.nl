@@ -2,10 +2,25 @@
 Barra de navegación
 {% endcomment %}
 
+{% assign i18n = site.data[site.lang] %}
+
 <nav class="level">
   <div class="level-left">
     <p class="level-item">
       <img src="assets/images/logo.png" alt="{{ i18n.logo.alt }}"/>
+    </p>
+
+    <p class="level-item">
+      {{ i18n.description.sites }}
+      {{ i18n.adjetivos | sample }}
+    </p>
+
+    <p class="level-item symbol">&#47;</p>
+
+    <p class="level-item">
+      {{ i18n.description.for | remove: ':' }}
+      {{ i18n.sujetxs | sample }}
+      {{ i18n.adverbios | sample }}
     </p>
   </div>
 </nav>

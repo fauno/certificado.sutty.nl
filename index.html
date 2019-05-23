@@ -29,7 +29,7 @@ Esto se va a convertir en el plugin de I18n
 <section id="{{ i18n.description.id }}" class="hero is-fullheight black-bg">
   <div class="hero-body"><div class="container">
     <div class="columns">
-      <div class="column is-vcentered">&lt;</div>
+      <div class="column is-narrow is-vcentered"><p class="symbol">&lt;</p></div>
 
       <div class="column is-vcentered">
         <h1 class="title">{{ i18n.description.sites }}</h1>
@@ -37,7 +37,7 @@ Esto se va a convertir en el plugin de I18n
         <p>{{ i18n.adjetivos | join: '. ' }}</p>
       </div>
 
-      <div class="column is-vcentered">&#47;</div>
+      <div class="column is-narrow is-vcentered"><p class="symbol">&#47;</p></div>
 
       <div class="column is-vcentered">
         <h1 class="title">{{ i18n.description.for }}</h1>
@@ -47,7 +47,7 @@ Esto se va a convertir en el plugin de I18n
         <p>{{ i18n.adverbios | join: ', '}}</p>
       </div>
 
-      <div class="column is-vcentered">&gt;</div>
+      <div class="column is-narrow is-vcentered"><p class="symbol">&gt;</p></div>
     </div>
   </div></div>
 </section>
@@ -59,8 +59,8 @@ Segmentos explicativos principales, uno por pantalla
 <section id="{{ i18n[section].id }}" class="hero is-fullheight">
   <div class="hero-body"><div class="container">
     <div class="columns">
-      <div class="column is-vcentered">
-        {{ i18n[section].symbol | escape }}
+      <div class="column is-narrow">
+        <p class="symbol">{{ i18n[section].symbol | escape }}</p>
         <h1 class="title">{{ i18n[section].title }}</h1>
       </div>
 
@@ -84,12 +84,15 @@ Segmentos explicativos ocupando una pantalla entera agrupados de a dos.
 Abrir la sección si el segmento es impar
 {% endcomment %}
 {% if new_section == 1 %}
-<section class="section is-fullheight">
+<section class="section is-fullheight {% if forloop.index == 1 %}cyan-bg{% endif %}">
 {% endif %}
   <div id="{{ i18n[section].id }}" class="container">
     <div class="columns">
+      <div class="column is-one-fifth is-vcentered">
+        <p class="symbol">{{ i18n[section].symbol | escape }}</p>
+      </div>
+
       <div class="column is-vcentered">
-        {{ i18n[section].symbol | escape }}
         <h1 class="title">{{ i18n[section].title }}</h1>
         <h2 class="subtitle">{{ i18n[section].subtitle }}</h2>
       </div>
