@@ -113,19 +113,23 @@ Cerrar la sección si el segmento es par
 {% if new_section == 0 %}</div></div></section>{% endif %}
 {% endfor %}
 
-<section >
+<section id="{{ i18n.contact.id }}" class="section">
   <div class="container">
-    <div id="{{ i18n.contact.id }}" class="columns">
-      <div class="column">
+    <div class="columns is-vcentered is-fullheight">
+      <div class="column is-two-fifths">
         <h1 class="title">{{ i18n.contact.title }}</h1>
       </div>
       <div class="column">
         {% include contact.html %}
       </div>
     </div>
+  </div>
+</section>
 
-    <div id="{{ i18n.blog.id }}" class="columns">
-      <div class="column">
+<section id="{{ i18n.blog.id }}" class="section">
+  <div class="container">
+    <div class="columns is-vcentered is-fullheight">
+      <div class="column is-two-fifths">
         <h1 class="title">{{ i18n.blog.title }}</h1>
       </div>
       <div class="column">
