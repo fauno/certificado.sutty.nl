@@ -4,23 +4,33 @@ Barra de navegación
 
 {% assign i18n = site.data[site.lang] %}
 
-<nav class="is-fixed-top level">
-  <div class="level-left">
-    <p class="level-item">
+<nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="{{ i18n.menu.title }}">
+  <div class="navbar-brand">
+    <a class="navbar-item">
       <img src="assets/images/logo.png" alt="{{ i18n.logo.alt }}"/>
-    </p>
+    </a>
 
-    <p class="level-item">
+    <p class="navbar-item">
       {{ i18n.description.sites }}
       {{ i18n.adjetivos | sample }}
     </p>
 
-    <p class="level-item symbol">&#47;</p>
+    <p class="navbar-item">&#47;</p>
 
-    <p class="level-item">
+    <p class="navbar-item">
       {{ i18n.description.for | remove: ':' }}
       {{ i18n.sujetxs | sample }}
       {{ i18n.adverbios | sample }}
     </p>
+
+    <a role="button" 
+       class="navbar-burger burger"
+       data-target="menu"
+       aria-expanded="false"
+       aria-label="{{ i18n.menu.title }}">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
   </div>
 </nav>

@@ -59,11 +59,6 @@ html {
   width: 100%;
 }
 
-.is-fixed-top {
-  position: fixed;
-  top: 0;
-}
-
 /* https://stackoverflow.com/a/5409373 */
 .is-flipped-horizontally {
   -moz-transform: scale(-1, 1);
@@ -81,4 +76,8 @@ html {
 footer,
 section {
   scroll-snap-align: start;
+}
+
+.is-transparent {
+  background-color: transparent;
 }
