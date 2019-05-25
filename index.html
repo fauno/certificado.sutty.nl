@@ -8,8 +8,8 @@ Esto se va a convertir en el plugin de I18n
 {% endcomment %}
 {% assign i18n = site.data[site.lang] %}
 
-<section id="{{ i18n.index.id }}" class="hero is-fullheight">
-  <div class="hero-body"><div class="container">
+<section id="{{ i18n.index.id }}" class="section is-fullheight">
+  <div class="container">
     <div class="columns">
       <div class="column is-vcentered">
         <h1 class="title magenta">{{ i18n.index.intro | escape }}</h1>
@@ -23,41 +23,41 @@ Esto se va a convertir en el plugin de I18n
         <img src="assets/images/sutty.png" alt="{{ i18n.isologo.alt | escape }}"/>
       </div>
     </div>
-  </div></div>
+  </div>
 </section>
 
-<section id="{{ i18n.description.id }}" class="hero is-fullheight black-bg">
-  <div class="hero-body"><div class="container">
+<section id="{{ i18n.description.id }}" class="section is-fullheight black-bg white-fg">
+  <div class="container">
     <div class="columns">
       <div class="column is-narrow is-vcentered"><p class="symbol">&lt;</p></div>
 
       <div class="column is-vcentered">
-        <h1 class="title">{{ i18n.description.sites }}</h1>
+        <h1 class="title is-uppercase white-fg">{{ i18n.description.sites }}</h1>
 
-        <p>{{ i18n.adjetivos | join: '. ' }}</p>
+        <p class="is-uppercase">{{ i18n.adjetivos | join: '. ' }}</p>
       </div>
 
       <div class="column is-narrow is-vcentered"><p class="symbol">&#47;</p></div>
 
       <div class="column is-vcentered">
-        <h1 class="title">{{ i18n.description.for }}</h1>
+        <h1 class="title white-fg">{{ i18n.description.for }}</h1>
 
         <p>{{ i18n.sujetxs | join: ', ' }}</p>
 
-        <p>{{ i18n.adverbios | join: ', '}}</p>
+        <p><span class="magenta-bg">{{ i18n.adverbios | join: ', '}}</span</p>
       </div>
 
       <div class="column is-narrow is-vcentered"><p class="symbol">&gt;</p></div>
     </div>
-  </div></div>
+  </div>
 </section>
 
 {% comment %}
 Segmentos explicativos principales, uno por pantalla
 {% endcomment %}
 {% for section in i18n.index.sections.main %}
-<section id="{{ i18n[section].id }}" class="hero is-fullheight">
-  <div class="hero-body"><div class="container">
+<section id="{{ i18n[section].id }}" class="section is-fullheight">
+  <div class="container">
     <div class="columns">
       <div class="column is-narrow">
         <p class="symbol">{{ i18n[section].symbol | escape }}</p>
@@ -70,7 +70,7 @@ Segmentos explicativos principales, uno por pantalla
         {% endfor %}
       </div>
     </div>
-  </div></div>
+  </div>
 </section>
 {% endfor %}
 
@@ -111,8 +111,8 @@ Cerrar la sección si el segmento es par
 {% if new_section == 0 %}</section>{% endif %}
 {% endfor %}
 
-<section class="hero is-fullheight">
-  <div class="hero-body"><div class="container">
+<section class="section is-fullheight">
+  <div class="container">
     <div id="{{ i18n.contact.id }}" class="columns">
       <div class="column is-vcentered">
         <h1 class="title">{{ i18n.contact.title }}</h1>
@@ -141,5 +141,5 @@ Cerrar la sección si el segmento es par
         </div>
       </div>
     </div>
-  </div></div>
+  </div>
 </section>

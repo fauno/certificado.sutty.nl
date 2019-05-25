@@ -9,6 +9,13 @@ body {
   font-family: Saira, sans-serif;
 }
 
+html {
+  scroll-snap-points-y: repeat(100%);
+  scroll-snap-destination: 0 0;
+  scroll-snap-type: y mandatory;
+  scroll-snap-type: mandatory;
+}
+
 .magenta {
   color: magenta;
 }
@@ -21,9 +28,16 @@ body {
   background-color: cyan;
 }
 
+.magenta-bg {
+  background-color: magenta;
+}
+
 .black-bg {
   background-color: black;
-  color: white;
+}
+
+.white-fg {
+  color: white !important;
 }
 
 .is-fullheight {
@@ -45,6 +59,11 @@ body {
   width: 100%;
 }
 
+.is-fixed-top {
+  position: fixed;
+  top: 0;
+}
+
 /* https://stackoverflow.com/a/5409373 */
 .is-flipped-horizontally {
   -moz-transform: scale(-1, 1);
@@ -53,4 +72,13 @@ body {
   -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
   display: inline-block;
+}
+
+.anti-bg {
+  mix-blend-mode: difference;
+}
+
+footer,
+section {
+  scroll-snap-align: start;
 }
