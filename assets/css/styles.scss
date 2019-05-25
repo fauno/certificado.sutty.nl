@@ -78,6 +78,14 @@ section {
   scroll-snap-align: start;
 }
 
+.section {
+  padding: 0
+}
+
+.columns {
+  margin: 0 !important;
+}
+
 .is-transparent {
   background-color: transparent;
 }

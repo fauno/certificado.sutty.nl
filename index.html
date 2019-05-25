@@ -8,10 +8,10 @@ Esto se va a convertir en el plugin de I18n
 {% endcomment %}
 {% assign i18n = site.data[site.lang] %}
 
-<section id="{{ i18n.index.id }}" class="section is-fullheight">
+<section id="{{ i18n.index.id }}" >
   <div class="container">
-    <div class="columns">
-      <div class="column is-vcentered">
+    <div class="columns is-vcentered is-fullheight">
+      <div class="column">
         <h1 class="title magenta">{{ i18n.index.intro | escape }}</h1>
 
         {% for p in i18n.index.description %}
@@ -19,27 +19,27 @@ Esto se va a convertir en el plugin de I18n
         {% endfor %}
       </div>
 
-      <div class="column is-vcentered">
+      <div class="column">
         <img src="assets/images/sutty.png" alt="{{ i18n.isologo.alt | escape }}"/>
       </div>
     </div>
   </div>
 </section>
 
-<section id="{{ i18n.description.id }}" class="section is-fullheight black-bg white-fg">
+<section id="{{ i18n.description.id }}" class="section black-bg white-fg">
   <div class="container">
-    <div class="columns">
-      <div class="column is-narrow is-vcentered"><p class="symbol">&lt;</p></div>
+    <div class="columns is-vcentered is-fullheight">
+      <div class="column is-narrow"><p class="symbol">&lt;</p></div>
 
-      <div class="column is-vcentered">
+      <div class="column">
         <h1 class="title is-uppercase white-fg">{{ i18n.description.sites }}</h1>
 
         <p class="is-uppercase">{{ i18n.adjetivos | join: '. ' }}</p>
       </div>
 
-      <div class="column is-narrow is-vcentered"><p class="symbol">&#47;</p></div>
+      <div class="column is-narrow"><p class="symbol">&#47;</p></div>
 
-      <div class="column is-vcentered">
+      <div class="column">
         <h1 class="title white-fg">{{ i18n.description.for }}</h1>
 
         <p>{{ i18n.sujetxs | join: ', ' }}</p>
@@ -47,7 +47,7 @@ Esto se va a convertir en el plugin de I18n
         <p><span class="magenta-bg">{{ i18n.adverbios | join: ', '}}</span</p>
       </div>
 
-      <div class="column is-narrow is-vcentered"><p class="symbol">&gt;</p></div>
+      <div class="column is-narrow"><p class="symbol">&gt;</p></div>
     </div>
   </div>
 </section>
@@ -56,15 +56,15 @@ Esto se va a convertir en el plugin de I18n
 Segmentos explicativos principales, uno por pantalla
 {% endcomment %}
 {% for section in i18n.index.sections.main %}
-<section id="{{ i18n[section].id }}" class="section is-fullheight">
+<section id="{{ i18n[section].id }}" >
   <div class="container">
-    <div class="columns">
-      <div class="column is-narrow">
+    <div class="columns is-vcentered is-fullheight">
+      <div class="column is-half">
         <p class="symbol">{{ i18n[section].symbol | escape }}</p>
         <h1 class="title">{{ i18n[section].title }}</h1>
       </div>
 
-      <div class="column is-vcentered">
+      <div class="column">
         {% for p in i18n[section].description %}
         {{ p | markdown }}
         {% endfor %}
@@ -84,20 +84,22 @@ Segmentos explicativos ocupando una pantalla entera agrupados de a dos.
 Abrir la sección si el segmento es impar
 {% endcomment %}
 {% if new_section == 1 %}
-<section class="section is-fullheight {% if forloop.index == 1 %}cyan-bg{% endif %}">
+<section class="section {% if forloop.index == 1 %}cyan-bg{% endif %}">
+  <div class="columns is-vcentered is-fullheight">
+    <div>{% comment %}Solo centrar este elemento completo{% endcomment %}
 {% endif %}
-  <div id="{{ i18n[section].id }}" class="container">
+  <div id="{{ i18n[section].id }}">
     <div class="columns">
-      <div class="column is-one-fifth is-vcentered">
+      <div class="column is-one-fifth">
         <p class="symbol">{{ i18n[section].symbol | escape }}</p>
       </div>
 
-      <div class="column is-vcentered">
+      <div class="column">
         <h1 class="title">{{ i18n[section].title }}</h1>
         <h2 class="subtitle">{{ i18n[section].subtitle }}</h2>
       </div>
 
-      <div class="column is-vcentered">
+      <div class="column">
         {% for p in i18n[section].description %}
         {{ p | markdown }}
         {% endfor %}
@@ -108,25 +110,25 @@ Abrir la sección si el segmento es impar
 {% comment %}
 Cerrar la sección si el segmento es par
 {% endcomment %}
-{% if new_section == 0 %}</section>{% endif %}
+{% if new_section == 0 %}</div></div></section>{% endif %}
 {% endfor %}
 
-<section class="section is-fullheight">
+<section >
   <div class="container">
     <div id="{{ i18n.contact.id }}" class="columns">
-      <div class="column is-vcentered">
+      <div class="column">
         <h1 class="title">{{ i18n.contact.title }}</h1>
       </div>
-      <div class="column is-vcentered">
+      <div class="column">
         {% include contact.html %}
       </div>
     </div>
 
     <div id="{{ i18n.blog.id }}" class="columns">
-      <div class="column is-vcentered">
+      <div class="column">
         <h1 class="title">{{ i18n.blog.title }}</h1>
       </div>
-      <div class="column is-vcentered">
+      <div class="column">
         <div class="columns">
           {% for page in site.posts limit: 3 %}
           <div class="column">
