@@ -55,8 +55,16 @@ html {
 .is-fixed-bottom {
   position: fixed;
   bottom: 0;
-  max-width: 100vw;
-  width: 100%;
+}
+
+.is-fixed-left {
+  position: fixed;
+  left: 0;
+}
+
+.is-fixed-right {
+  position: fixed;
+  right: 0;
 }
 
 /* https://stackoverflow.com/a/5409373 */
