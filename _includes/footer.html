@@ -15,9 +15,9 @@
     </div>
 
     <div class="columns">
-      <div class="column">
+      <div class="column has-text-centered">
         {% assign design = site.data[site.lang].footer.design %}
-        <a href="{{ design.href }}" title="{{ design.title }}">
+        <a class="cyan-bg black-fg" href="{{ design.href }}" title="{{ design.title }}">
           {{ design.text }}
         </a>
       </div>
@@ -25,5 +25,5 @@
   </div>
 </footer>
 
-<div class="is-fixed-bottom is-fixed-left symbol anti-bg">&angrt;</div>
-<div class="is-fixed-bottom is-fixed-right symbol anti-bg"><span class="is-flipped-horizontally">&angrt;</span></div>
+<div class="is-fixed-bottom is-fixed-left has-margin-left symbol magenta-fg">&angrt;</div>
+<div class="is-fixed-bottom is-fixed-right has-margin-right symbol magenta-fg"><span class="is-flipped-horizontally">&angrt;</span></div>

@@ -5,6 +5,9 @@
 
 @import 'saira';
 
+// bulma/sass/utilities/initial-variables.sass
+$black: hsl(0, 0%, 4%);
+
 body {
   font-family: Saira, sans-serif;
 }
@@ -16,16 +19,20 @@ html {
   scroll-snap-type: mandatory;
 }
 
-.magenta {
-  color: magenta;
+.magenta-fg {
+  color: magenta !important;
 }
 
-.cyan {
-  color: cyan;
+.cyan-fg {
+  color: cyan !important;
 }
 
 .cyan-bg {
   background-color: cyan;
+}
+
+.black-fg {
+  color: $black !important;
 }
 
 .magenta-bg {

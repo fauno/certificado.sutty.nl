@@ -12,7 +12,7 @@ Esto se va a convertir en el plugin de I18n
   <div class="container">
     <div class="columns is-vcentered is-fullheight">
       <div class="column">
-        <h1 class="title magenta">{{ i18n.index.intro | escape }}</h1>
+        <h1 class="title magenta-fg">{{ i18n.index.intro | escape }}</h1>
 
         {% for p in i18n.index.description %}
         {{ p | markdown }}
@@ -60,7 +60,7 @@ Segmentos explicativos principales, uno por pantalla
   <div class="container">
     <div class="columns is-vcentered is-fullheight">
       <div class="column is-half">
-        <p class="symbol">{{ i18n[section].symbol | escape }}</p>
+        <p class="symbol {{ i18n[section].fg }}">{{ i18n[section].symbol | escape }}</p>
         <h1 class="title">{{ i18n[section].title }}</h1>
       </div>
 
@@ -84,22 +84,22 @@ Segmentos explicativos ocupando una pantalla entera agrupados de a dos.
 Abrir la sección si el segmento es impar
 {% endcomment %}
 {% if new_section == 1 %}
-<section class="section {% if forloop.index == 1 %}cyan-bg{% endif %}">
+<section class="section {{ i18n[section].bg }}">
   <div class="columns is-vcentered is-fullheight">
     <div>{% comment %}Solo centrar este elemento completo{% endcomment %}
 {% endif %}
   <div id="{{ i18n[section].id }}">
-    <div class="columns">
-      <div class="column is-one-fifth">
-        <p class="symbol">{{ i18n[section].symbol | escape }}</p>
+    <div class="columns is-centered">
+      <div class="column is-narrow has-text-right">
+        <p class="symbol {{ i18n[section].fg }}">{{ i18n[section].symbol | escape }}</p>
       </div>
 
-      <div class="column">
+      <div class="column is-one-third">
         <h1 class="title">{{ i18n[section].title }}</h1>
-        <h2 class="subtitle">{{ i18n[section].subtitle }}</h2>
+        <h2 class="subtitle is-uppercase">{{ i18n[section].subtitle }}</h2>
       </div>
 
-      <div class="column">
+      <div class="column is-one-third">
         {% for p in i18n[section].description %}
         {{ p | markdown }}
         {% endfor %}
