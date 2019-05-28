@@ -1,0 +1,22 @@
+$colors: white, black, cyan, magenta;
+
+@each $color in $colors {
+  .#{$color}-fg {
+    color: $color !important;
+  }
+
+  .#{$color}-bg {
+    background-color: $color;
+  }
+}
+
+// Genera el color contrario del fondo
+//
+// XXX: No funciona con objetos flotantes
+.anti-bg {
+  mix-blend-mode: difference;
+}
+
+a {
+  color: cyan;
+}

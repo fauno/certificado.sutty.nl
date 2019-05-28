@@ -1,0 +1,35 @@
+/* Generar los símbolos gigantes */
+.is-symbol {
+  font-size: 5rem;
+}
+
+.is-monospace {
+  font-family: monospace !important;
+}
+
+.is-fullheight {
+  min-height: 100vh;
+}
+
+$positions: top, bottom, left, right;
+
+@each $position in $positions {
+  .is-fixed-#{$position} {
+    position: fixed;
+    #{$position}: 0;
+  }
+}
+
+.is-spread-horizontally {
+  justify-content: space-between;
+}
+
+/* https://stackoverflow.com/a/5409373 */
+.is-flipped-horizontally {
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+  display: inline-block;
+}

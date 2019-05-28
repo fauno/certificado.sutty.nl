@@ -1,0 +1,29 @@
+/*
+ * Scroll Snap
+ */
+
+html {
+  scroll-snap-points-y: repeat(100%);
+  scroll-snap-destination: 0 0;
+}
+
+footer,
+section {
+  scroll-snap-align: start;
+}
+
+// desktop
+@media screen and (min-width: 1088px) {
+  html {
+    scroll-snap-type: y mandatory;
+    scroll-snap-type: mandatory;
+  }
+}
+
+// menor a desktop
+@media screen and (max-width: 1087px) {
+  html {
+    scroll-snap-type: y proximity;
+    scroll-snap-type: proximity;
+  }
+}
