@@ -3,4 +3,10 @@
   body {
     padding-top: 52px;
   }
+
+  .navbar {
+    &.is-transparent {
+      background-color: white;
+    }
+  }
 }
