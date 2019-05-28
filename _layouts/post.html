@@ -3,11 +3,15 @@ layout: default
 ---
 
 <section class="section">
-  <article>
-    <p class="heading">{{ page.date | date: site.data[site.lang].date }}</p>
-    <h1 class="title">{{ page.title }}</h1>
-    <h2 class="subtitle">{{ page.description }}</h2>
+  <div class="columns is-centered">
+    <div class="column is-half">
+      <article class="content" id="{{ page.id }}">
+        <p class="heading">{{ page.date | date: site.data[site.lang].date }}</p>
+        <h1 class="title">{{ page.title }}</h1>
+        <h2 class="subtitle">{{ page.description }}</h2>
 
-    {{ content }}
-  </article>
+        {{ content | html_relativize_anchors_to: page.url }}
+      </article>
+    </div>
+  </div>
 </section>
