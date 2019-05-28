@@ -33,3 +33,7 @@ $positions: top, bottom, left, right;
   transform: scale(-1, 1);
   display: inline-block;
 }
+
+.fix-bottom-margins {
+  margin-bottom: -30px;
+}
