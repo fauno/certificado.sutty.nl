@@ -2,11 +2,24 @@
 layout: default
 ---
 
+{% assign i18n = site.data[site.lang] %}
+
 <section class="section">
   <div class="columns is-centered">
     <div class="column is-half">
       <article class="content" id="{{ page.id }}">
-        <p class="heading">{{ page.date | date: site.data[site.lang].date }}</p>
+        <p class="heading">
+          {{ page.date | date: site.data[site.lang].date }}
+
+          /
+
+          {% assign words = content | number_of_words %}
+          {% if words < 360 %}
+            1 {{ i18n.post.one_minute }}
+          {% else %}
+            {{ words | divided_by: 180 }} {{ i18n.post.minutes }}
+          {% endif %}
+        </p>
         <h1 class="title">{{ page.title }}</h1>
         <h2 class="subtitle">{{ page.description }}</h2>
 
