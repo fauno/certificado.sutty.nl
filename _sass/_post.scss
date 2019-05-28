@@ -1,5 +1,14 @@
-section {
-  &.footnotes {
-    border-top: 1px grey solid;
+article {
+  &.content {
+    code {
+      background: #272822;
+      color: #f8f8f2;
+    }
+  }
+
+  section {
+    &.footnotes {
+      border-top: 1px grey solid;
+    }
   }
 }
