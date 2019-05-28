@@ -29,7 +29,7 @@ Esto se va a convertir en el plugin de I18n
 <section id="{{ i18n.description.id }}" class="section black-bg white-fg">
   <div class="container">
     <div class="columns is-vcentered is-fullheight">
-      <div class="column is-narrow"><p class="symbol">&lt;</p></div>
+      <div class="column is-narrow"><p class="is-symbol">&lt;</p></div>
 
       <div class="column">
         <h1 class="title is-uppercase white-fg">{{ i18n.description.sites }}</h1>
@@ -37,7 +37,7 @@ Esto se va a convertir en el plugin de I18n
         <p class="is-uppercase">{{ i18n.adjetivos | join: '. ' }}</p>
       </div>
 
-      <div class="column is-narrow"><p class="symbol">&#47;</p></div>
+      <div class="column is-narrow"><p class="is-symbol">&#47;</p></div>
 
       <div class="column">
         <h1 class="title white-fg">{{ i18n.description.for }}</h1>
@@ -47,7 +47,7 @@ Esto se va a convertir en el plugin de I18n
         <p><span class="magenta-bg">{{ i18n.adverbios | join: ', '}}</span</p>
       </div>
 
-      <div class="column is-narrow"><p class="symbol">&gt;</p></div>
+      <div class="column is-narrow"><p class="is-symbol">&gt;</p></div>
     </div>
   </div>
 </section>
@@ -60,7 +60,7 @@ Segmentos explicativos principales, uno por pantalla
   <div class="container">
     <div class="columns is-vcentered is-fullheight">
       <div class="column is-half">
-        <p class="symbol {{ i18n[section].fg }}">{{ i18n[section].symbol | escape }}</p>
+        <p class="is-symbol {{ i18n[section].fg }}">{{ i18n[section].symbol | escape }}</p>
         <h1 class="title">{{ i18n[section].title }}</h1>
       </div>
 
@@ -91,7 +91,7 @@ Abrir la sección si el segmento es impar
   <div id="{{ i18n[section].id }}">
     <div class="columns is-centered">
       <div class="column is-narrow has-text-right">
-        <p class="symbol {{ i18n[section].fg }}">{{ i18n[section].symbol | escape }}</p>
+        <p class="is-symbol {{ i18n[section].fg }}">{{ i18n[section].symbol | escape }}</p>
       </div>
 
       <div class="column is-one-third">
