@@ -2,6 +2,7 @@
 layout: post
 title: Sitios web transportables
 author: f@sutty.nl
+description: Por qué es importante que podamos mover nuestros sitios a cualquier lado
 categories:
   - Jekyll
   - Hacks

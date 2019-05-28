@@ -2,6 +2,7 @@
 title: Presentación de Sutty
 author: f@sutty.nl
 layout: post
+description: Con qué se come esto
 ---
 
 ## Introducción
