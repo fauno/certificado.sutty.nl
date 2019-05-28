@@ -15,6 +15,7 @@ tags:
   - ipfs
   - web distribuida
 content_warning: Términos técnicos sobre desarrollo web
+liquid: false
 ---
 
 Para que un sitio web sea transportable, es decir poder colocar todos
@@ -119,7 +120,7 @@ Las estructuras de directorios se suelen representar en árboles, donde
 cada nivel representa archivos y directorios dentro del mismo directorio
 superior.  En nuestro caso, el árbol del sitio sería:
 
-```
+```bash
 /
   subdirectorio/
     imagenes/
@@ -140,7 +141,7 @@ recurso `hoja_de_estilos.css` ubicado en la raíz, lo llamaríamos por
 mismo que `subdirectorio`.  Si usáramos URLs absolutas, vincularíamos
 por `/hoja_de_estilos.css`.
 
-```
+```bash
 /
   hoja_de_estilos.css
   subdirectorio/
@@ -161,7 +162,7 @@ absolutas.  Pero como su ventaja principal es que podemos mover toda la
 raíz del sitio a un subdirectorio y que todo siga funcionando, creemos
 que vale la pena.
 
-```
+```bash
 /
   sitio
     hoja_de_estilos.css
