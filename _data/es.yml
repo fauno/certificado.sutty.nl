@@ -30,11 +30,15 @@ sujetxs:
   - campañas
   - colectivas
   - luchadoras
+  - economías
 adverbios:
   - trans-feministas
   - ecologistas
   - disidentes
   - comunitarias
+  - plurales
+  - solidarias
+  - decoloniales
 logo:
   alt: Logo de Sutty.  Una Y compuesta por una >/, el > cyan y la / magenta
 isologo:
@@ -44,16 +48,16 @@ index:
   title: Inicio
   intro: Sutty es una editora de sitios web especial.
   description:
-    - 'Hace tiempo que sentimos la urgencia de contar con sitios web que garanticen nuestra seguridad, que no sean censurables, que visibilicen nuestras luchas de manera coherente y cuyos contenidos puedan ser auto-gestionados.'
+    - 'Hace tiempo que sentimos la urgencia de contar con **sitios web que garanticen nuestra seguridad**, que no sean censurables, que **visibilicen nuestras luchas** de manera coherente y cuyos contenidos puedan ser auto-gestionados.'
     - '¡Por eso desarrollamos Sutty!'
-    - 'Trabaja con sitios estáticos generados con Jekyll y les agrega características que los hacen más visibles en la Web.'
-    - 'Sutty está pensada para potenciar la presencia, la seguridad y la libertad de expresión a organizaciones y colectivas activistas.'
+    - 'Trabaja con sitios estáticos generados con [Jekyll](https://jekyllrb.com) y les agrega características que los hacen más visibles en la Web.'
+    - '**Sutty está pensada para potenciar la presencia, la seguridad y la libertad de expresión a organizaciones y colectivas activistas.**'
   sections:
     main:
       - static
       - invulnerable
     secondary:
-      - sustentable
+      - sustainable
       - visible
       - accesible
       - archivable
@@ -61,7 +65,7 @@ description:
   id: descripcion
   title: Descripción
   sites: sitios web
-  for: 'para:'
+  for: para
 static:
   fg: magenta-fg
   id: estaticos
@@ -81,7 +85,7 @@ invulnerable:
   description:
     - La mayor parte de las vulnerabilidades que afectan un sitio web provienen de fallos inherentes a las tecnologías que utilizan. En cambio, los sitios estáticos se valen de otras tecnologías que no producen vulnerabilidades.
     - Desde una mirada integral de autodefensa digital, se eliminan los riesgos más comunes para un sitio web.
-sustentable:
+sustainable:
   bg: cyan-bg
   fg: white-fg
   id: sustentables
