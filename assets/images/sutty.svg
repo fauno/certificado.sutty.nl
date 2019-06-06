@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136.606 105.833" height="400" width="516.305">
+  <path d="M56.615 0L23.898 105.833H0L32.717 0z" fill="#f0f">
+    <animate attributeType="XML" attributeName="d" from="M56.615 0L23.898 105.833H0L32.717 0z" to="M114.823 0L82.106 105.833H58.208L90.926 0z" dur="3s" fill="freeze"/>
+    <animate attributeType="XML" attributeName="opacity" from="0.3" to="1" dur="3s" fill="freeze"/>
+  </path>
+  <path d="M65.766 105.833L108.44 54.34 65.766 0H93.93l42.675 54.055-42.675 51.778z" fill="#0ff">
+    <animate attributeType="XML" attributeName="d" from="M65.766 105.833L108.44 54.34 65.766 0H93.93l42.675 54.055-42.675 51.778z" to="M0 105.833L42.675 54.34 0 0h28.165L70.84 54.055l-42.675 51.778z" dur="3s" fill="freeze"/>
+    <animate attributeType="XML" attributeName="opacity" from="0.3" to="1" dur="3s" fill="freeze"/>
+  </path>
+</svg>
