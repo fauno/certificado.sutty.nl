@@ -38,3 +38,48 @@ nav {
     }
   }
 }
+
+@keyframes left-to-right {
+  from {
+    opacity: 0.3;
+    left: 0
+  }
+
+  to {
+    opacity: 1;
+    left: 100px;
+  }
+}
+
+@keyframes right-to-left {
+  from {
+    opacity: 0.3;
+    left: 232px;
+  }
+
+  to {
+    opacity: 1;
+    left: 0
+  }
+}
+
+.animation-container {
+  position: relative;
+  min-height: 369px;
+}
+
+.slide-from-right {
+  position: absolute;
+  z-index: 1;
+  animation: right-to-left ease-in 1;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.slide-from-left {
+  position: absolute;
+  z-index: 0;
+  animation: left-to-right ease-in 1;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
