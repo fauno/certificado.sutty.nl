@@ -8,7 +8,7 @@ Esto se va a convertir en el plugin de I18n
 {% endcomment %}
 {% assign i18n = site.data[site.lang] %}
 
-<section id="{{ i18n.index.id }}" >
+<section id="{{ i18n.index.id }}" class="section sutty">
   <div class="container">
     <div class="columns is-vcentered is-fullheight">
       <div class="column">
@@ -20,7 +20,8 @@ Esto se va a convertir en el plugin de I18n
       </div>
 
       <div class="column">
-        <img src="assets/images/sutty.png" alt="{{ i18n.isologo.alt | escape }}"/>
+        <img src="assets/images/mayor.png" alt="{{ i18n.isologo.alt | escape }}"/>
+        <img src="assets/images/barra.png" alt="{{ i18n.isologo.alt | escape }}"/>
       </div>
     </div>
   </div>
@@ -44,7 +45,7 @@ Esto se va a convertir en el plugin de I18n
 
         <p>{{ i18n.sujetxs | join: ', ' }}</p>
 
-        <p><span class="magenta-bg">{{ i18n.adverbios | join: ', '}}</span</p>
+        <p><span class="cyan-bg black-fg">{{ i18n.adverbios | join: ', '}}</span</p>
       </div>
 
       <div class="column is-narrow has-text-centered"><p class="is-symbol">&gt;</p></div>
@@ -56,15 +57,16 @@ Esto se va a convertir en el plugin de I18n
 Segmentos explicativos principales, uno por pantalla
 {% endcomment %}
 {% for section in i18n.index.sections.main %}
-<section id="{{ i18n[section].id }}" >
+<section id="{{ i18n[section].id }}" class="main">
   <div class="container">
-    <div class="columns is-vcentered is-fullheight">
-      <div class="column is-half">
+    <div class="columns is-vcentered is-centered is-fullheight">
+      <div class="column is-one-third">
         <p class="is-symbol {{ i18n[section].fg }}">{{ i18n[section].symbol | escape }}</p>
         <h1 class="title">{{ i18n[section].title }}</h1>
       </div>
 
-      <div class="column">
+      <div class="column is-half">
+        <h2 class="subtitle">{{ i18n[section].subtitle }}</h2>
         {% for p in i18n[section].description %}
         {{ p | markdown }}
         {% endfor %}
@@ -84,7 +86,7 @@ Segmentos explicativos ocupando una pantalla entera agrupados de a dos.
 Abrir la sección si el segmento es impar
 {% endcomment %}
 {% if new_section == 1 %}
-<section class="section {{ i18n[section].bg }}">
+<section class="section secondary {{ i18n[section].bg }}">
   <div class="columns is-vcentered is-fullheight">
     <div>{% comment %}Solo centrar este elemento completo{% endcomment %}
 {% endif %}
@@ -94,12 +96,12 @@ Abrir la sección si el segmento es impar
         <p class="is-symbol {{ i18n[section].fg }}">{{ i18n[section].symbol | escape }}</p>
       </div>
 
-      <div class="column is-one-third">
+      <div class="column is-two-fifths">
         <h1 class="title">{{ i18n[section].title }}</h1>
         <h2 class="subtitle is-uppercase">{{ i18n[section].subtitle }}</h2>
       </div>
 
-      <div class="column is-one-third">
+      <div class="column is-two-fifths {% if new_section == 1 %}has-border-bottom{% endif %}">
         {% for p in i18n[section].description %}
         {{ p | markdown }}
         {% endfor %}

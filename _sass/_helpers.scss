@@ -1,6 +1,7 @@
 /* Generar los símbolos gigantes */
 .is-symbol {
   font-size: 5rem;
+  font-family: monospace;
 }
 
 .is-monospace {
@@ -36,4 +37,8 @@ $positions: top, bottom, left, right;
 
 .fix-bottom-margins {
   margin-bottom: -30px;
+}
+
+.has-border-bottom {
+  border-bottom: 1px $black solid;
 }

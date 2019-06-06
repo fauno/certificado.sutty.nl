@@ -13,6 +13,23 @@
 @import 'monokai';
 @import 'post';
 
+section {
+  &.main {
+    .title { font-size: 3rem; }
+    .subtitle { font-size: 2rem; }
+  }
+
+  &.sutty {
+    strong {
+      font-weight: 400;
+      background-color: magenta;
+      color: white;
+    }
+  }
+
+  p { margin-bottom: 1rem; }
+}
+
 nav {
   &.navbar {
     a {
