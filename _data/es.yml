@@ -2,6 +2,19 @@
 date: '%d/%m/%Y'
 menu:
   title: Menú principal
+  items:
+    - title: Blog
+      href: blog/
+    - title: Inicio
+      href: ''
+    - title: Contacto
+      href: '#contacto'
+    - title: Ingresar
+      href: 'https://editar.sutty.nl/'
+      css:
+        - button
+        - white-fg
+        - black-bg
 adjetivos:
   - estáticos
   - coherentes

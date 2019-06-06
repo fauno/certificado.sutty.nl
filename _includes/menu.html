@@ -33,4 +33,16 @@ Barra de navegación
       <span aria-hidden="true"></span>
     </a>
   </div>
+
+  <div class="navbar-menu">
+    <div class="navbar-end">
+      {% for item in i18n.menu.items %}
+        <div class="navbar-item">
+          <a class="{{ item.css | join: ' ' }}" href="{{ item.href }}">
+            {{ item.title }}
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 </nav>

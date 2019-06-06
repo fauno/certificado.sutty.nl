@@ -5,3 +5,12 @@
 .section { padding: 0 }
 .columns { margin: 0 !important; }
 .is-transparent { background-color: transparent; }
+
+.button {
+  border-radius: 0;
+  border: none;
+
+  &:focus {
+    box-shadow: none;
+  }
+}

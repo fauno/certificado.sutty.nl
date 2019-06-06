@@ -12,3 +12,12 @@
 @import 'responsive';
 @import 'monokai';
 @import 'post';
+
+nav {
+  &.navbar {
+    a {
+      color: $black;
+      text-transform: uppercase;
+    }
+  }
+}
