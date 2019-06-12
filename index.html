@@ -142,8 +142,8 @@ Cerrar la sección si el segmento es par
 
 <section id="{{ i18n.blog.id }}" class="section">
   {% include menu.html %}
-  <div class="container">
-    <div class="columns is-vcentered is-fullheight">
+  <div class="container is-fullheight">
+    <div class="columns is-vcentered">
       <div class="column is-two-fifths">
         <h1 class="title">{{ i18n.blog.title }}</h1>
       </div>
@@ -162,6 +162,7 @@ Cerrar la sección si el segmento es par
         </div>
       </div>
     </div>
+    {% include footer.html %}
   </div>
   {% include corners.html %}
 </section>
