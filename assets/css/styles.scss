@@ -13,6 +13,11 @@
 @import 'monokai';
 @import 'post';
 
+::-moz-selection,
+::selection {
+  background: cyan;
+}
+
 section {
   &.main {
     .title { font-size: 3rem; }
