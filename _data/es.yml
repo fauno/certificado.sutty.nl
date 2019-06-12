@@ -3,10 +3,10 @@ date: '%d/%m/%Y'
 menu:
   title: Menú principal
   items:
-    - title: Blog
-      href: blog/
     - title: Inicio
       href: ''
+    - title: Blog
+      href: blog/
     - title: Escribinos
       href: '#contacto'
     - title: Ingresar
