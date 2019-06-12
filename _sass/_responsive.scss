@@ -1,5 +1,5 @@
 // menor a tablet
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   body {
     // El alto del menú
     padding-top: 52px;
@@ -8,6 +8,26 @@
   .navbar {
     &.is-transparent {
       background-color: white;
+    }
+  }
+
+  /* En responsive ver solo un menú */
+  section {
+    .navbar {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    /* Cancelar .is-fixed-top */
+    position: relative !important;
+  }
+
+  body {
+    & > .navbar {
+      display: none;
     }
   }
 }

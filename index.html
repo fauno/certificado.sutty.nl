@@ -9,6 +9,7 @@ Esto se va a convertir en el plugin de I18n
 {% assign i18n = site.data[site.lang] %}
 
 <section id="{{ i18n.index.id }}" class="section sutty">
+  {% include menu.html %}
   <div class="container">
     <div class="columns is-vcentered is-fullheight">
       <div class="column">
@@ -28,6 +29,7 @@ Esto se va a convertir en el plugin de I18n
 </section>
 
 <section id="{{ i18n.description.id }}" class="section black-bg white-fg">
+  {% include menu.html %}
   <div class="container">
     <div class="columns is-vcentered is-fullheight">
       <div class="column is-narrow has-text-centered"><p class="is-symbol">&lt;</p></div>
@@ -58,6 +60,7 @@ Segmentos explicativos principales, uno por pantalla
 {% endcomment %}
 {% for section in i18n.index.sections.main %}
 <section id="{{ i18n[section].id }}" class="main">
+  {% include menu.html %}
   <div class="container">
     <div class="columns is-vcentered is-centered is-fullheight">
       <div class="column is-one-third">
@@ -87,6 +90,7 @@ Abrir la sección si el segmento es impar
 {% endcomment %}
 {% if new_section == 1 %}
 <section class="section secondary {{ i18n[section].bg }}">
+  {% include menu.html %}
   <div class="columns is-vcentered is-fullheight">
     <div>{% comment %}Solo centrar este elemento completo{% endcomment %}
 {% endif %}
@@ -116,6 +120,7 @@ Cerrar la sección si el segmento es par
 {% endfor %}
 
 <section id="{{ i18n.contact.id }}" class="section">
+  {% include menu.html %}
   <div class="container">
     <div class="columns is-vcentered is-fullheight">
       <div class="column is-two-fifths">
@@ -129,6 +134,7 @@ Cerrar la sección si el segmento es par
 </section>
 
 <section id="{{ i18n.blog.id }}" class="section">
+  {% include menu.html %}
   <div class="container">
     <div class="columns is-vcentered is-fullheight">
       <div class="column is-two-fifths">

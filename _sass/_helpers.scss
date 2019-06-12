@@ -9,7 +9,7 @@
 }
 
 .is-fullheight {
-  min-height: 100vh;
+  min-height: calc(100vh - 56px);
 }
 
 $positions: top, bottom, left, right;

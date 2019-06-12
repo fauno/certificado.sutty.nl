@@ -28,6 +28,28 @@ section {
   }
 
   p { margin-bottom: 1rem; }
+
+  &.black-bg {
+    nav {
+      &.navbar {
+        .navbar-item {
+          color: white;
+        }
+
+        a {
+          color: white;
+
+          &.black-bg {
+            background-color: white;
+          }
+
+          &.white-fg {
+            color: black !important;
+          }
+        }
+      }
+    }
+  }
 }
 
 nav {
