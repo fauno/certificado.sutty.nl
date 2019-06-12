@@ -14,3 +14,15 @@
     box-shadow: none;
   }
 }
+
+.label {
+  font-weight: 400;
+}
+
+.input,
+.textarea {
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  background-color: #eee;
+}
