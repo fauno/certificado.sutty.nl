@@ -31,8 +31,7 @@ section {
   &.sutty {
     strong {
       font-weight: 400;
-      background-color: magenta;
-      color: white;
+      background-color: cyan;
     }
   }
 
@@ -61,6 +60,11 @@ section {
 
     .corner {
       color: white;
+    }
+
+    strong {
+      font-weight: 400;
+      background-color: cyan;
     }
   }
 }
