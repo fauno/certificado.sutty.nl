@@ -25,6 +25,7 @@ Esto se va a convertir en el plugin de I18n
       </div>
     </div>
   </div>
+  {% include corners.html %}
 </section>
 
 <section id="{{ i18n.description.id }}" class="section black-bg white-fg">
@@ -52,6 +53,7 @@ Esto se va a convertir en el plugin de I18n
       <div class="column is-narrow has-text-centered"><p class="is-symbol">&gt;</p></div>
     </div>
   </div>
+  {% include corners.html %}
 </section>
 
 {% comment %}
@@ -75,6 +77,7 @@ Segmentos explicativos principales, uno por pantalla
       </div>
     </div>
   </div>
+  {% include corners.html %}
 </section>
 {% endfor %}
 
@@ -115,7 +118,11 @@ Abrir la sección si el segmento es impar
 {% comment %}
 Cerrar la sección si el segmento es par
 {% endcomment %}
-{% if new_section == 0 %}</div></div></section>{% endif %}
+{% if new_section == 0 %}
+    </div>
+  </div>
+  {% include corners.html %}
+</section>{% endif %}
 {% endfor %}
 
 <section id="{{ i18n.contact.id }}" class="section">
@@ -130,6 +137,7 @@ Cerrar la sección si el segmento es par
       </div>
     </div>
   </div>
+  {% include corners.html %}
 </section>
 
 <section id="{{ i18n.blog.id }}" class="section">
@@ -155,4 +163,5 @@ Cerrar la sección si el segmento es par
       </div>
     </div>
   </div>
+  {% include corners.html %}
 </section>

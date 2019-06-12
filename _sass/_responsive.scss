@@ -26,8 +26,21 @@
   }
 
   body {
+    & > .corner,
     & > .navbar {
       display: none;
+    }
+  }
+
+  section {
+    .corner {
+      position: absolute;
+
+      @each $side in left right {
+        &.is-fixed-#{$side} {
+          #{$side}: 10px;
+        }
+      }
     }
   }
 }
