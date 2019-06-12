@@ -151,12 +151,7 @@ Cerrar la sección si el segmento es par
         <div class="columns">
           {% for page in site.posts limit: 3 %}
           <div class="column">
-            <p class="heading">{{ page.date | date: i18n.date }}</p>
-            <h1 class="title">
-              <a href="{{ page.url }}">{{ page.title }}</a>
-            </h1>
-
-            <p>{{ page.description | markdown }}</p>
+            {% include post_summary.html page=page %}
           </div>
           {% endfor %}
         </div>

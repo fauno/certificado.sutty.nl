@@ -42,3 +42,14 @@ $positions: top, bottom, left, right;
 .has-border-bottom {
   border-bottom: 1px $black solid;
 }
+
+.has-border-left-on-hover {
+  padding-left: 1rem;
+  border-left: 5px solid white;
+  transition: border-left 1s;
+
+  &:focus,
+  &:hover {
+    border-left: 5px solid cyan;
+  }
+}

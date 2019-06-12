@@ -18,6 +18,10 @@
   background: cyan;
 }
 
+a {
+  transition: color 1s;
+}
+
 section {
   &.main {
     .title { font-size: 3rem; }
@@ -72,4 +76,16 @@ nav {
 
 svg {
   max-width: 100%;
+}
+
+article {
+  header {
+    a {
+      color: $black;
+
+      &:hover {
+        color: magenta;
+      }
+    }
+  }
 }

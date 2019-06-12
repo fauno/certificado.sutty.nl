@@ -154,6 +154,7 @@ form:
 blog:
   id: blog
   title: ...y nos lean
+  description: Todos los artículos
 footer:
   links:
     - href: politica-de-privacidad/

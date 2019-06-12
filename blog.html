@@ -1,0 +1,35 @@
+---
+layout: default
+title: Blog
+---
+
+{% assign i18n = site.data[site.lang] %}
+
+<section>
+  {% include menu.html %}
+
+  <div class="columns">
+    <div class="column is-one-third">
+      <p class="is-symbol cyan-fg">&gt;</p>
+
+      <h1 class="title is-capitalized">{{ i18n.blog.id }}</h1>
+      <h2 class="subtitle">{{ i18n.blog.description | markdown }}</h2>
+    </div>
+
+    <div class="column">
+      <section id="{{ i18n.blog.id }}">
+        {% for page in site.posts %}
+          <article id="{{ page.slug }}">
+            <header class="has-border-left-on-hover">
+              {% include post_summary.html page=page %}
+            </header>
+
+            <hr/>
+          </article>
+        {% endfor %}
+      </section>
+    </div>
+  </div>
+</section>
+
+{% include footer.html %}

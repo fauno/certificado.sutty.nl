@@ -1,0 +1,15 @@
+{% comment %}
+Encabezado de un post, pasar como
+
+{% include post_summary.html page=page %}
+{% endcomment %}
+
+<time datetime="{{ include.page.date }}" class="heading">
+  {{ include.page.date | date: i18n.date }}
+</time>
+
+<h1 class="title">
+  <a href="{{ include.page.url }}">{{ include.page.title }}</a>
+</h1>
+
+{{ include.page.description | markdown }}
