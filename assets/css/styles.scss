@@ -15,7 +15,7 @@
 
 ::-moz-selection,
 ::selection {
-  background: cyan;
+  background: $cyan;
 }
 
 a {
@@ -31,7 +31,12 @@ section {
   &.sutty {
     strong {
       font-weight: 400;
-      background-color: cyan;
+      background-color: $cyan;
+
+      &::selection,
+      &::-moz-selection {
+        background-color: $magenta;
+      }
     }
   }
 
@@ -41,14 +46,14 @@ section {
     nav {
       &.navbar {
         .navbar-item {
-          color: white;
+          color: $white;
         }
 
         a {
-          color: white;
+          color: $white;
 
           &.black-bg {
-            background-color: white;
+            background-color: $white;
           }
 
           &.white-fg {
@@ -59,12 +64,18 @@ section {
     }
 
     .corner {
-      color: white;
+      color: $white;
     }
 
     strong {
       font-weight: 400;
-      background-color: cyan;
+      background-color: $cyan;
+
+      &::selection,
+      &::-moz-selection {
+        background-color: $magenta;
+        color: $white;
+      }
     }
   }
 }
@@ -88,7 +99,7 @@ article {
       color: $black;
 
       &:hover {
-        color: magenta;
+        color: $magenta;
       }
     }
   }

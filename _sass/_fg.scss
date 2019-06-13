@@ -1,13 +1,33 @@
-$colors: white, black, cyan, magenta;
+.white-fg {
+  color: $white !important;
+}
 
-@each $color in $colors {
-  .#{$color}-fg {
-    color: $color !important;
-  }
+.white-bg {
+  background-color: $white;
+}
 
-  .#{$color}-bg {
-    background-color: $color;
-  }
+.black-fg {
+  color: $white !important;
+}
+
+.black-bg {
+  background-color: $black;
+}
+
+.magenta-fg {
+  color: $magenta !important;
+}
+
+.magenta-bg {
+  background-color: $magenta;
+}
+
+.cyan-fg {
+  color: $cyan !important;
+}
+
+.cyan-bg {
+  background-color: $cyan;
 }
 
 // Genera el color contrario del fondo
@@ -17,4 +37,4 @@ $colors: white, black, cyan, magenta;
   mix-blend-mode: difference;
 }
 
-a { color: magenta; }
+a { color: $magenta; }

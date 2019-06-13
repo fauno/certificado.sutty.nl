@@ -45,11 +45,11 @@ $positions: top, bottom, left, right;
 
 .has-border-left-on-hover {
   padding-left: 1rem;
-  border-left: 5px solid white;
+  border-left: 5px solid $white;
   transition: border-left 1s;
 
   &:focus,
   &:hover {
-    border-left: 5px solid cyan;
+    border-left: 5px solid $cyan;
   }
 }
