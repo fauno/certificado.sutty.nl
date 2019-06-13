@@ -36,6 +36,7 @@ section {
       &::selection,
       &::-moz-selection {
         background-color: $magenta;
+        color: $black;
       }
     }
   }
@@ -75,6 +76,12 @@ section {
       &::-moz-selection {
         background-color: $magenta;
         color: $white;
+      }
+    }
+
+    svg {
+      path {
+        fill: $white;
       }
     }
   }

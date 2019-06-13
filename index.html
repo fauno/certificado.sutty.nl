@@ -32,7 +32,9 @@ Esto se va a convertir en el plugin de I18n
   {% include menu.html %}
   <div class="container">
     <div class="columns is-vcentered is-fullheight">
-      <div class="column is-narrow has-text-centered"><p class="is-symbol">&lt;</p></div>
+      <div class="column is-narrow has-text-centered">
+        {% include_relative assets/images/menor.svg %}
+      </div>
 
       <div class="column">
         <h1 class="title is-uppercase white-fg">{{ i18n.description.sites }}</h1>
@@ -40,7 +42,9 @@ Esto se va a convertir en el plugin de I18n
         <p class="is-uppercase">{{ i18n.adjetivos | join: '. ' }}</p>
       </div>
 
-      <div class="column is-narrow has-text-centered"><p class="is-symbol">&#47;</p></div>
+      <div class="column is-narrow has-text-centered">
+        {% include_relative assets/images/barra.svg %}
+      </div>
 
       <div class="column">
         <h1 class="title white-fg">{{ i18n.description.for }}</h1>
@@ -50,7 +54,9 @@ Esto se va a convertir en el plugin de I18n
         <p><strong>{{ i18n.adverbios | join: ', '}}</strong></p>
       </div>
 
-      <div class="column is-narrow has-text-centered"><p class="is-symbol">&gt;</p></div>
+      <div class="column is-narrow has-text-centered">
+        {% include_relative assets/images/mayor.svg %}
+      </div>
     </div>
   </div>
   {% include corners.html %}
