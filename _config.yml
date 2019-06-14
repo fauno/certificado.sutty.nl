@@ -11,6 +11,7 @@ sass:
   style: compressed
 
 css: assets/css/styles.css
+logo: assets/images/sutty.svg
 
 exclude:
   - package.json

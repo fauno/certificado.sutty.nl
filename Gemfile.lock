@@ -62,6 +62,7 @@ GEM
       ruby_dep (~> 1.2)
     mercenary (0.3.6)
     method_source (0.9.2)
+    mini_magick (4.9.3)
     necromancer (0.4.0)
     neocities (0.0.13)
       httpclient (~> 2.8, >= 2.8.3)
@@ -96,6 +97,7 @@ GEM
       unicode-display_width (>= 1.4.0, < 1.6)
     ruby-enum (0.7.2)
       i18n
+    ruby-filemagic (0.7.2)
     ruby-progressbar (1.10.0)
     ruby_dep (1.5.0)
     safe_yaml (1.0.5)
@@ -133,9 +135,11 @@ DEPENDENCIES
   jekyll-commonmark!
   jekyll-relative-urls (= 0.0.2)
   jekyll-sass-converter!
+  mini_magick
   neocities
   pry
   rubocop
+  ruby-filemagic
 
 RUBY VERSION
    ruby 2.5.5p157

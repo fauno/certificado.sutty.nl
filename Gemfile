@@ -17,4 +17,6 @@ group :development do
   gem 'pry'
   gem 'rubocop'
   gem 'neocities'
+  gem 'ruby-filemagic'
+  gem 'mini_magick'
 end
