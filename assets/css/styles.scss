@@ -4,7 +4,6 @@
 {% node_module bulma/css/bulma.min.css %}
 
 @import 'variables';
-@import 'saira';
 @import 'snap';
 @import 'fg';
 @import 'bulma';
@@ -12,6 +11,28 @@
 @import 'responsive';
 @import 'monokai';
 @import 'post';
+
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 500;
+  font-display: optional;
+  src: local('Saira Medium'), local('Saira-Medium'),
+    url({% base64 assets/fonts/saira/v3/SairaMedium.ttf %}) format('truetype');
+}
+
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 700;
+  font-display: optional;
+  src: local('Saira Bold'), local('Saira-Bold'),
+    url({% base64 assets/fonts/saira/v3/SairaBold.ttf %}) format('truetype');
+}
+
+body {
+  font-family: Saira, sans-serif;
+}
 
 ::-moz-selection,
 ::selection {
