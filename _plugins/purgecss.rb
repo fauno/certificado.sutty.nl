@@ -3,6 +3,8 @@
 Jekyll::Hooks.register :site, :post_write do |site|
   next unless ENV['JEKYLL_ENV'] == 'production'
 
+  Jekyll.logger.info 'Purging CSS'
+
   system('./node_modules/.bin/purgecss ' \
          "--css #{site.dest}/#{site.config.dig('css')} " \
          "--content #{site.dest}/**/*.html #{site.dest}/*.html " \
