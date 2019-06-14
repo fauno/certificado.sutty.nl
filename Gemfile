@@ -11,6 +11,8 @@ gem 'jekyll-sass-converter',
 group :jekyll_plugins do
   gem 'jekyll-commonmark', git: 'https://0xacab.org/sutty/jekyll/jekyll-commonmark.git'
   gem 'jekyll-relative-urls', '0.0.2'
+  gem 'jekyll-gzip'
+  gem 'jekyll-brotli'
 end
 
 group :development do
