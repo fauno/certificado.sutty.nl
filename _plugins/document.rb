@@ -1,12 +1,13 @@
+# frozen_string_literal: true
+
 require 'jekyll/document'
 
 module Jekyll
+  # Redefine render_with_liquid? para que podamos indicar manualmente
+  # cuándo queremos que se pueda usar liquid en un artículo o no.
   class Document
-    alias_method :old_render_with_liquid?, :render_with_liquid?
+    alias old_render_with_liquid? render_with_liquid?
 
-    # Redefine render_with_liquid? para que podamos indicar manualmente
-    # cuándo queremos que se pueda usar liquid en un artículo o no.
-    #
     # XXX: Queremos que se puedar usar liquid en los artículos?
     # TODO: Implementar variable liquid en Sutty
     def render_with_liquid?

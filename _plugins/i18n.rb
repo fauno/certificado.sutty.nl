@@ -1,13 +1,13 @@
-# Plugin de i18n simple de Jekyll
-#
-# * Los posts se organizan en directorios _IDIOMA
-# * El idioma por defecto queda en _posts
-# * Las strings de traducción de los sitios están en _data/IDIOMA.yml
+# frozen_string_literal: true
 
-require 'pry'
 module Jekyll
+  # Plugin de i18n simple de Jekyll
+  #
+  # * Los posts se organizan en directorios _IDIOMA
+  # * El idioma por defecto queda en _posts
+  # * Las strings de traducción de los sitios están en _data/IDIOMA.yml
   class Site
-    alias_method :process_one, :process
+    alias process_one process
     def process
       langs = config.fetch('i18n', [])
       langs.each do |lang|

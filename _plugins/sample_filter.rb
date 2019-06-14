@@ -1,11 +1,12 @@
+# frozen_string_literal: true
+
 module Jekyll
   module Filters
+    # Filtros para Liquid
     module Sample
       # Obtiene un elemento al azar de un array
       def sample(input)
-        unless input.is_a?(Array)
-          raise ArgumentError, 'Input must be an Array'
-        end
+        raise ArgumentError, 'Input must be an Array' unless input.is_a?(Array)
 
         input.sample
       end

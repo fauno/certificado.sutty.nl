@@ -1,3 +1,11 @@
 ---
 Style/AsciiComments:
   Enabled: false
+
+Metrics/AbcSize:
+  Exclude:
+    - '_plugins/i18n.rb'
+
+Metrics/MethodLength:
+  Exclude:
+    - '_plugins/i18n.rb'

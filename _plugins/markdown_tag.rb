@@ -2,6 +2,7 @@
 
 module Jekyll
   module Filters
+    # Filtro de markdown usando commonmark
     module Markdown
       # Reutiliza la configuración de jekyll-commonmark para pasar texto
       # por un filtro de markdown
