@@ -26,3 +26,11 @@
   border-radius: 0;
   background-color: #eee;
 }
+
+nav {
+  &.navbar {
+    svg {
+      max-height: 45px;
+    }
+  }
+}

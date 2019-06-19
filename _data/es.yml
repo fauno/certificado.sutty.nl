@@ -40,9 +40,11 @@ adverbios:
   - solidarias
   - decoloniales
 logo:
-  alt: Logo de Sutty.  Una Y compuesta por una >/, el > cyan y la / magenta
+  title: Logo de Sutty
+  desc: Una Y compuesta por una >/, el > cyan y la / magenta
 isologo:
-  alt: Isologo de Sutty.  La Y de Sutty está compuesta por una >/, el > cyan y la / magenta
+  title: Sutty
+  desc: La Y de Sutty está compuesta por una >/, el > cyan y la / magenta
 index:
   id: inicio
   title: Inicio
