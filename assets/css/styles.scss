@@ -47,6 +47,30 @@ section {
   &.main {
     .title { font-size: 3rem; }
     .subtitle { font-size: 2rem; }
+
+    svg {
+      path {
+        fill: $magenta;
+      }
+    }
+  }
+
+  &.secondary {
+    svg {
+      max-width: 3rem;
+
+      path {
+        fill: $cyan;
+      }
+    }
+
+    &.cyan-bg {
+      svg {
+        path {
+          fill: $white;
+        }
+      }
+    }
   }
 
   &.sutty {

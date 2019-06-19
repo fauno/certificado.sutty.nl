@@ -33,7 +33,7 @@ Esto se va a convertir en el plugin de I18n
   <div class="container">
     <div class="columns is-vcentered is-fullheight">
       <div class="column is-narrow has-text-centered">
-        {% include_relative assets/images/menor.svg %}
+        {% include menor.svg %}
       </div>
 
       <div class="column">
@@ -43,7 +43,7 @@ Esto se va a convertir en el plugin de I18n
       </div>
 
       <div class="column is-narrow has-text-centered">
-        {% include_relative assets/images/barra.svg %}
+        {% include barra.svg %}
       </div>
 
       <div class="column">
@@ -55,7 +55,7 @@ Esto se va a convertir en el plugin de I18n
       </div>
 
       <div class="column is-narrow has-text-centered">
-        {% include_relative assets/images/mayor.svg %}
+        {% include mayor.svg %}
       </div>
     </div>
   </div>
@@ -71,7 +71,9 @@ Segmentos explicativos principales, uno por pantalla
   <div class="container">
     <div class="columns is-vcentered is-centered is-fullheight">
       <div class="column is-one-third">
-        <p class="is-symbol {{ i18n[section].fg }}">{{ i18n[section].symbol | escape }}</p>
+        {% assign file = i18n[section].symbol.file %}
+        {% assign title = i18n[section].symbol.title %}
+        {% include {{file}} title=title %}
         <h1 class="title">{{ i18n[section].title }}</h1>
       </div>
 
@@ -105,7 +107,9 @@ Abrir la sección si el segmento es impar
   <div id="{{ i18n[section].id }}">
     <div class="columns is-centered">
       <div class="column is-narrow has-text-right-desktop">
-        <p class="is-symbol {{ i18n[section].fg }}">{{ i18n[section].symbol | escape }}</p>
+        {% assign file = i18n[section].symbol.file %}
+        {% assign title = i18n[section].symbol.title %}
+        {% include {{file}} title=title %}
       </div>
 
       <div class="column is-two-fifths">

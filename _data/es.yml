@@ -1,4 +1,6 @@
 ---
+magenta: '#f206f9'
+cyan: '#13fefe'
 date: '%d/%m/%Y'
 menu:
   title: Menú principal
@@ -41,7 +43,7 @@ adverbios:
   - decoloniales
 logo:
   title: Logo de Sutty
-  desc: Una Y compuesta por una >/, el > cyan y la / magenta
+  desc: Una Y compuesta por una >/, el > cyan y la / magenta.  La animación comienza con /> y al cruzar
 isologo:
   title: Sutty
   desc: La Y de Sutty está compuesta por una >/, el > cyan y la / magenta
@@ -72,7 +74,9 @@ static:
   fg: magenta-fg
   id: estaticos
   title: Los sitios estáticos son la clave
-  symbol: '!'
+  symbol:
+    file: admiracion.svg
+    title: Un signo de exclamación que late para llamar la atención.
   subtitle: Los sitios estáticos son predecibles porque reducen las fallas y las vulnerabilidades.
   description:
     - Los sitios estáticos funcionan para siempre.
@@ -82,7 +86,9 @@ invulnerable:
   fg: cyan-fg
   id: invulnerables
   title: ¡Seamos invulnerables a ataques y bloqueos!
-  symbol: '>'
+  symbol:
+    file: mayor.svg
+    title: 'Un símbolo de mayor ">"'
   subtitle: Los sitios estáticos son invulnerables
   description:
     - La mayor parte de las vulnerabilidades que afectan un sitio web provienen de fallos inherentes a las tecnologías que utilizan. En cambio, los sitios estáticos se valen de otras tecnologías que no producen vulnerabilidades.
@@ -92,7 +98,9 @@ sustainable:
   fg: white-fg
   id: sustentables
   title: Por una web sustentable y ecológica
-  symbol: '#'
+  symbol:
+    file: numeral.svg
+    title: 'Un símbolo de numeral "#"'
   subtitle: Los sitios estáticos utilizan menos recursos.
   description:
     - Los servidores y los dispositivos que usamos cotidianamente utilizan minerales raros que son extraídos del sur global a fuerza de explotación de personas y otras especies.  Cuando un sitio requiere muchos recursos, se agudiza el problema porque el recambio de componentes lleva a la obsolecencia programada.
@@ -101,7 +109,9 @@ visible:
   bg: cyan-bg
   fg: white-fg
   id: visibles
-  symbol: '*'
+  symbol:
+    file: asterisco.svg
+    title: 'Un asterisco "*"'
   title: Por una web donde quepamos todes
   subtitle: Sutty genera sitios más veloces y visibles
   description:
@@ -110,7 +120,9 @@ visible:
 accesible:
   fg: cyan-fg
   id: accesibles
-  symbol: '~'
+  symbol:
+    file: nuflo.svg
+    title: 'Un ñuflo, el símbolo de la ñ "~"'
   title: Por una web de la que todes podamos participar
   subtitle: Sutty implementa cuidados y técnicas para que la web sea accesible para todes.
   description:
@@ -119,7 +131,9 @@ accesible:
 archivable:
   fg: cyan-fg
   id: archivables
-  symbol: '^'
+  symbol:
+    file: circunflejo.svg
+    title: 'Un circunflejo "^"'
   title: Por una web que preserve la memoria colectiva
   subtitle: Con Sutty, los sitios estáticos están preparados para que su contenido perdure.
   description:

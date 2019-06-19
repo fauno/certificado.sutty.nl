@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="317" height="300.7" role="img" aria-labelledby="title desc">
   {% assign i18n = site.data[site.lang] %}
-  <title id="title">{{ i18n.logo.title }}</title>
-  <desc id="desc">{{ i18n.logo.desc }}</desc>
+  <title id="title">{{ i18n.logo.title | escape }}</title>
+  <desc id="desc">{{ i18n.logo.desc | escape }}</desc>
   <path fill="#f206f9" d="M137.9 300.7H93.5L236.8 0h45.4z">
     <animate
       attributeType="XML"
