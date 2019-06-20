@@ -6,16 +6,18 @@
 {% comment %}
 TODO: cuando minifiquemos JS, solo incorporar zepto y event.js
 {% endcomment %}
-{% node_module zepto/dist/zepto.min.js %}
 
-$(document).on('turbolinks:load', function() {
-  $('.navbar-burger').on('click', function(e) {
-    e.preventDefault();
+document.addEventListener('turbolinks:load', function() {
+  document.querySelectorAll('a.navbar-burger').forEach(function(el) {
+    el.addEventListener('click', function(e) {
+      e.preventDefault();
 
-    var _toggler = $(e.currentTarget);
-    var _navbar  = _toggler.parents('nav').find('.navbar-menu');
+      const _toggler = e.currentTarget;
+      const _navbar  = _toggler.closest('nav').querySelector('.navbar-menu');
+      const _aria    = _toggler.getAttribute('aria-expanded');
 
-    _toggler.attr('aria-expanded', true);
-    _navbar.toggleClass('is-active');
+      _toggler.setAttribute('aria-expanded', (_aria == 'true') ? 'false' : 'true');
+      _navbar.classList.toggle('is-active');
+    });
   });
 });
