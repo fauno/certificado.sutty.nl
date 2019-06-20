@@ -2,6 +2,20 @@
 layout: default
 title: Bienvenidx
 ---
+<style>
+  @media screen and (min-width: 1088px) {
+    html {
+      scroll-snap-points-y: repeat(100%);
+      scroll-snap-destination: 0 0;
+      scroll-snap-type: y mandatory;
+      scroll-snap-type: mandatory;
+    }
+
+    section {
+      scroll-snap-align: start;
+    }
+  }
+</style>
 
 {% comment %}
 Esto se va a convertir en el plugin de I18n
