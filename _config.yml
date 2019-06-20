@@ -6,6 +6,8 @@ dir: ltr
 plugins:
   - jekyll-commonmark
   - jekyll-relative-urls
+  - jekyll-brotli
+  - jekyll-gzip
 
 sass:
   style: compressed
