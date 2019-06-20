@@ -8,7 +8,7 @@ Encabezado de un post, pasar como
   {{ include.page.date | date: i18n.date }}
   /
 
-  {% assign words = content | number_of_words %}
+  {% assign words = include.page.content | number_of_words %}
   {% if words < 360 %}
     1 {{ i18n.post.one_minute }}
   {% else %}
