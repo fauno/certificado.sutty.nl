@@ -56,18 +56,22 @@ section {
   }
 
   &.secondary {
-    svg {
-      max-width: 3rem;
+    .column {
+      svg {
+        max-width: 3rem;
 
-      path {
-        fill: $cyan;
+        path {
+          fill: $cyan;
+        }
       }
     }
 
     &.cyan-bg {
-      svg {
-        path {
-          fill: $white;
+      .column {
+        svg {
+          path {
+            fill: $white;
+          }
         }
       }
     }
