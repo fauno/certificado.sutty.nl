@@ -44,13 +44,25 @@ a {
 }
 
 section {
+  &:not(.sutty) {
+    .navbar {
+      svg {
+        path {
+          fill: $black;
+        }
+      }
+    }
+  }
+
   &.main {
     .title { font-size: 3rem; }
     .subtitle { font-size: 2rem; }
 
-    svg {
-      path {
-        fill: $magenta;
+    .column {
+      svg {
+        path {
+          fill: $magenta;
+        }
       }
     }
   }
@@ -130,7 +142,7 @@ section {
 
     svg {
       path {
-        fill: $white;
+        fill: $white !important;
       }
     }
   }
