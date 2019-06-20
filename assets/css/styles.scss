@@ -161,12 +161,25 @@ svg {
 }
 
 article {
+  .content {
+    a {
+      text-decoration: underline;
+    }
+  }
+
   header {
     a {
       color: $black;
 
       &:hover {
         color: $magenta;
+      }
+    }
+
+    svg {
+      margin-bottom: 1rem;
+      path {
+        fill: $magenta;
       }
     }
   }

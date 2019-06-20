@@ -186,3 +186,10 @@ footer:
 post:
   one_minute: minuto
   minutes: minutos
+  symbols:
+    - mayor.svg
+    - menor.svg
+    - asterisco.svg
+    - numeral.svg
+    - circunflejo.svg
+    - nuflo.svg

@@ -6,26 +6,27 @@ layout: default
 
 <section class="section">
   {% include menu.html %}
-  <div class="columns is-centered">
-    <div class="column is-half">
-      <article class="content" id="{{ page.id }}">
-        <p class="heading">
-          {{ page.date | date: site.data[site.lang].date }}
+  <article class="content" id="{{ page.id }}">
+    <div class="columns is-centered">
+      <div class="column is-one-third">
+        <header>
+          {% assign file = i18n.post.symbols | sample %}
+          {% include {{ file }} %}
+          {% include post_summary.html page=page %}
+        </header>
+      </div>
 
-          /
-
-          {% assign words = content | number_of_words %}
-          {% if words < 360 %}
-            1 {{ i18n.post.one_minute }}
-          {% else %}
-            {{ words | divided_by: 180 }} {{ i18n.post.minutes }}
-          {% endif %}
-        </p>
-        <h1 class="title">{{ page.title }}</h1>
-        <h2 class="subtitle">{{ page.description }}</h2>
+      <div class="column is-half content">
 
         {{ content | html_relativize_anchors_to: page.url }}
+
+        <footer>
+          {% if page.next %}<a href="{{ page.next.url }}">&lt; {{ page.next.title }}</a>{% endif %}
+          {% if page.previous %}<a href="{{ page.previous.url }}">{{ page.previous.title }} &gt;</a>{% endif %}
+        </footer>
       </article>
     </div>
   </div>
 </section>
+
+{% include footer.html %}
