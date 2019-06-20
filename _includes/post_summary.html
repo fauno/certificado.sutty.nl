@@ -6,6 +6,14 @@ Encabezado de un post, pasar como
 
 <time datetime="{{ include.page.date }}" class="heading">
   {{ include.page.date | date: i18n.date }}
+  /
+
+  {% assign words = content | number_of_words %}
+  {% if words < 360 %}
+    1 {{ i18n.post.one_minute }}
+  {% else %}
+    {{ words | divided_by: 180 }} {{ i18n.post.minutes }}
+  {% endif %}
 </time>
 
 <h1 class="title">
