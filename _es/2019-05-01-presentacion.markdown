@@ -1,9 +1,16 @@
 ---
 title: Presentación de Sutty
-author: f@sutty.nl
+author:
+- f@sutty.nl
+image:
+  description: ''
+draft: '<span class="translation_missing" title="translation missing: es.posts.submit.save_draft">Save
+  Draft</span>'
 layout: post
-description: Con qué se come esto
+liquid: false
 ---
+
+
 
 ## Introducción
 
