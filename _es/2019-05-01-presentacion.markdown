@@ -4,8 +4,7 @@ author:
 - f@sutty.nl
 image:
   description: ''
-draft: '<span class="translation_missing" title="translation missing: es.posts.submit.save_draft">Save
-  Draft</span>'
+draft: true
 layout: post
 liquid: false
 ---
