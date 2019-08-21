@@ -3,8 +3,10 @@ title: Presentación de Sutty
 author:
 - f@sutty.nl
 image:
-  description: ''
-  path: public/Wk1yQxZJDjraeS6yC2aebgoG.png
+  description: cyberpunk is now
+categories:
+- hola
+- que ondis
 layout: post
 liquid: false
 ---
