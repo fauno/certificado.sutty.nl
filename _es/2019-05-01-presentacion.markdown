@@ -3,19 +3,8 @@ title: Presentación de Sutty
 author:
 - f@sutty.nl
 image:
-  description: omemo
-  path: !ruby/object:ActionDispatch::Http::UploadedFile
-    tempfile: !ruby/object:Tempfile
-      unlinked: false
-      mode: 194
-      tmpfile: &1 !ruby/object:File {}
-      opts:
-        :perm: 384
-      delegate_dc_obj: *1
-    original_filename: omemo.png
-    content_type: image/png
-    headers: "Content-Disposition: form-data; name=\"post[image][path]\"; filename=\"omemo.png\"\r\nContent-Type:
-      image/png\r\n"
+  description: ''
+  path: public/Wk1yQxZJDjraeS6yC2aebgoG.png
 layout: post
 liquid: false
 ---
