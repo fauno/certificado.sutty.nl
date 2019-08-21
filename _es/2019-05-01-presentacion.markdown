@@ -1,9 +1,9 @@
 ---
-title: d6cbd06d1d40653169150d499c748396
+title: Presentación de Sutty
 author:
 - f@sutty.nl
 image:
-  description: todo el maldito sistema esta mal!
+  description: omemo
   path: !ruby/object:ActionDispatch::Http::UploadedFile
     tempfile: !ruby/object:Tempfile
       unlinked: false
@@ -12,13 +12,10 @@ image:
       opts:
         :perm: 384
       delegate_dc_obj: *1
-    original_filename: image823.png
+    original_filename: omemo.png
     content_type: image/png
-    headers: "Content-Disposition: form-data; name=\"post[image][path]\"; filename=\"image823.png\"\r\nContent-Type:
+    headers: "Content-Disposition: form-data; name=\"post[image][path]\"; filename=\"omemo.png\"\r\nContent-Type:
       image/png\r\n"
-categories:
-- d6cbd06d1d40653169150d499c748396
-draft: true
 layout: post
 liquid: false
 ---
