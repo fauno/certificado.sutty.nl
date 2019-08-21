@@ -1,9 +1,23 @@
 ---
-title: Presentación de Sutty
+title: d6cbd06d1d40653169150d499c748396
 author:
 - f@sutty.nl
 image:
-  description: ''
+  description: todo el maldito sistema esta mal!
+  path: !ruby/object:ActionDispatch::Http::UploadedFile
+    tempfile: !ruby/object:Tempfile
+      unlinked: false
+      mode: 194
+      tmpfile: &1 !ruby/object:File {}
+      opts:
+        :perm: 384
+      delegate_dc_obj: *1
+    original_filename: image823.png
+    content_type: image/png
+    headers: "Content-Disposition: form-data; name=\"post[image][path]\"; filename=\"image823.png\"\r\nContent-Type:
+      image/png\r\n"
+categories:
+- d6cbd06d1d40653169150d499c748396
 draft: true
 layout: post
 liquid: false
