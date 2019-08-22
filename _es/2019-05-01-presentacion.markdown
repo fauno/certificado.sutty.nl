@@ -3,7 +3,8 @@ title: Presentación de Sutty
 author:
 - f@sutty.nl
 image:
-  description: cyberpunk is now
+  description: omemo
+  path: public/Qhu5AQEKyPAhPGhtRrrfZoLm.png
 categories:
 - hola
 - que ondis
