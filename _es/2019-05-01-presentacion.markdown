@@ -4,7 +4,6 @@ author:
 - f@sutty.nl
 image:
   description: cyberpunk is now
-  path: public/oxmGqggPVUXFi36HKSMGVVLC.png
 categories:
 - hola
 - que ondis
