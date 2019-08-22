@@ -4,7 +4,7 @@ author:
 - f@sutty.nl
 image:
   description: omemo!!
-  path: public/Qhu5AQEKyPAhPGhtRrrfZoLm.png
+  path: public/8QxiEjU8NeEcARn98yd8mkAG.png
 categories:
 - hola
 - que ondis
