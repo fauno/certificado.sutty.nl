@@ -9,4 +9,20 @@ liquid: false
 
 
 
-hola que ondatengo un mundo de sensacionesque te quiero regalarHola que ondaahora si!
+# hola que onda
+
+como [estas?](http://localhost:3000/sites/sutty.nl/posts/2019-08-29-hola/edit)  
+  
+Hola
+
+&gt; una cita
+
+un tachado **bold**
+
+- hola
+- que tal
+  - muajaja
+
+    hola esto es codigo seentiende?
+
+_y ahora algo completamente diferente_
