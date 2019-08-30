@@ -9,27 +9,8 @@ liquid: false
 
 
 
-hola que onda **qweh**** _wqqwe_ ****qweqweqwe \_hola\_ que onda?**
-
-como [estas?  
-](http://localhost:3000/sites/sutty.nl/posts/2019-08-29-hola/edit)  
-
-Hola  
+_y ahora por algo completamente diferente_  
   
-
-\&gt; una cita  
+que **onda por qué mandas cualquier cosa**  
   
-
-un tachado **bold**  
-  
-
-- hola
-- que tal 
-  - muajaja  
-  
-  - hola esto es codigo seentiende?  
-  
-
-_y ahora algo completamente diferente_  
-  
-
+Logo de Sutty
