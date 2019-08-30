@@ -9,20 +9,27 @@ liquid: false
 
 
 
-# hola que onda
+hola que onda **qweh**** _wqqwe_ ****qweqweqwe \_hola\_ que onda?**
 
-como [estas?](http://localhost:3000/sites/sutty.nl/posts/2019-08-29-hola/edit)  
+como [estas?  
+](http://localhost:3000/sites/sutty.nl/posts/2019-08-29-hola/edit)  
+
+Hola  
   
-Hola
 
-&gt; una cita
+\&gt; una cita  
+  
 
-un tachado **bold**
+un tachado **bold**  
+  
 
 - hola
-- que tal
-  - muajaja
+- que tal 
+  - muajaja  
+  
+  - hola esto es codigo seentiende?  
+  
 
-    hola esto es codigo seentiende?
+_y ahora algo completamente diferente_  
+  
 
-_y ahora algo completamente diferente_
