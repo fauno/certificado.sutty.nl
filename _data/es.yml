@@ -174,11 +174,14 @@ blog:
 footer:
   links:
     - href: politica-de-privacidad/
-      title: Luchamos por el derecho a la privacidad
+      title: La privacidad es un derecho
       text: Política de privacidad
-    - href: código-de-conducta/
-      title: Lee nuestro código de conducta
-      text: Código de conducta
+    - href: terminos-de-servicio/
+      title: '¿Cuáles condiciones debemos cumplir para ser usuaries de Sutty?'
+      text: Términos de Servicio
+    - href: codigo-de-convivencia/
+      title: Leé nuestro código de convivencia
+      text: Código de convivencia
   design:
     href: http://cooperativadedisenio.com/
     title: Visitar el sitio de la Cooperativa de Diseño
