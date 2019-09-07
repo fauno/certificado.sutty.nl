@@ -133,9 +133,9 @@ accesible:
   title: Por una web en la que todes podamos participar
   subtitle: Sutty implementa cuidados y técnicas para que la web sea accesible.
   description:
-    - Una Internet para todes contempla a las personas con diversidad funcional, neurodiversas y con experiencias de traumas.
-    - Sutty se informa de las técnicas que buscan la accesibilidad de los sitios y está **atenta a lo que sus comunidades proponen**.
-    - Sutty promueve el uso de alertas de contenido para cuidarnos ante temas sensibles, contribuyendo a fortalecer **comunidades compasivas y resilientes**.
+    - 'Una Internet para todes contempla a las personas con diversidad funcional, neurodiversas y con experiencias de traumas.'
+    - 'Sutty se informa de las técnicas que buscan la accesibilidad de los sitios y está **atenta a lo que sus comunidades proponen**.'
+    - 'Sutty promueve el uso de alertas de contenido para cuidarnos ante temas sensibles, contribuyendo a fortalecer **comunidades compasivas y resilientes**.'
 archivable:
   fg: cyan-fg
   id: archivables
@@ -145,9 +145,9 @@ archivable:
   title: Por una web que preserve la memoria colectiva
   subtitle: Sutty crea sitios que sobreviven a la censura y al paso del tiempo.
   description:
-    - Con sutty, los sitios son fácilmente archivables y transportables, de forma que puedan seguir en línea aun cuando sean bloqueados y censurados, o dejen de ser actualizados.
-    - **¡Que corra la voz!**
-    - Sutty permite que los sitios estén disponibles desde múltiples ubicaciones.
+    - 'Con sutty, los sitios son fácilmente archivables y transportables, de forma que puedan seguir en línea aun cuando sean bloqueados y censurados, o dejen de ser actualizados.'
+    - '**¡Que corra la voz!**'
+    - 'Sutty permite que los sitios estén disponibles desde múltiples ubicaciones.'
 contact:
   id: contacto
   title: ¿Querés preguntarnos o comentarnos algo? ¡Adelante! Nos encanta que nos escriban.
