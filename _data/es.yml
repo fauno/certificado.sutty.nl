@@ -18,7 +18,6 @@ menu:
         - white-fg
         - black-bg
 adjetivos:
-  - estáticos
   - coherentes
   - amables
   - veloces
@@ -26,6 +25,9 @@ adjetivos:
   - visibles
   - invulnerables
   - ecológicos
+  - sustentables
+  - colaborativos
+  - libres
 sujetxs:
   - organizaciones
   - activistas
@@ -40,7 +42,8 @@ adverbios:
   - comunitarias
   - plurales
   - solidarias
-  - decoloniales
+  - anticolonialistas
+  - diversas
 logo:
   title: Logo de Sutty
   desc: Una Y compuesta por una >/, el > cyan y la / magenta.  La animación comienza con /> y al cruzar
@@ -50,11 +53,11 @@ isologo:
 index:
   id: inicio
   title: Inicio
-  intro: Sutty es una editora de sitios web especial.
+  intro: Sutty crea sitios seguros, veloces y visibles
   description:
     - 'Hace tiempo que sentimos la urgencia de contar con **sitios web que garanticen nuestra seguridad**, que no sean censurables, que **visibilicen nuestras luchas** de manera coherente y cuyos contenidos puedan ser auto-gestionados.'
     - '¡Por eso desarrollamos Sutty!'
-    - 'Trabaja con sitios estáticos generados con [Jekyll](https://jekyllrb.com) y les agrega características que los hacen más visibles en la Web.'
+    - 'Sutty incorpora las técnicas para sitios web que son vanguardia entre las élites tecnológicas y las acerca a nuestros objetivos políticos, volviéndolas accesibles para que nuestras colectivas expresen sus voces.'
     - '**Sutty está pensada para potenciar la presencia, la seguridad y la libertad de expresión a organizaciones y colectivas activistas.**'
   sections:
     main:
@@ -73,26 +76,27 @@ description:
 static:
   fg: magenta-fg
   id: estaticos
-  title: Los sitios estáticos son la clave
+  title: Sutty nos acerca las tecnologías que usan les hacktivistas
   symbol:
     file: admiracion.svg
     title: Un signo de exclamación que late para llamar la atención.
-  subtitle: Los sitios estáticos son predecibles porque reducen las fallas y las vulnerabilidades.
+  subtitle: Sutty te acompaña en el proceso de generación de tu sitio, reduciendo la complejidad de uso de las tecnologías que prefieren les hackers.
   description:
-    - Los sitios estáticos funcionan para siempre.
-    - Los editores dinámicos, como Wordpress y Drupal, habilitan la edición inmediata de los sitios web. Sin embargo, requieren de varios componentes que deben funcionar de manera constante para que el sitio permanezca accesible. Basta que una parte falle, para que el sitio se caiga. Además, sabemos que contienen errores de programación que los hacen vulnerables a distintos ataques.
-    - Un sitio estático es generado de antemano, con lo que se ahorran recursos y disminuyen las fallas y las vulnerabilidades.
+    - 'Sutty entiende que la programación del mejor sitio no puede ser compleja: queremos que las tecnologías más eficientes estén al alcance de todes.'
+    - 'Sutty descarta las fallas y las vulnerabilidades de la mayoría de los sitios: **¡ tener un sitio seguro está a nuestro alcance!**'
+    - '**Sutty te da la confianza que necesitás para tu sitio.**'
+    - '**Sutty funciona para siempre.**'
 invulnerable:
   fg: cyan-fg
   id: invulnerables
-  title: ¡Seamos invulnerables a ataques y bloqueos!
+  title: ¡Seamos invulnerables a ataques y trolls!
   symbol:
     file: mayor.svg
     title: 'Un símbolo de mayor ">"'
-  subtitle: Los sitios estáticos son invulnerables
+  subtitle: Los sitios hechos con Sutty son imbatibles.
   description:
-    - La mayor parte de las vulnerabilidades que afectan un sitio web provienen de fallos inherentes a las tecnologías que utilizan. En cambio, los sitios estáticos se valen de otras tecnologías que no producen vulnerabilidades.
-    - Desde una mirada integral de autodefensa digital, se eliminan los riesgos más comunes para un sitio web.
+    - 'La mayor parte de las vulnerabilidades que afectan un sitio web provienen de fallos propios de  las tecnologías que utilizan. **Sutty funciona con tecnologías radicalmente diferentes, ¡que no producen vulnerabilidades!**'
+    - '**Sutty elimina los riesgos más comunes para un sitio web.**'
 sustainable:
   bg: cyan-bg
   fg: white-fg
@@ -101,10 +105,10 @@ sustainable:
   symbol:
     file: numeral.svg
     title: 'Un símbolo de numeral "#"'
-  subtitle: Los sitios estáticos utilizan menos recursos.
+  subtitle: Sutty utiliza menos recursos.
   description:
-    - Los servidores y los dispositivos que usamos cotidianamente utilizan minerales raros que son extraídos del sur global a fuerza de explotación de personas y otras especies.  Cuando un sitio requiere muchos recursos, se agudiza el problema porque el recambio de componentes lleva a la obsolecencia programada.
-    - Los sitios estáticos contribuyen a una Web sustentable y ecológica porque utilizan menos recursos.
+    - 'Las computadoras y celulares se fabrican con minerales raros que son extraídos del sur global a fuerza de explotación de personas y otras especies y destrucción del medio ambiente. Cuando un sitio requiere muchos recursos, se agudiza el problema.'
+    - '**Sutty contribuye a una Web sustentable y ecológica.**'
 visible:
   bg: cyan-bg
   fg: white-fg
@@ -112,22 +116,26 @@ visible:
   symbol:
     file: asterisco.svg
     title: 'Un asterisco "*"'
-  title: Por una web donde quepamos todes
-  subtitle: Sutty genera sitios más veloces y visibles
+  title: Por una web en la que nuestros sitios lleguen a más personas, sin recetas ocultas.
+  subtitle: Sutty genera sitios veloces y visibles
   description:
-    - Los buscadores toman en cuenta la velocidad de un sitio, penalizando los más lentos y **priorizando los más veloces**.  Esto produce que los sitios con mayor infraestructura hegemonicen los resultados de búsqueda.  **Con Sutty, los sitios estáticos están optimizados para ser veloces y posicionar mejor el contenido.**
-    - Los sitios livianos y veloces son más accesibles a personas con conexiones a Internet y dispositivos con menores recursos, **aumentando su visibilidad y la cantidad de visitas potenciales.**
+    - 'Los sitios más visitados en Internet son los que muestran los buscadores en los primeros resultados.'
+    - 'Los buscadores priorizan los sitios más veloces y ocultan los más lentos. Por eso queremos que nuestros sitios puedan ser más veloces sin la necesidad de invertir extra en campañas de posicionamiento.'
+    - '**Sutty optimiza los sitios para ser veloces y posicionarlos mejor en los buscadores.**'
+    - '**Sutty aumenta la visibilidad de tu sitio y las visitas potenciales.**'
+    - '**Sutty llega a más personas.**'
 accesible:
   fg: cyan-fg
   id: accesibles
   symbol:
     file: nuflo.svg
     title: 'Un ñuflo, el símbolo de la ñ "~"'
-  title: Por una web de la que todes podamos participar
-  subtitle: Sutty implementa cuidados y técnicas para que la web sea accesible para todes.
+  title: Por una web en la que todes podamos participar
+  subtitle: Sutty implementa cuidados y técnicas para que la web sea accesible.
   description:
-    - Una Internet para todes debe contemplar a las personas con diversidad funcional y neurodiversas. Los sitios y sus contenidos deben estar pensados y estructurados para no ser excluyentes.
-    - Los contenidos pueden ser disparadores de traumas o fobias.  Sutty provee herramientas que permiten anticiparlos, empoderando a les usuaries.
+    - Una Internet para todes contempla a las personas con diversidad funcional, neurodiversas y con experiencias de traumas.
+    - Sutty se informa de las técnicas que buscan la accesibilidad de los sitios y está **atenta a lo que sus comunidades proponen**.
+    - Sutty promueve el uso de alertas de contenido para cuidarnos ante temas sensibles, contribuyendo a fortalecer **comunidades compasivas y resilientes**.
 archivable:
   fg: cyan-fg
   id: archivables
@@ -135,13 +143,14 @@ archivable:
     file: circunflejo.svg
     title: 'Un circunflejo "^"'
   title: Por una web que preserve la memoria colectiva
-  subtitle: Con Sutty, los sitios estáticos están preparados para que su contenido perdure.
+  subtitle: Sutty crea sitios que sobreviven a la censura y al paso del tiempo.
   description:
-    - Los sitios pueden caer en desuso y su contenido deja de ser accesible para otres compañeres.  También pueden ser censurados por distintos medios técnicos y judiciales que previenen su acceso.
-    - La estrategia frente a estas dos posibilidades es que los sitios sean archivables y transportables, de forma que puedan ser accedidos desde múltiples lugares, incluso _offline_.
+    - Con sutty, los sitios son fácilmente archivables y transportables, de forma que puedan seguir en línea aun cuando sean bloqueados y censurados, o dejen de ser actualizados.
+    - **¡Que corra la voz!**
+    - Sutty permite que los sitios estén disponibles desde múltiples ubicaciones.
 contact:
   id: contacto
-  title: Nos encanta que nos escriban
+  title: ¿Querés preguntarnos o comentarnos algo? ¡Adelante! Nos encanta que nos escriban.
   form:
     site:
       type: hidden
