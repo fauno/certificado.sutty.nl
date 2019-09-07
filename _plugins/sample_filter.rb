@@ -10,14 +10,6 @@ module Jekyll
 
         input.sample
       end
-
-      # TODO: Mover a jekyll-relative-urls
-      # TODO: Hacerlo con Nokogiri?
-      #
-      # Agrega una URL base a los anchors de una cadena HTML
-      def html_relativize_anchors_to(input, base)
-        input.gsub!(/((href|src)=["'])#/, "\\1#{base}#")
-      end
     end
   end
 end

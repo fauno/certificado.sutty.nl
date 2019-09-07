@@ -4,15 +4,13 @@ source 'https://rubygems.org'
 ruby '2.5.5'
 
 gem 'jekyll'
-gem 'jekyll-sass-converter',
-    git: 'https://github.com/jekyll/jekyll-sass-converter.git',
-    branch: 'master'
 
 group :jekyll_plugins do
-  gem 'jekyll-commonmark', git: 'https://0xacab.org/sutty/jekyll/jekyll-commonmark.git'
-  gem 'jekyll-relative-urls', '0.0.2'
+  gem 'jekyll-commonmark'
+  gem 'jekyll-relative-urls'
   gem 'jekyll-gzip'
   gem 'jekyll-brotli'
+  gem 'jekyll-drafts-as-metadata'
 end
 
 group :development do

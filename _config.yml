@@ -1,9 +1,11 @@
 ---
-title: 145a8e2fbc9f5ffe41b4795e309f6fcc
+title: Sutty
+description: Sutty crea sitios seguros, veloces y visibles
 title_separator: "-"
 lang: es
 dir: ltr
 plugins:
+- jekyll-drafts-as-metadata
 - jekyll-commonmark
 - jekyll-relative-urls
 - jekyll-brotli
@@ -31,5 +33,3 @@ commonmark:
 i18n:
 - es
 permalink: ":title/"
-theme: 163957ca042ff0a7d7b81e957b61487c
-description: abf206bef6331f50c70e04ad8ea22db8abf206bef6331f50c70e04ad8ea22db8
