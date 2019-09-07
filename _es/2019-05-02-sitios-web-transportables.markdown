@@ -1,4 +1,5 @@
 ---
+draft: true
 layout: post
 title: Sitios web transportables
 author: f@sutty.nl
