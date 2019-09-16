@@ -1,0 +1,87 @@
+---
+title:
+  type: 'string'
+  required: true
+  label:
+    es: 'Título del artículo'
+    en: 'Post title'
+  help:
+    es: '¡Un título que invite a leer el artículo!'
+    en: 'A title that invites people to read the post!'
+author:
+  type: 'array'
+  label:
+    es: 'Autores'
+    en: 'Authors'
+  help:
+    es: 'Quiénes participaron en la escritura de este artículo'
+    en: 'Who collaborated in write this post'
+image:
+  type: 'image'
+  path:
+    label:
+      es: 'Imagen principal'
+      en: 'Main image'
+    help:
+      es: |
+        Se utiliza para ilustrar el artículo y como previsualización en
+        las redes sociales.
+      en: |
+        It's used to illustrate the article and as preview in social
+        networks.
+  description:
+    label:
+      es: 'Descripción de la imagen principal'
+      en: 'Main image description'
+    help:
+      es: |
+        Describe la imagen principal para usuaries no videntes y
+        buscadores
+      en: |
+        Describe the main image for blind or partially sighted users and
+        search engines
+content:
+  type: 'content'
+  label:
+    es: 'Contenido del artículo'
+    en: 'Post content'
+  help:
+    es: 'Escribe aquí el artículo'
+    en: 'Write down your post'
+permalink:
+  type: 'string'
+  label:
+    es: 'Enlace'
+    en: 'Permalink'
+  help:
+    es: |
+      Si no quieres utilizar el formato de enlaces general del sitio
+      para este artículo, especifica uno aquí.
+    en: |
+      If you don't want to follow the site's link format for this
+      post, change it here.
+categories:
+  type: 'array'
+  label:
+    es: 'Categorías'
+    en: 'Categories'
+  help:
+    es: 'Ayudan a organizar los artículos en temas'
+    en: 'Use categories to organize posts by themes'
+tags:
+  type: 'array'
+  label:
+    es: 'Etiquetas'
+    en: 'Tags'
+  help:
+    es: 'Usa etiquetas para resaltar palabras clave'
+    en: 'Tags are helpful as keywords'
+draft:
+  type: 'boolean'
+  label:
+    es: 'Borrador'
+    en: 'Draft'
+  help:
+    es: 'Este artículo aun no está listo para publicar'
+    en: "This post isn't ready to be published yet"
+---
