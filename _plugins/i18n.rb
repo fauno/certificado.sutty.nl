@@ -30,7 +30,7 @@ module Jekyll
 
         # En lugar de cambiar el funcionamiento interno de Jekyll, le
         # engañamos a que busque los _posts en otro lado
-        FileUtils.rm('_posts') if File.exist? '_posts'
+        FileUtils.rm_f('_posts')
         FileUtils.ln_s("_#{@lang}", '_posts')
 
         process_one
