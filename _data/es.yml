@@ -2,6 +2,9 @@
 magenta: '#f206f9'
 cyan: '#13fefe'
 date: '%d/%m/%Y'
+gramatica:
+  - sujetxs
+  - adverbios
 menu:
   title: Menú principal
   items:
@@ -12,7 +15,7 @@ menu:
     - title: Escribinos
       href: '#contacto'
     - title: Ingresar
-      href: 'https://editar.sutty.nl/'
+      href: 'https://panel.sutty.nl/'
       css:
         - button
         - white-fg
@@ -46,7 +49,7 @@ adverbios:
   - diversas
 logo:
   title: Logo de Sutty
-  desc: Una Y compuesta por una >/, el > cyan y la / magenta.  La animación comienza con /> y al cruzar
+  desc: Una Y compuesta por una >/, el > cyan y la / magenta.  La animación comienza con /> y al cruzarse horizontalmente forma >/
 isologo:
   title: Sutty
   desc: La Y de Sutty está compuesta por una >/, el > cyan y la / magenta
@@ -85,7 +88,7 @@ static:
     - 'Sutty entiende que la programación del mejor sitio no puede ser compleja: queremos que las tecnologías más eficientes estén al alcance de todes.'
     - 'Sutty descarta las fallas y las vulnerabilidades de la mayoría de los sitios: **¡tener un sitio seguro está a nuestro alcance!**'
     - '**Sutty te da la confianza que necesitás para tu sitio.**'
-    - '**Sutty funciona para siempre.**'
+    - '**Los sitios generados con Sutty funcionan para siempre.**'
 invulnerable:
   fg: cyan-fg
   id: invulnerables
@@ -178,8 +181,6 @@ form:
   required: '*'
 blog:
   id: blog
-  title: ...y nos lean
-  description: Todos los artículos
 footer:
   links:
     - href: politica-de-privacidad/

@@ -32,4 +32,5 @@ commonmark:
   - table
 i18n:
 - es
+- en
 permalink: ":title/"

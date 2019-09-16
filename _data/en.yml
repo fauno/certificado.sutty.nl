@@ -1,0 +1,207 @@
+---
+magenta: '#f206f9'
+cyan: '#13fefe'
+date: '%m/%d/%Y'
+gramatica:
+  - adverbios
+  - sujetxs
+menu:
+  title: Main menu
+  items:
+    - title: Home
+      href: ''
+    - title: Blog
+      href: blog/
+    - title: Contact us
+      href: '#contact'
+    - title: Log in
+      href: 'https://panel.sutty.nl/'
+      css:
+        - button
+        - white-fg
+        - black-bg
+adjetivos:
+  - coherent
+  - gentle
+  - fast
+  - accessible
+  - visible
+  - invulnerable
+  - ecological
+  - sustainable
+  - collaborative
+sujetxs:
+  - organizations
+  - activists
+  - campaigns
+  - collectives
+  - fighters
+  - economies
+adverbios:
+  - trans-feminist
+  - ecologist
+  - disident
+  - communitary
+  - plural
+  - solidary
+  - anticolonialist
+  - diverse
+logo:
+  title: "Sutty's logo"
+  desc: A Y composed by >/, where > is cyan and / magenta.  The animation starts with /> and crosses horizontally to form >/
+isologo:
+  title: Sutty
+  desc: The Y is composed by >/
+index:
+  id: home
+  title: Home
+  intro: Sutty creates safe, fast and visible web sites
+  description:
+    - "We've been feeling the urgency of having **web sites that keep us safe**, evading censorship, **making our struggles visible** in a coherent way, with self-management included."
+    - "That's why we developed Sutty!"
+    - "Sutty incorporates the vanguardist tecniques of the technological elites and takes them closer to our political objetives, making them accessible for collectives to express their voices."
+    - "**Sutty is developed to empower presence, safety and freedom to activist organizations and collectives.**"
+  sections:
+    main:
+      - static
+      - invulnerable
+    secondary:
+      - sustainable
+      - visible
+      - accesible
+      - archivable
+description:
+  id: description
+  title: Descripction
+  sites: web sites
+  for: for
+static:
+  fg: magenta-fg
+  id: static
+  title: Sutty takes us closer to the technology used by hacktivists
+  symbol:
+    file: admiracion.svg
+    title: An exclamation point beating to call our attention
+  subtitle: Sutty empowers you to generate your web site, reducing complexities in the technology prefered by hacktivists.
+  description:
+    - "Sutty understands that developing the best site should not be complex: we want the most efficient technologies to be reachable by everyone."
+    - "Sutty discards failures and vulnerabilities from most web sites:  **having a safe web site is at our hands!**"
+    - "**Sutty gives you the trust you need in your web site.**"
+    - '**Web sites made with Sutty work forever.**'
+invulnerable:
+  fg: cyan-fg
+  id: invulnerable
+  title: "Let's become invulnerable to attacks and trolls!"
+  symbol:
+    file: mayor.svg
+    title: 'A greater than symbol, ">"'
+  subtitle: Web sites made with Sutty are unbeatable.
+  description:
+    - "Most vulnerabilities that can affect a web site come from failures on the technologies they use.  **Sutty works with radically different technologies, that don't have them!**"
+    - "**Sutty removes the most common risks for a web site.**"
+sustainable:
+  bg: cyan-bg
+  fg: white-fg
+  id: sustentables
+  title: For a sustainable and ecological Web
+  symbol:
+    file: numeral.svg
+    title: 'A hash symbol, "#"'
+  subtitle: Sutty uses fewer resources
+  description:
+    - "Computers and smartphones are made using rare minerals extracted from the Global South by exploiting people and other species and destroying the environment.  When a web sites uses many resources, they deepen the issue."
+    - "**Sutty contributes to a sustainable and ecological Web.**"
+visible:
+  bg: cyan-bg
+  fg: white-fg
+  id: visibles
+  symbol:
+    file: asterisco.svg
+    title: 'A star symbol, "*"'
+  title: For a web where our sites reach more people, without hidden recipes
+  subtitle: Sutty makes fast and visible web sites
+  description:
+    - "The most visited web sites in the Internet are those appearing first in search engines."
+    - "Search engines prioritize the fastest web sites and hide the slowest. That's why we want our web sites to be faster without investing extra in positioning campaigns."
+    - "**Sutty optimizes web sites to be faster and be better positioned in search engines.**"
+    - "**Sutty makes your web site more visible to have more potential visitors.**"
+    - "**Sutty reaches more people.**"
+accesible:
+  fg: cyan-fg
+  id: accessible
+  symbol:
+    file: nuflo.svg
+    title: 'A tilde symbol, like in the ñ, "~"'
+  title: For a Web where everyone can participate
+  subtitle: Sutty implements caring and tecniques to make the Web more accessible
+  description:
+    - "An Internet for everyone contemplates people functionally diverse, neuro diverse, and experience of trauma."
+    - "Sutty keeps informed of accessibility for web sites and **works towards it with their communities.**"
+    - "Sutty promotes content warnings to care about sensitive topics, contributing to empower **compassive and resilient communities**."
+archivable:
+  fg: cyan-fg
+  id: archivable
+  symbol:
+    file: circunflejo.svg
+    title: 'A caret symbol, "^"'
+  title: For a Web that preserves collective memory
+  subtitle: Sutty makes web sites that survive censorship and time.
+  description:
+    - "With Sutty, web sites are easily archivable and transportable, making them available even when blocked and censored or not maintained anymore."
+    - '**Spread the word!**'
+    - "Sutty allows web sites to be available in multiple locations."
+contact:
+  id: contact
+  title: "Do you want to say or ask us something?  Go ahead!  We're delighted to read you."
+  form:
+    site:
+      type: hidden
+      value: sutty.nl
+    name:
+      type: text
+      label: Pen name, nick, alias, chosen name
+    pronouns:
+      type: text
+      label: Pronouns
+    contact:
+      type: text
+      label: Contact form (e-mail, telegram, etc.)
+      required: true
+    body:
+      type: textarea
+      label: Message
+      required: true
+    gdpr:
+      type: checkbox
+      label: I understand Sutty's privacy policy
+      required: true
+  submit: Send
+form:
+  required: '*'
+blog:
+  id: blog
+footer:
+  links:
+    - href: privacy-policy/
+      title: Privacy is a right
+      text: Privacy policy
+    - href: terms-of-service/
+      title: "Under which conditions can we become users?"
+      text: Terms of service
+    - href: code-of-conduct
+      title: Codes of conduct stablish a floor for caring spaces that enable participation to everyone.
+      text: Code of conduct
+  design:
+    href: http://cooperativadedisenio.com/
+    title: Got to Cooperativa de Diseño
+    text: Design by Cooperativa de Diseño
+post:
+  one_minute: minute
+  minutes: minutes
+  symbols:
+    - mayor.svg
+    - menor.svg
+    - asterisco.svg
+    - numeral.svg
+    - circunflejo.svg
+    - nuflo.svg

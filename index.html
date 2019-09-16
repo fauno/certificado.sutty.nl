@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Bienvenidx
 ---
 <style>
   @media screen and (min-width: 1088px) {
@@ -63,9 +62,13 @@ Esto se va a convertir en el plugin de I18n
       <div class="column">
         <h1 class="title white-fg">{{ i18n.description.for }}</h1>
 
-        <p>{{ i18n.sujetxs | join: ', ' }}</p>
-
-        <p><strong>{{ i18n.adverbios | join: ', '}}</strong></p>
+        {% for part in i18n.gramatica %}
+          <p>
+            {% if part == 'adverbios' %}<strong>{% endif %}
+            {{ i18n[part] | join: ', ' }}
+            {% if part == 'adverbios' %}</strong>{% endif %}
+          </p>
+        {% endfor %}
       </div>
 
       <div class="column is-narrow has-text-centered">

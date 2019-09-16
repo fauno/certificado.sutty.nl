@@ -11,16 +11,24 @@ Barra de navegación
     </a>
 
     <p class="navbar-item is-hidden-mobile">
+      {% if i18n.gramatica[0] == 'adverbios' %}
+        {{ i18n.adjetivos | sample }}
+      {% endif %}
+
       {{ i18n.description.sites }}
-      {{ i18n.adjetivos | sample }}
+
+      {% if i18n.gramatica[0] != 'adverbios' %}
+        {{ i18n.adjetivos | sample }}
+      {% endif %}
     </p>
 
     <p class="navbar-item is-hidden-mobile">&#47;</p>
 
     <p class="navbar-item is-hidden-mobile">
       {{ i18n.description.for | remove: ':' }}
-      {{ i18n.sujetxs | sample }}
-      {{ i18n.adverbios | sample }}
+      {% for part in i18n.gramatica %}
+        {{ i18n[part] | sample }}
+      {% endfor %}
     </p>
 
     <a role="button" 
