@@ -166,11 +166,8 @@ Cerrar la sección si el segmento es par
 
 <section id="{{ i18n.blog.id }}" class="section">
   {% include menu.html %}
-  <div class="container is-fullheight">
+  <div class="container is-flex space-between is-fullheight">
     <div class="columns is-vcentered">
-      <div class="column is-two-fifths">
-        <h1 class="title">{{ i18n.blog.title }}</h1>
-      </div>
       <div class="column">
         <div class="columns">
           {% for page in site.posts limit: 3 %}

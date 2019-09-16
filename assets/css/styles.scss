@@ -199,3 +199,8 @@ article {
 .turbolinks-progress-bar {
   background-color: $magenta;
 }
+
+.space-between {
+  justify-content: space-between;
+  flex-direction: column;
+}
