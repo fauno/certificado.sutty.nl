@@ -2,17 +2,12 @@
 title: Presentación de Sutty
 author:
 - f@sutty.nl
-image:
-  description: omemo!!
-  path: public/8QxiEjU8NeEcARn98yd8mkAG.png
 categories:
-- hola
-- que ondis
+- Sutty
 layout: post
 liquid: false
+description: Nace una estrella
 ---
-
-
 
 ## Introducción
 

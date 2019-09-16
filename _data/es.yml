@@ -80,10 +80,10 @@ static:
   symbol:
     file: admiracion.svg
     title: Un signo de exclamación que late para llamar la atención.
-  subtitle: Sutty te acompaña en el proceso de generación de tu sitio, reduciendo la complejidad de uso de las tecnologías que prefieren les hackers.
+  subtitle: Sutty te acompaña en el proceso de generación de tu sitio, reduciendo la complejidad de uso de las tecnologías que prefieren les hacktivistas.
   description:
     - 'Sutty entiende que la programación del mejor sitio no puede ser compleja: queremos que las tecnologías más eficientes estén al alcance de todes.'
-    - 'Sutty descarta las fallas y las vulnerabilidades de la mayoría de los sitios: **¡ tener un sitio seguro está a nuestro alcance!**'
+    - 'Sutty descarta las fallas y las vulnerabilidades de la mayoría de los sitios: **¡tener un sitio seguro está a nuestro alcance!**'
     - '**Sutty te da la confianza que necesitás para tu sitio.**'
     - '**Sutty funciona para siempre.**'
 invulnerable:
@@ -105,7 +105,7 @@ sustainable:
   symbol:
     file: numeral.svg
     title: 'Un símbolo de numeral "#"'
-  subtitle: Sutty utiliza menos recursos.
+  subtitle: Sutty utiliza menos recursos
   description:
     - 'Las computadoras y celulares se fabrican con minerales raros que son extraídos del sur global a fuerza de explotación de personas y otras especies y destrucción del medio ambiente. Cuando un sitio requiere muchos recursos, se agudiza el problema.'
     - '**Sutty contribuye a una Web sustentable y ecológica.**'
@@ -116,7 +116,7 @@ visible:
   symbol:
     file: asterisco.svg
     title: 'Un asterisco "*"'
-  title: Por una web en la que nuestros sitios lleguen a más personas, sin recetas ocultas.
+  title: Por una web en la que nuestros sitios lleguen a más personas, sin recetas ocultas
   subtitle: Sutty genera sitios veloces y visibles
   description:
     - 'Los sitios más visitados en Internet son los que muestran los buscadores en los primeros resultados.'
@@ -131,7 +131,7 @@ accesible:
     file: nuflo.svg
     title: 'Un ñuflo, el símbolo de la ñ "~"'
   title: Por una web en la que todes podamos participar
-  subtitle: Sutty implementa cuidados y técnicas para que la web sea accesible.
+  subtitle: Sutty implementa cuidados y técnicas para que la web sea accesible
   description:
     - 'Una Internet para todes contempla a las personas con diversidad funcional, neurodiversas y con experiencias de traumas.'
     - 'Sutty se informa de las técnicas que buscan la accesibilidad de los sitios y está **atenta a lo que sus comunidades proponen**.'
@@ -158,7 +158,7 @@ contact:
     name:
       type: text
       label: Pseudónimo, nick, alias, nombre elegido
-    pronoun:
+    pronouns:
       type: text
       label: Pronombres
     contact:
@@ -171,7 +171,7 @@ contact:
       required: true
     gdpr:
       type: checkbox
-      label: Doy mi consentimiento...
+      label: Comprendo las políticas de privacidad de Sutty
       required: true
   submit: Enviar
 form:
