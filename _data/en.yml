@@ -1,4 +1,5 @@
 ---
+locale: English
 magenta: '#f206f9'
 cyan: '#13fefe'
 date: '%m/%d/%Y'

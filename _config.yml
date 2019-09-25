@@ -5,9 +5,11 @@ title_separator: "-"
 lang: es
 dir: ltr
 plugins:
+- jekyll-locales
 - jekyll-drafts-as-metadata
 - jekyll-commonmark
 - jekyll-relative-urls
+- jekyll-purgecss
 - jekyll-brotli
 - jekyll-gzip
 sass:
@@ -30,7 +32,7 @@ commonmark:
   - strikethrough
   - autolink
   - table
-i18n:
+locales:
 - es
 - en
 permalink: ":title/"

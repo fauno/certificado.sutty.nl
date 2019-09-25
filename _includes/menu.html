@@ -34,7 +34,7 @@ Barra de navegación
     <a role="button" 
        class="navbar-burger burger"
        data-target="menu"
-       aria-expanded="false"
+       aria-expanded="true"
        aria-label="{{ i18n.menu.title }}">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -42,7 +42,7 @@ Barra de navegación
     </a>
   </div>
 
-  <div class="navbar-menu">
+  <div class="navbar-menu is-active">
     <div class="navbar-end">
       {% for item in i18n.menu.items %}
         <div class="navbar-item">
