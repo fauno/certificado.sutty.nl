@@ -32,5 +32,4 @@ group :development do
   gem 'neocities'
   gem 'ruby-filemagic'
   gem 'mini_magick'
-  gem 'turbolinks-source'
 end

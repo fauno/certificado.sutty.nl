@@ -15,8 +15,8 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.6.0)
-      public_suffix (>= 2.0.2, < 4.0)
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
     ast (2.4.0)
     brotli (0.2.3)
     coderay (1.1.2)
@@ -96,7 +96,7 @@ GEM
       tty-prompt (~> 0.12, = 0.12.0)
       tty-table (~> 0.10, = 0.10.0)
     parallel (1.17.0)
-    parser (2.6.3.0)
+    parser (2.6.4.1)
       ast (~> 2.4.0)
     pastel (0.7.2)
       equatable (~> 0.5.0)
@@ -106,13 +106,13 @@ GEM
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
-    public_suffix (3.1.1)
+    public_suffix (4.0.1)
     rainbow (3.0.0)
     rake (12.3.3)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
-    rouge (3.9.0)
+    rouge (3.11.0)
     rubocop (0.74.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
@@ -126,7 +126,7 @@ GEM
     ruby-progressbar (1.10.1)
     ruby_dep (1.5.0)
     safe_yaml (1.0.5)
-    sassc (2.2.0)
+    sassc (2.2.1)
       ffi (~> 1.9)
     strings (0.1.6)
       strings-ansi (~> 0.1)
@@ -176,7 +176,6 @@ DEPENDENCIES
   pry
   rubocop
   ruby-filemagic
-  turbolinks-source
 
 BUNDLED WITH
    2.0.2
