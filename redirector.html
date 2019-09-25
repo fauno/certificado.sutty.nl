@@ -1,0 +1,44 @@
+---
+permalink: redirector.html
+turbolinks: false
+---
+<!DOCTYPE html>
+<html lang="{{ site.lang }}" dir="{{ site.dir }}">
+  <head>
+    <meta charset="UTF-8">
+    <base href="{% base %}" />
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <meta name="theme-color" content="white"/>
+    <meta name="color-scheme" content="light"/>
+
+    <meta http-equiv="refresh" content="10;url={{ site.default_locale }}/" />
+
+    <title>{{ site.title }}</title>
+    <link rel='preload' as='style' href='{{ site.default_locale }}/{{ 'assets/css/styles.css' | asset }}'/>
+    <link rel="manifest" href="{{ site.default_locale }}/manifest.webmanifest">
+
+    <link href='{{ site.default_locale }}/{{ 'assets/css/styles.css' | asset }}' rel='stylesheet'>
+    <script defer type="text/javascript" src="{{ site.default_locale }}/{{ 'assets/js/sutty.js' | asset }}"></script>
+  </head>
+
+  <body>
+    <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="{{ i18n.menu.title }}">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="{{ site.default_locale }}/">
+          {% include sutty_color.svg %}
+        </a>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="columns is-centered">
+        <div class="column is-one-third">
+          {% for locale in site.locales %}
+            <h1><a href="{{ locale }}/">{{ site.data[locale].locale }}</a></h1>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

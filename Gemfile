@@ -7,10 +7,14 @@ gem 'jekyll'
 
 group :jekyll_plugins do
   gem 'jekyll-commonmark'
+  gem 'jekyll-locales'
+  gem 'jekyll-purgecss',
+      git: 'https://0xacab.org/sutty/jekyll/jekyll-purgecss.git'
   gem 'jekyll-relative-urls'
   gem 'jekyll-gzip'
   gem 'jekyll-brotli'
   gem 'jekyll-drafts-as-metadata'
+  gem 'jekyll-seo-tag'
 end
 
 group :development do
