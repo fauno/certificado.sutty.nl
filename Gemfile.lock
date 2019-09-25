@@ -1,4 +1,12 @@
 GIT
+  remote: https://0xacab.org/edsl/jekyll-archives.git
+  revision: d8afc2f73afb500786e86cefda960f77dac0a202
+  branch: liquid-slug
+  specs:
+    jekyll-archives (2.2.1)
+      jekyll (>= 3.6, < 5.0)
+
+GIT
   remote: https://0xacab.org/sutty/jekyll/jekyll-purgecss.git
   revision: 3f86a3d07e5f06af67ad5435e5a710987a86c8d6
   specs:
@@ -51,6 +59,8 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-drafts-as-metadata (0.0.3)
       jekyll (>= 3.8, < 4.1)
+    jekyll-feed (0.12.1)
+      jekyll (>= 3.7, < 5.0)
     jekyll-gzip (2.3.0)
       jekyll (>= 3.0, < 5.0)
     jekyll-locales (0.1.0)
@@ -60,6 +70,11 @@ GEM
       sassc (> 2.0.1, < 3.0)
     jekyll-seo-tag (2.6.1)
       jekyll (>= 3.3, < 5.0)
+    jekyll-sitemap (1.3.1)
+      jekyll (>= 3.7, < 5.0)
+    jekyll-turbolinks (0.0.3)
+      jekyll (>= 3.8, < 4.1)
+      turbolinks-source (~> 5)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     kramdown (2.1.0)
@@ -143,24 +158,25 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll
+  jekyll (~> 4)
+  jekyll-archives!
   jekyll-brotli
   jekyll-commonmark
   jekyll-drafts-as-metadata
+  jekyll-feed
   jekyll-gzip
   jekyll-locales
   jekyll-purgecss!
   jekyll-relative-urls
   jekyll-seo-tag
+  jekyll-sitemap
+  jekyll-turbolinks
   mini_magick
   neocities
   pry
   rubocop
   ruby-filemagic
   turbolinks-source
-
-RUBY VERSION
-   ruby 2.5.5p157
 
 BUNDLED WITH
    1.17.3

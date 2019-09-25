@@ -192,9 +192,16 @@ footer:
     - href: code-of-conduct
       title: Codes of conduct stablish a floor for caring spaces that enable participation to everyone.
       text: Code of conduct
+  social:
+    - href: https://0xacab.org/sutty
+      text: Source code
+      title: 'Sutty is free software!'
+    - href: https://todon.nl/@sutty
+      text: Fediverse
+      title: "You'll find us in the Fediverse!"
   design:
     href: http://cooperativadedisenio.com/
-    title: Got to Cooperativa de Diseño
+    title: Go to Cooperativa de Diseño's site
     text: Design by Cooperativa de Diseño
 post:
   one_minute: minute

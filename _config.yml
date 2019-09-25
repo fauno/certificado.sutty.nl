@@ -2,20 +2,19 @@
 title: Sutty
 description: Sutty crea sitios seguros, veloces y visibles
 title_separator: "-"
-lang: es
-dir: ltr
+logo: assets/images/logo.png
+url: https://sutty.nl
 plugins:
 - jekyll-locales
 - jekyll-drafts-as-metadata
 - jekyll-commonmark
 - jekyll-relative-urls
+- jekyll-seo-tag
 - jekyll-purgecss
 - jekyll-brotli
 - jekyll-gzip
 sass:
   style: compressed
-css: assets/css/styles.css
-logo: assets/images/sutty.svg
 exclude:
 - package.json
 - yarn.lock
@@ -36,3 +35,5 @@ locales:
 - es
 - en
 permalink: ":title/"
+turbolinks:
+  enabled: false

@@ -193,6 +193,13 @@ footer:
     - href: codigo-de-convivencia/
       title: Leé nuestro código de convivencia
       text: Código de convivencia
+  social:
+    - href: https://0xacab.org/sutty
+      text: Código fuente
+      title: '¡Sutty es software libre!'
+    - href: https://todon.nl/@sutty
+      text: Fediverso
+      title: '¡Nos vemos en el fediverso!'
   design:
     href: http://cooperativadedisenio.com/
     title: Visitar el sitio de la Cooperativa de Diseño

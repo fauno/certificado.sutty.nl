@@ -6,14 +6,7 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
     <meta name="theme-color" content="white"/>
-
-    <title>
-      {{ site.title }}
-      {% if page.title %}
-        {{ site.title_separator }}
-        {{ page.title }}
-      {% endif %}
-    </title>
+    <meta name="color-scheme" content="light"/>
 
     {% comment %}
       TODO Generar un script que encuentre los recursos a
@@ -25,6 +18,9 @@
 
     <link href='{{ 'assets/css/styles.css' | asset }}' rel='stylesheet'>
     <script defer type="text/javascript" src="{{ 'assets/js/sutty.js' | asset }}"></script>
+
+    {% seo %}
+    {% feed_meta %}
   </head>
 
   <body>

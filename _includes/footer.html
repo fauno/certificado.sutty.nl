@@ -13,6 +13,18 @@
           {% endfor %}
         </ul>
       </div>
+
+      <div class="column">
+        <ul>
+          {% for link in site.data[site.lang].footer.social %}
+            <li>
+              <a rel="me" href="{{ link.href }}" title="{{ link.title }}">
+                {{ link.text }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
 
     <div class="columns">
