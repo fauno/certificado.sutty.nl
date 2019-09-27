@@ -176,6 +176,7 @@ contact:
       type: checkbox
       label: I understand Sutty's privacy policy
       required: true
+      value: 'Yes'
   submit: Send
 form:
   required: '*'

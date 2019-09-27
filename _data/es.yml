@@ -177,6 +177,7 @@ contact:
       type: checkbox
       label: Comprendo las políticas de privacidad de Sutty
       required: true
+      value: Sí
   submit: Enviar
 form:
   required: '*'
