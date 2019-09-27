@@ -14,7 +14,7 @@ menu:
     - title: Blog
       href: blog/
     - title: Escribinos
-      href: '#contacto'
+      href: 'index.html#contacto'
     - title: Ingresar
       href: 'https://panel.sutty.nl/'
       css:
