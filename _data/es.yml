@@ -1,5 +1,6 @@
 ---
 locale: Castellano
+dir: ltr
 magenta: '#f206f9'
 cyan: '#13fefe'
 date: '%d/%m/%Y'
@@ -159,6 +160,9 @@ contact:
     site:
       type: hidden
       value: sutty.nl
+    redirect:
+      type: hidden
+      value: 'https://sutty.nl/es/gracias/'
     name:
       type: text
       label: Pseudónimo, nick, alias, nombre elegido
@@ -215,3 +219,14 @@ post:
     - numeral.svg
     - circunflejo.svg
     - nuflo.svg
+site_not_found:
+  title: Sitio no encontrado
+  help: |
+    El sitio al que quieres acceder todavía no existe.  Si es tu sitio,
+    tienes que usar el botón "Publicar todos los cambios" desde
+    [Sutty](https://panel.sutty.nl/sites).
+page_not_found:
+  title: Página no encontrada
+  help: |
+    Lo sentimos, la página web que estás buscando no existe.  ¿Quizás te
+    interese algo de nuestro blog?
