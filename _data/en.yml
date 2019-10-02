@@ -1,5 +1,6 @@
 ---
 locale: English
+dir: ltr
 magenta: '#f206f9'
 cyan: '#13fefe'
 date: '%m/%d/%Y'
@@ -158,6 +159,9 @@ contact:
     site:
       type: hidden
       value: sutty.nl
+    redirect:
+      type: hidden
+      value: 'https://sutty.nl/en/thanks/'
     name:
       type: text
       label: Pen name, nick, alias, chosen name
@@ -214,3 +218,14 @@ post:
     - numeral.svg
     - circunflejo.svg
     - nuflo.svg
+site_not_found:
+  title: Site not found
+  help: |
+    The site you want to visit doesn't exist yet.  If it's your site,
+    you'll have to use the "Publish all changes" button at
+    [Sutty](https://panel.sutty.nl/sites).
+page_not_found:
+  title: Page not found
+  help: |
+    We're sorry, the page you're looking for doesn't exist.  Maybe
+    you're interested in our blog?

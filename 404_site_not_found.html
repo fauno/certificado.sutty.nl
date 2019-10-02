@@ -1,0 +1,46 @@
+---
+title: Sitio no encontrado / Site not found
+permalink: 404_site_not_found.html
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="theme-color" content="white"/>
+    <meta name="color-scheme" content="light dark"/>
+
+    <link rel="preload" as="style" href="https://sutty.nl/es/assets/css/styles.css"/>
+
+    <link href="/es/assets/css/styles.css" rel="stylesheet">
+    <script defer type="text/javascript" src="https://sutty.nl/es/assets/js/client_side_i18n.js"></script>
+
+    {% seo %}
+    {% feed_meta %}
+  </head>
+  <body>
+    <section class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            {% for locale in site.locales %}
+            {% assign i18n = site.data[locale] %}
+            <span lang="{{ locale }}" dir="{{ i18n.dir }}">
+              {{ i18n.site_not_found.title }}
+            </span>
+            {% endfor %}
+          </h1>
+          <h2 class="subtitle">
+            {% for locale in site.locales %}
+            {% assign i18n = site.data[locale] %}
+            <span lang="{{ locale }}" dir="{{ i18n.dir }}">
+              {{ i18n.site_not_found.help | markdown }}
+            </span>
+            {% endfor %}
+          </h2>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
