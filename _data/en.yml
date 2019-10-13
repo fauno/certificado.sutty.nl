@@ -198,6 +198,9 @@ footer:
       title: Codes of conduct stablish a floor for caring spaces that enable participation to everyone.
       text: Code of conduct
   social:
+    - href: mailto:hi@sutty.nl
+      text: hi@sutty.nl
+      title: 'Drop us an email :)'
     - href: https://0xacab.org/sutty
       text: Source code
       title: 'Sutty is free software!'
