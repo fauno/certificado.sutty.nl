@@ -199,6 +199,9 @@ footer:
       title: Leé nuestro código de convivencia
       text: Código de convivencia
   social:
+    - href: mailto:hi@sutty.nl
+      text: hi@sutty.nl
+      title: 'Escribinos :)'
     - href: https://0xacab.org/sutty
       text: Código fuente
       title: '¡Sutty es software libre!'
