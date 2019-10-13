@@ -24,14 +24,17 @@ permalink: redirector.html
 
   <body>
     <section class="section">
-      <div class="columns is-centered">
-        <div class="column is-one-third">
-          {% include sutty_color.svg %}
+      <div class="container is-flex space-between is-fullheight">
+        <div class="columns is-centered">
+          <div class="column is-one-third">
+            {% include sutty_color.svg %}
 
-          {% for locale in site.locales %}
-            <h1><a href="{{ locale }}/">{{ site.data[locale].locale }}</a></h1>
-          {% endfor %}
+            {% for locale in site.locales %}
+              <h1><a href="{{ locale }}/">{{ site.data[locale].locale }}</a></h1>
+            {% endfor %}
+          </div>
         </div>
+        {% include footer.html %}
       </div>
     </section>
   </body>
