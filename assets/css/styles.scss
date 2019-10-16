@@ -2,6 +2,7 @@
 ---
 
 {% node_module bulma/css/bulma.min.css %}
+{% node_module bulma-pricingtable/dist/css/bulma-pricingtable.min.css %}
 
 @import 'variables';
 @import 'fg';

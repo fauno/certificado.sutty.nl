@@ -14,6 +14,8 @@ menu:
       href: ''
     - title: Blog
       href: blog/
+    - title: Precios
+      href: precios/
     - title: Escribinos
       href: 'index.html#contacto'
     - title: Ingresar
@@ -233,3 +235,51 @@ page_not_found:
   help: |
     Lo sentimos, la página web que estás buscando no existe.  ¿Quizás te
     interese algo de nuestro blog?
+pricing:
+  id: precios
+  table:
+    - header: Características
+      items:
+        - Sitio
+        - Diseño
+        - Acceso a Sutty
+        - Soporte
+    - header: Individuxs / Colectivxs
+      currency: '$'
+      price: '0'
+      #extra: '<a href="donaciones/">(y donaciones)</a>'
+      items:
+        - "https://ejemplo.sutty.nl"
+        - Plantillas predefinidas
+        - Completo
+        - Ayuda mutua
+      footer:
+        class: 'white-fg magenta-bg'
+        href: 'https://panel.sutty.nl/'
+        text: Ingresá ahora
+    - header: Organizaciones / Campañas
+      price: Solicitá presupuesto
+      items:
+        - Propio
+        - Propio
+        - Completo
+        - Personalizado
+      footer:
+        class: 'cyan-bg'
+        href: 'index.html#contacto'
+        text: Escribinos
+  features:
+    id: caracteristicas
+    title: "¿Cuáles son las características de Sutty?"
+    items:
+      - '<a href="https://0xacab.org/sutty/" target="_blank">Software libre</a>'
+      - Sitios ilimitados
+      - Multi idiomas
+      - Gestión compartida
+      - Optimización para buscadores
+      - Optimización para redes sociales
+      - Optimización para celulares
+    footer:
+      class: 'black-bg white-fg'
+      href: 'index.html#contacto'
+      text: Con tu ayuda seguimos agregando más

@@ -44,6 +44,11 @@ brace-expansion@^1.1.7:
     balanced-match "^1.0.0"
     concat-map "0.0.1"
 
+bulma-pricingtable@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/bulma-pricingtable/-/bulma-pricingtable-0.2.0.tgz#d4bb5827c6859a4303be1474644d10b1e5a579ed"
+  integrity sha512-4feDoGG5kxfzYNo+eplIbofEerO2FjwJgWoTdM1K8frU1eMHzd2Beh0Jo+18Q0N/83l+YxZydxw/xPijbCOsdQ==
+
 bulma@^0.7.4:
   version "0.7.4"
   resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.7.4.tgz#7e74512e9118d9799021339e67e365ee0ac4f3f9"
