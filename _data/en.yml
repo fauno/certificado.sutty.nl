@@ -279,6 +279,6 @@ pricing:
       - Social network optimization
       - Cellphone optimization
     footer:
-      class: 'black-bg white-fg'
+      class: 'black-bg white-fg is-responsive'
       href: 'index.html#contact'
       text: We're adding more with your help

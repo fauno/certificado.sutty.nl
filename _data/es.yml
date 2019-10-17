@@ -280,6 +280,6 @@ pricing:
       - Optimización para redes sociales
       - Optimización para celulares
     footer:
-      class: 'black-bg white-fg'
+      class: 'black-bg white-fg is-responsive'
       href: 'index.html#contacto'
       text: Con tu ayuda seguimos agregando más
