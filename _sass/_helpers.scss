@@ -53,3 +53,9 @@ $positions: top, bottom, left, right;
     border-left: 5px solid $cyan;
   }
 }
+
+.is-responsive {
+  min-height: 2.25em;
+  height: auto;
+  white-space: normal;
+}
