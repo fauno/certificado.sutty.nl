@@ -196,7 +196,7 @@ footer:
     - href: terms-of-service/
       title: "Under which conditions can we become users?"
       text: Terms of service
-    - href: code-of-conduct
+    - href: code-of-conduct/
       title: Codes of conduct stablish a floor for caring spaces that enable participation to everyone.
       text: Code of conduct
   social:
@@ -282,3 +282,11 @@ pricing:
       class: 'black-bg white-fg is-responsive'
       href: 'index.html#contact'
       text: We're adding more with your help
+gracias:
+  id: thanks
+  title: 'Thanks!'
+  content: |
+    Thanks for your interest in what we're doing, we'll be answering you
+    shortly :)
+
+    [Keep reading >>](blog/)
