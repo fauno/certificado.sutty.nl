@@ -283,3 +283,11 @@ pricing:
       class: 'black-bg white-fg is-responsive'
       href: 'index.html#contacto'
       text: Con tu ayuda seguimos agregando más
+gracias:
+  id: gracias
+  title: '¡Gracias!'
+  content: |
+    Gracias por tu interés en lo que hacemos, vamos a estar
+    respondiéndote en breve :)
+
+    [Seguir leyendo el sitio >>](blog/)
