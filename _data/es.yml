@@ -18,6 +18,8 @@ menu:
       href: precios/
     - title: Escribinos
       href: 'index.html#contacto'
+    - title: English
+      href: ../en/
     - title: Ingresar
       href: 'https://panel.sutty.nl/'
       css:
