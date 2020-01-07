@@ -24,12 +24,12 @@ group :jekyll_plugins do
   gem 'jekyll-seo-tag'
   gem 'jekyll-sitemap'
   gem 'jekyll-turbolinks'
+  gem 'ruby-filemagic'
+  gem 'mini_magick'
 end
 
 group :development do
   gem 'pry'
   gem 'rubocop'
   gem 'neocities'
-  gem 'ruby-filemagic'
-  gem 'mini_magick'
 end
