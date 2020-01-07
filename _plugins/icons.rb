@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'mini_magick'
-require 'pry'
 
 Jekyll::Hooks.register :site, :after_init do |site|
   logo = site.config['logo']
