@@ -18,6 +18,8 @@ menu:
       href: pricing/
     - title: Contact us
       href: 'index.html#contact'
+    - title: Castellano
+      href: ../es/
     - title: Log in
       href: 'https://panel.sutty.nl/'
       css:
