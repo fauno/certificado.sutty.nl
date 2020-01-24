@@ -27,6 +27,7 @@ commonmark:
   options:
   - SMART
   - FOOTNOTES
+  - UNSAFE
   extensions:
   - strikethrough
   - autolink
@@ -37,3 +38,11 @@ locales:
 permalink: ":title/"
 turbolinks:
   enabled: false
+social:
+  links:
+    - https://todon.nl/@sutty
+    - https://twitter.com/SuttyWeb
+twitter:
+  username: SuttyWeb
+author:
+  twitter: SuttyWeb
