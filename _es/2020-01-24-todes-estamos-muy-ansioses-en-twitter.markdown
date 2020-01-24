@@ -13,7 +13,6 @@ tags:
 - fediverso
 - guías
 - reflexiones
-draft: true
 order: 6
 layout: post
 uuid: 0b371e28-7f1d-4885-881b-54ea01701791
