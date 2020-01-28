@@ -18,7 +18,7 @@
   font-weight: 500;
   font-display: optional;
   src: local('Saira Medium'), local('Saira-Medium'),
-    url({% base64 assets/fonts/saira/v3/SairaMedium.ttf %}) format('truetype');
+    url({% base64 assets/fonts/saira/v3/SairaMedium-subset.zopfli.woff %}) format('woff');
 }
 
 @font-face {
@@ -27,7 +27,7 @@
   font-weight: 700;
   font-display: optional;
   src: local('Saira Bold'), local('Saira-Bold'),
-    url({% base64 assets/fonts/saira/v3/SairaBold.ttf %}) format('truetype');
+    url({% base64 assets/fonts/saira/v3/SairaBold-subset.zopfli.woff %}) format('woff');
 }
 
 body {
