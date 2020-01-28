@@ -63,7 +63,7 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-gzip (2.4.1)
       jekyll (>= 3.0, < 5.0)
-    jekyll-locales (0.1.6)
+    jekyll-locales (0.1.7)
     jekyll-relative-urls (0.0.4)
       jekyll (>= 3.8, < 5)
     jekyll-sass-converter (2.0.1)
@@ -176,4 +176,4 @@ DEPENDENCIES
   ruby-filemagic
 
 BUNDLED WITH
-   2.0.2
+   2.1.4
