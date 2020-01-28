@@ -35,6 +35,7 @@ commonmark:
 locales:
 - es
 - en
+redirect: false
 permalink: ":title/"
 turbolinks:
   enabled: false
