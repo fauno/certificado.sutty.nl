@@ -1,10 +1,8 @@
 ---
 title: Jornada de presentación de Sutty, Taller e Intercambio
-description: "Existe una nueva plataforma para crear y publicar sitios web, pensada
-  especialmente para y desde prácticas feministas, ecologistas y de cuidados digitales.\r\n\r\nLes
-  invitamos a encontrarnos este martes 11 de febrero en el Centro Cultural Tierra
-  Violeta (Tacuarí 538, San Telmo, CABA, Argentina), de 17 a 20.00 para conocer y
-  probar Sutty."
+description: Les invitamos a encontrarnos este martes 11 de febrero en el Centro Cultural
+  Tierra Violeta (Tacuarí 538, San Telmo, CABA, Argentina), de 17 a 20.00 para conocer
+  y probar Sutty.
 author:
 - Sutty
 image:
@@ -17,6 +15,7 @@ tags:
 - taller
 - jornada
 - presentación
+order: 7
 layout: post
 uuid: b79cd2d4-2f72-4d52-a11f-0e021d4d62ab
 liquid: false
