@@ -17,6 +17,14 @@ layout: default
       </div>
 
       <div class="column is-half content">
+        {%- if page.image.path -%}
+          <picture>
+            {%- for size in site.images.sizes -%}
+              <source srcset="{{ page.image.path | thumbnail: size }}" media="(max-width: {{ size | plus: 1 }}px)" />
+            {%- endfor -%}
+            <img src="{{ page.image.path | thumbnail: 800 }}" alt="{{ page.image.description }}"/>
+          </picture>
+        {%- endif -%}
 
         {{ content }}
 

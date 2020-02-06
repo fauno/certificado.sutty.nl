@@ -47,3 +47,9 @@ twitter:
   username: SuttyWeb
 author:
   twitter: SuttyWeb
+images:
+  sizes:
+    - 576
+    - 768
+    - 992
+    - 1200

@@ -63,6 +63,9 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-gzip (2.4.1)
       jekyll (>= 3.0, < 5.0)
+    jekyll-images (0.2.1)
+      ruby-filemagic (~> 0.7)
+      ruby-vips (~> 2)
     jekyll-locales (0.1.7)
     jekyll-relative-urls (0.0.4)
       jekyll (>= 3.8, < 5)
@@ -123,6 +126,8 @@ GEM
       i18n
     ruby-filemagic (0.7.2)
     ruby-progressbar (1.10.1)
+    ruby-vips (2.0.17)
+      ffi (~> 1.9)
     safe_yaml (1.0.5)
     sassc (2.2.1)
       ffi (~> 1.9)
@@ -163,6 +168,7 @@ DEPENDENCIES
   jekyll-drafts-as-metadata
   jekyll-feed
   jekyll-gzip
+  jekyll-images
   jekyll-locales
   jekyll-purgecss!
   jekyll-relative-urls
