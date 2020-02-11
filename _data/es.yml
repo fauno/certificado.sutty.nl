@@ -20,7 +20,7 @@ menu:
       href: 'index.html#contacto'
     - title: English
       href: ../en/
-    - title: Ingresar
+    - title: Creá tu sitio
       href: 'https://panel.sutty.nl/'
       css:
         - button

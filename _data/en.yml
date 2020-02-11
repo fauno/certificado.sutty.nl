@@ -20,7 +20,7 @@ menu:
       href: 'index.html#contact'
     - title: Castellano
       href: ../es/
-    - title: Log in
+    - title: Get your site
       href: 'https://panel.sutty.nl/'
       css:
         - button
