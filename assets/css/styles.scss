@@ -211,3 +211,18 @@ article {
   justify-content: space-between;
   flex-direction: column;
 }
+
+.message {
+  margin: 1rem;
+
+  &.is-info {
+    .message-header {
+      background-color: $cyan;
+      color: $black;
+    }
+
+    .message-body {
+      color: $black;
+    }
+  }
+}
