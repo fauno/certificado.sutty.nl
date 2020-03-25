@@ -1,0 +1,10 @@
+---
+layout: banner
+title: COVID-19
+description: |
+  Con la crisis del COVID-19 muchísimos sitios web de importancia vital
+  se caen, porque no resisten los picos de visitas. En este contexto,
+  los sitios web estáticos son clave por su resiliencia
+  y accesibilidad. ¡Cuenten con Sutty para generar (o migrar a) sitios
+  solidarios y resistentes!
+---

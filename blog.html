@@ -7,6 +7,7 @@ title: Blog
 
 <section class="blog">
   {% include menu.html %}
+  {% include banner.html %}
 
   <div class="columns is-centered">
     <div class="column is-one-third">
@@ -18,7 +19,8 @@ title: Blog
 
     <div class="column is-half">
       <section id="{{ i18n.blog.id }}">
-        {% for page in site.posts %}
+        {% assign posts = site.posts | where: 'layout', 'post' %}
+        {% for page in posts %}
           <article id="{{ page.slug }}">
             <header class="has-border-left-on-hover">
               {% include post_summary.html page=page %}
