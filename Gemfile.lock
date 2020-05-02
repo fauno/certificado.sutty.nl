@@ -63,6 +63,8 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-gzip (2.4.1)
       jekyll (>= 3.0, < 5.0)
+    jekyll-hardlinks (0.1.1)
+      jekyll (~> 4)
     jekyll-images (0.2.1)
       ruby-filemagic (~> 0.7)
       ruby-vips (~> 2)
@@ -168,6 +170,7 @@ DEPENDENCIES
   jekyll-drafts-as-metadata
   jekyll-feed
   jekyll-gzip
+  jekyll-hardlinks
   jekyll-images
   jekyll-locales
   jekyll-purgecss!
