@@ -175,7 +175,8 @@ Cerrar la sección si el segmento es par
     <div class="columns is-vcentered">
       <div class="column">
         <div class="columns">
-          {% for page in site.posts limit: 3 %}
+          {% assign posts = site.posts | where: 'layout', 'post' %}
+          {% for page in posts limit: 3 %}
           <div class="column">
             {% include post_summary.html page=page %}
           </div>
