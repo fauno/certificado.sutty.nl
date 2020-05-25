@@ -5,7 +5,7 @@ layout: post
 title: ¿Por qué los sitios web deben ser transportables?
 author:
 - Sutty
-description: Por qué es importante que podamos mover nuestros sitios a cualquier lado
+description: Es importante que podamos mover nuestros sitios web a cualquier lado para lograr resiliencia
 categories:
 - FAQ
 tags:
@@ -21,38 +21,39 @@ liquid: false
 
 ## Introducción
 
-Cuando pensamos en las características que debe tener un sitio para ser
-resiliente, una de las que identificamos es que deben ser
-transportables.  Es decir, que ante cualquier eventualidad, el sitio
-pueda moverse de un lado a otro con un mínimo de esfuerzo.
+¿Qué es un sitio web "resiliente"? ¿Cómo se construye una página web
+que resista eventualidades, ataques, sobrecargas y proteja nuestro
+trabajo?  Una característica que lo asegura es la transportabilidad.
+Es decir, que ante cualquier eventualidad, el sitio pueda moverse de un
+lado a otro con un mínimo de esfuerzo.
 
 Es muy recurrente en nuestro trabajo encontrarnos con situaciones donde
-el sitio dejó de estar disponible porque no fue pagado a tiempo el
-alojamiento, o una actualización no es compatible con nuestra
-configuración.  O, por suerte en la minoría de los casos, el alojamiento
-suspende el sitio porque superó los límites de visitas del sitio, por un
-pico en el interés o por un ataque concertado ("DDOS" por denegación
-distribuida de servicio, en inglés).
+el sitio dejó de estar disponible porque el alojamiento no fue pagado
+a tiempo, o una actualización no es compatible con nuestra
+configuración.  O el alojamiento suspende el sitio porque superó los
+límites de visitas del sitio, por un pico en el interés o por un ataque
+concertado ("DDOS" por denegación distribuida de servicio, en inglés).
 
-También puede suceder que cambiemos de nombre de dominio o habilitemos
-el protocolo HTTPS en nuestros sitios.  Recomendamos especialmente esto
-último, para proteger la integridad de nuestro sitio y la privacidad de
-nuestres visitantes.
+También se dan situaciones planificadas, que de todas formas dejan al
+sitio  fuera de juego por un tiempo. Puede suceder que cambiemos de
+nombre de dominio o habilitemos el protocolo HTTPS en nuestros sitios.
+(Proceso que recomendamos especialmente, para proteger la integridad de
+nuestro sitio y la privacidad de nuestres visitantes.)
 
-Sin embargo, estos cambios en la estructura de un sitio deben estar bien
-pensadas, porque pueden afectar el tiempo que pasamos fuera de
-circulación.  Son sucesos que en definitiva se hacen con cierta urgencia
-y tensión y que nos desgastan.
+Estos cambios en la estructura de un sitio deben estar bien pensadas,
+porque afectan el tiempo que pasamos fuera de circulación.  Son sucesos
+que en definitiva se hacen con cierta urgencia y tensión y que nos
+desgastan.
 
 Por estas experiencias, desde Sutty tomamos la decisión muy temprana de
-que todos los sitios deben ser transportables.  Es decir, poder tomar
-todos los archivos de un sitio y copiarlos a otro lugar debería ser lo
-más simple posible y no requerir ningún cambio o adaptación al sitio
-tal y como está.
+que todos los sitios sean transportables.  Es decir: tomar todos los
+archivos de un sitio y copiarlos a otro lugar debería ser lo más simple
+posible y no requerir ningún cambio o adaptación al sitio tal y como
+está.
 
-Esto habilita otras estrategias que nos resultan sumamente interesantes
-y que también tienen que ver con la resiliencia de un sitio.  Cuando un
-sitio es transportable, es posible archivarlo para resguardar la memoria
+Esto habilita otras estrategias sumamente interesantes y que también
+tienen que ver con la resiliencia de un sitio.  Cuando un sitio es
+transportable, es posible archivarlo para resguardar la memoria
 histórica, teniendo a disposición distintas versiones.  También es
 posible activar estrategias contra la censura, como las que aplicaron
 _Wikileaks_ y _The Pirate Bay_ en sus momentos de mayor persecución:
@@ -70,8 +71,8 @@ páginas entre sí.
 
 > **Aviso:** La propuesta de Sutty es comunicar los aspectos técnicos
 > para poder habilitar su apropiación.  Por eso no los ocultamos, sino
-> que tratamos de clarificarlos, lo que no siempre es inmediato.  Si algo
-> no se entiende, por favor [contactanos](index.html#contacto) :)
+> que tratamos de clarificarlos, lo que no siempre es inmediato.  Si
+> algo no se entiende, por favor [contactanos](index.html#contacto) :)
 
 Un sitio web está compuesto de páginas web que representan las distintas
 partes del sitio.  Cada página representa un artículo, por ejemplo, como
@@ -80,18 +81,18 @@ videos y otros archivos relacionados, donde se definen el estilo de la
 página (colores, tipografía, etc.) y comportamientos específicos.
 
 En los sitios generados por Sutty, todas estos recursos se almacenan en
-un directorio (el nombre técnico para una carpeta).  Esta estructura
-o árbol de archivos y sub-directorios se corresponde con la estructura
-de direcciones ("URLs", _links_, vínculos) del sitio al que accedemos
+un directorio (nombre técnico de una carpeta).  Esta estructura o árbol
+de archivos y sub-directorios se corresponde con la estructura de
+direcciones ("URLs", _links_, vínculos) del sitio al que accedemos
 a través de un navegador.
 
 Por ejemplo, a la dirección web
 <https://sutty.nl/politica-de-privacidad/> le corresponde un archivo
 llamado `index.html` (este nombre es tácito en la dirección) dentro de
-un directorio llamado `politica-de-privacidad`.  Su dirección completa
+un directorio llamado `politica-de-privacidad`.  Su ubicación completa
 es `politica-de-privacidad/index.html`, porque las partes de una
-dirección se unen con `/`.  En Windows, las direcciones se unen con `\`,
-pero en web siempre es `/` (esto tiene su historia también).
+ubicación se unen con `/`.  En Windows, las direcciones se unen con `\`,
+pero en web siempre es `/`.
 
 Esta dirección de ejemplo no tiene imágenes, pero tiene una hoja de
 estilos ("CSS") que define el diseño de la página y en este caso está
@@ -102,10 +103,10 @@ Si lo representáramos en un árbol, sería así.
 ```
 sutty.nl/
 ├── assets
-│   └── css
-│       └── styles.css
+│   └── css
+│       └── styles.css
 └── politica-de-privacidad
-    └── index.html
+    └── index.html
 ```
 
 Para que un sitio web sea transportable, tenemos que poder copiar este
@@ -115,7 +116,7 @@ encontrar su hoja de estilos, sin importar la ubicación donde lo
 guardemos.  Si colocamos el sitio en `C:\Users\sutty\copia de
 seguridad\sutty.nl` tiene que funcionar lo mismo que si lo publicamos en
 web en <https://sutty.neocities.org/> o en
-<https://alojamientoweb.com/cosas/sutty/> (esta última es de ejemplo,
+<https://solidaridadweb.org/sitios/sutty/> (esta última es de ejemplo,
 ¡pero la anterior funciona!).
 
 ## Direcciones absolutas y relativas
@@ -137,13 +138,13 @@ sitio, porque la dirección cambió de
 <http://sutty.nl/assets/css/styles.css> (sin "s")
 a <https://sutty.nl/assets/css/styles.css> (con "s").  También si
 cambiáramos nuestro dominio de `sutty.nl` a `sutty.neocities.org`,
-o copiáramos el sitio
-a <https://solidaridad.org/sitios/sutty/assets/css/styles.css>.
+o copiáramos el sitio dentro otro como en
+<https://solidaridadweb.org/sitios/sutty/assets/css/styles.css>.
 
 Esta dirección es muy precisa, con lo que cualquier cambio de ubicación
-del sitio implica que debemos readecuar todas las direcciones del sitio,
-que pueden ser pocas o montones, siempre con un grado de error.  Hay
-programas que lo hacen también.
+del sitio implica que debemos readecuar todas las direcciones dentro del
+sitio, que pueden ser pocas o montones, siempre con un grado de error.
+Hay programas que lo hacen también.
 
 Todo esto provoca que tengamos que pensar varias veces antes de cambiar
 de ubicación un sitio web y que debamos planificarlo bien.
@@ -165,21 +166,21 @@ de la carpeta donde están guardados, representados por la primera `/`
 En nuestro ejemplo entonces, la hoja de estilos estaría vinculada a la
 dirección `/assets/css/styles.css` en lugar de
 <https://sutty.nl/assets/css/styles.css>.  Es decir, le removimos la
-dirección.
+dirección web.
 
 De esta forma, es posible cambiar de HTTP a HTTPS o de `sutty.nl`
-a `solidaridad.org` sin realizar cambios en los archivos del sitio.
-Como la dirección ignora la ubicación web, podemos mover los archivos
-entre distintas ubicaciones sin preocuparnos por hacer cambios.
+a `solidaridadweb.org` sin realizar cambios en los archivos del
+sitio. Como la dirección ignora la ubicación web, podemos mover los
+archivos entre distintas ubicaciones sin preocuparnos por hacer cambios.
 
 Sin embargo, el sitio solo funciona correctamente si lo movemos de una
 ubicación web a otra manteniendo el mismo nivel de ubicación.  Si
-copiáramos el sitio a <https://solidaridad.org/sitios/sutty/>, la raíz
-de los archivos está en `/sitios/sutty/`, pero la ubicación la sigue
-buscando en `/assets/css/styles.css`.  Si el sitio `solidaridad.org` no
-tiene un archivo en esa ubicación, las políticas de privacidad de Sutty
-no van a tener diseño --y si hubiera un archivo, ¡tendría el diseño
-equivocado!
+copiáramos el sitio a <https://solidaridadweb.org/sitios/sutty/>, la
+raíz de los archivos está en `/sitios/sutty/`, pero la ubicación la
+sigue buscando en `/assets/css/styles.css`.  Si el sitio
+`solidaridadweb.org` no tiene un archivo en esa ubicación, las políticas
+de privacidad de Sutty no van a tener diseño --y si hubiera un archivo,
+¡tendría el diseño equivocado!
 
 Y aun así, todavía no podemos descargarnos el sitio a nuestra
 computadora y navegarlo.
@@ -202,7 +203,7 @@ varios niveles hacia atrás --`../../../../`.
 Esta forma es un poco más compleja, pero nos da flexibilidad a la hora
 de transportar un sitio.  Podemos guardar los archivos en
 <https://sutty.nl>, <https://sutty.neocities.org>,
-<https://solidaridad.org/sitios/sutty> o `C:\Users\sutty`
+<https://solidaridadweb.org/sitios/sutty> o `C:\Users\sutty`
 o `/home/alguien/sitios/copias/sutty` y el sitio va a seguir
 funcionando.
 
@@ -228,7 +229,7 @@ cómo hacerlo.
 
 Una respuesta ha sido la de Rico Sta. Cruz, en su artículo [_Relative
 paths in Jekyll_](https://ricostacruz.com/til/relative-paths-in-jekyll)
-(ubicaciones relativas en Jekyll) donde sugiere un código que es capaz
+("Ubicaciones relativas en Jekyll") donde sugiere un código que es capaz
 de obtener la ubicación relativa a la página actual.
 
 Sin embargo, este código tiene sus limitaciones, porque hay que
@@ -237,10 +238,11 @@ sabemos cuáles van a ser.  Además, implica readaptar todas las
 plantillas para poder usar este esquema --un trabajo engorroso, aunque
 menor que adaptar todo un sitio.
 
-Nos dio la inspiración para que desarrollar nuestro propio complemento,
-que encuentra la ubicación relativa de forma automática y flexible, sin
-que le tengamos que indicar manualmente la ubicación, con cambios
-mínimos a las plantillas (que podrían ser automatizables también).
+La propuesta de Rico Sta. Cruz nos dio la inspiración para desarrollar
+nuestro propio complemento, que encuentra la ubicación relativa de forma
+automática y flexible, sin que le tengamos que indicar manualmente la
+ubicación, con cambios mínimos a las plantillas, que podrían ser
+automatizables también.
 
 Logramos esto aprovechando un atributo de las páginas web llamado
 `<base>` ([documentación en Mozilla Web
@@ -262,9 +264,10 @@ transportar sin modificaciones, cumpliendo con nuestro primer objetivo.
 ## El complemento
 
 En Sutty trabajamos constantemente con software libre y nuestro
-compromiso es liberar todo el software que escribamos.  En este sentido,
-este aprendizaje que hicimos quedó plasmado en un complemento que
-llamamos
+compromiso es [liberar todo el software que
+escribamos](https://0xacab.org/sutty/). Este aprendizaje que hicimos
+quedó plasmado en un complemento que llamamos
 [jekyll-relative-urls](https://rubygems.org/gems/jekyll-relative-urls)
 que cualquier sitio utilizando Jekyll puede instalar y utilizar, aun
 cuando no se aloje en Sutty.
+
