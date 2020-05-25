@@ -1,312 +1,270 @@
 ---
+breaks: false
 draft: true
 layout: post
-title: Sitios web transportables
-author: f@sutty.nl
+title: ¿Por qué los sitios web deben ser transportables?
+author:
+- Sutty
 description: Por qué es importante que podamos mover nuestros sitios a cualquier lado
 categories:
-  - Jekyll
-  - Hacks
-  - IPFS
+- FAQ
 tags:
-  - jekyll
-  - transportable
-  - hack
-  - liquid
-  - wordpress
-  - ipfs
-  - web distribuida
-content_warning: Términos técnicos sobre desarrollo web
+- jekyll
+- transportable
+- hack
+- liquid
+- wordpress
+- ipfs
+- web distribuida
 liquid: false
 ---
 
-Para que un sitio web sea transportable, es decir poder colocar todos
-sus archivos en cualquier dominio o cualquier subdirectorio, descargarlo
-en nuestras computadoras y que siga funcionando, tiene que cumplir con
-una serie de condiciones técnicas.
+## Introducción
 
-Por ejemplo, si tenemos nuestro sitio en la dirección
-`http://sitio.com/` y lo queremos mover a `https://sitio.com` o
-directamente cambiamos de dominio a `https://sitio.org`, el sitio tiene
-que seguir funcionando sin modificaciones, apuntando a los recursos
-(imágenes, hojas de estilos, etc.) en donde estén.  En algunos casos,
-especialmente en sitios Wordpress, el sitio apunta a estos recursos con
-su dirección exacta y completa (`https://sitio.com/imagen.png` en lugar
-de `/imagen.png` o `imagen.png`) lo que produce que al moverlo de lugar,
-los recursos se sigan buscando en la ubicación anterior.  Si la
-ubicación anterior deja de estar disponible, el sitio se ve roto (sin
-diseño, sin imágenes, sin animaciones, etc.)
+Cuando pensamos en las características que debe tener un sitio para ser
+resiliente, una de las que identificamos es que deben ser
+transportables.  Es decir, que ante cualquier eventualidad, el sitio
+pueda moverse de un lado a otro con un mínimo de esfuerzo.
+
+Es muy recurrente en nuestro trabajo encontrarnos con situaciones donde
+el sitio dejó de estar disponible porque no fue pagado a tiempo el
+alojamiento, o una actualización no es compatible con nuestra
+configuración.  O, por suerte en la minoría de los casos, el alojamiento
+suspende el sitio porque superó los límites de visitas del sitio, por un
+pico en el interés o por un ataque concertado ("DDOS" por denegación
+distribuida de servicio, en inglés).
+
+También puede suceder que cambiemos de nombre de dominio o habilitemos
+el protocolo HTTPS en nuestros sitios.  Recomendamos especialmente esto
+último, para proteger la integridad de nuestro sitio y la privacidad de
+nuestres visitantes.
+
+Sin embargo, estos cambios en la estructura de un sitio deben estar bien
+pensadas, porque pueden afectar el tiempo que pasamos fuera de
+circulación.  Son sucesos que en definitiva se hacen con cierta urgencia
+y tensión y que nos desgastan.
+
+Por estas experiencias, desde Sutty tomamos la decisión muy temprana de
+que todos los sitios deben ser transportables.  Es decir, poder tomar
+todos los archivos de un sitio y copiarlos a otro lugar debería ser lo
+más simple posible y no requerir ningún cambio o adaptación al sitio
+tal y como está.
+
+Esto habilita otras estrategias que nos resultan sumamente interesantes
+y que también tienen que ver con la resiliencia de un sitio.  Cuando un
+sitio es transportable, es posible archivarlo para resguardar la memoria
+histórica, teniendo a disposición distintas versiones.  También es
+posible activar estrategias contra la censura, como las que aplicaron
+_Wikileaks_ y _The Pirate Bay_ en sus momentos de mayor persecución:
+pusieron a disposición copias de sus sitios para que fueran alojadas
+copias por toda la Internet, en solidaridad.  Se nos ocurren otras, como
+poder descargarse los sitios y llevarlos en una memoria portátil a zonas
+donde no haya acceso a Internet, o alojar el sitio en infraestructuras
+distribuidas, como [IPFS](https://ipfs.io/) (en inglés).
+
+Para poder lograr esto, tuvimos que hacer algunos cambios en cómo se
+estructuran internamente los sitios y cómo se vinculan las distintas
+páginas entre sí.
+
+## Cómo funcionan las direcciones web
+
+> **Aviso:** La propuesta de Sutty es comunicar los aspectos técnicos
+> para poder habilitar su apropiación.  Por eso no los ocultamos, sino
+> que tratamos de clarificarlos, lo que no siempre es inmediato.  Si algo
+> no se entiende, por favor [contactanos](index.html#contacto) :)
+
+Un sitio web está compuesto de páginas web que representan las distintas
+partes del sitio.  Cada página representa un artículo, por ejemplo, como
+si fuera un libro o revista.  Luego hay otros recursos, como imágenes,
+videos y otros archivos relacionados, donde se definen el estilo de la
+página (colores, tipografía, etc.) y comportamientos específicos.
+
+En los sitios generados por Sutty, todas estos recursos se almacenan en
+un directorio (el nombre técnico para una carpeta).  Esta estructura
+o árbol de archivos y sub-directorios se corresponde con la estructura
+de direcciones ("URLs", _links_, vínculos) del sitio al que accedemos
+a través de un navegador.
+
+Por ejemplo, a la dirección web
+<https://sutty.nl/politica-de-privacidad/> le corresponde un archivo
+llamado `index.html` (este nombre es tácito en la dirección) dentro de
+un directorio llamado `politica-de-privacidad`.  Su dirección completa
+es `politica-de-privacidad/index.html`, porque las partes de una
+dirección se unen con `/`.  En Windows, las direcciones se unen con `\`,
+pero en web siempre es `/` (esto tiene su historia también).
+
+Esta dirección de ejemplo no tiene imágenes, pero tiene una hoja de
+estilos ("CSS") que define el diseño de la página y en este caso está
+ubicada en `assets/css/styles.css`.
+
+Si lo representáramos en un árbol, sería así.
+
+```
+sutty.nl/
+├── assets
+│   └── css
+│       └── styles.css
+└── politica-de-privacidad
+    └── index.html
+```
+
+Para que un sitio web sea transportable, tenemos que poder copiar este
+directorio `sutty.nl` con todos sus archivos y que el sitio siga
+funcionando correctamente, es decir que la política de privacidad pueda
+encontrar su hoja de estilos, sin importar la ubicación donde lo
+guardemos.  Si colocamos el sitio en `C:\Users\sutty\copia de
+seguridad\sutty.nl` tiene que funcionar lo mismo que si lo publicamos en
+web en <https://sutty.neocities.org/> o en
+<https://alojamientoweb.com/cosas/sutty/> (esta última es de ejemplo,
+¡pero la anterior funciona!).
+
+## Direcciones absolutas y relativas
+
+Existen distintas formas de vincular archivos entre sí, en nuestro caso,
+que la política de privacidad vincule a su hoja de estilos.  Estas
+diferentes formas tienen distintos nombres y nos simplifican
+o dificultan la tarea de transportar un sitio.
+
+A veces, las plataformas de publicación usan las direcciones completas
+de los distintos recursos.  Por ejemplo, para que la política de
+privacidad vincule a su hoja de estilos, usa la dirección
+<https://sutty.nl/assets/css/styles.css>.  Pero si cambiara alguno de
+los elementos de esta dirección, el archivo `styles.css` ya no podría
+ser encontrado.
+
+Esto pasa bastante si estamos agregando soporte para HTTPS a nuestro
+sitio, porque la dirección cambió de
+<http://sutty.nl/assets/css/styles.css> (sin "s")
+a <https://sutty.nl/assets/css/styles.css> (con "s").  También si
+cambiáramos nuestro dominio de `sutty.nl` a `sutty.neocities.org`,
+o copiáramos el sitio
+a <https://solidaridad.org/sitios/sutty/assets/css/styles.css>.
+
+Esta dirección es muy precisa, con lo que cualquier cambio de ubicación
+del sitio implica que debemos readecuar todas las direcciones del sitio,
+que pueden ser pocas o montones, siempre con un grado de error.  Hay
+programas que lo hacen también.
 
 Todo esto provoca que tengamos que pensar varias veces antes de cambiar
-de ubicación un sitio web y que debamos planificarlo bien.  En el caso
-que mencionábamos de Wordpress, hay que utilizar herramientas como
-`PHP-Search-Replace-DB` para buscar la ubicación anterior y reemplazarla
-por la nueva.  Y así con cada migración.
+de ubicación un sitio web y que debamos planificarlo bien.
 
-Desde que la web se está moviendo a ser segura por defecto y muchos
-sitios comienzan a adoptar versiones HTTPS, cada vez tenemos que migrar
-más sitios.  Y con la aparición de la web distribuida (¡esperemos!),
-nuestros sitios tienen que ser transportables y funcionar desde
-distintas ubicaciones.
+Hay dos estrategias posibles para poder cambiar la primera parte de la
+dirección (`https://sutty.nl`) sin "romper" el sitio.
 
-Existen dos estrategias para evitar este problema.  Una son las "URLs
-absolutas" y la otra son las "URLs relativas".  Una URL, para explicarlo
-rápido, es la dirección desde donde se descarga un recurso web (una
-página, una imagen, una hoja de estilos, etc.) y su forma completa es
-algo como `https://sitio.org/recurso`.
-
-## URLs absolutas
+### Direcciones absolutas
 
 En el caso de las URLs absolutas, se trata de eliminar la parte de la
-URL que indica el protocolo (`http://` o `https://`, pero puede haber
-otros mucho menos usados), usuaria y contraseña (`usuaria@contraseña:`),
-si el sitio necesita autenticación, el dominio (`sitio.org`) y el puerto
-(`:8000` a continuación del dominio, aunque se infiere del protocolo,
-`80` para `http` y `443` para `https`).  Aunque por lo general, en una
-URL solo vemos el protocolo y el dominio en la forma
-`https://sitio.org`.
+dirección que indican el protocolo (`http://` o `https://`) y el dominio
+(`sutty.nl`).  Hay otros componentes, aunque por lo general solo vemos
+estos dos.
 
-Con las URLs absolutas, entonces, los recursos internos al sitio ya no
-se vinculan con `https://sitio.org/recurso.png` y pasan a vincularse por
-`/recurso.png`, es decir empiezan a llamarse desde la raíz o `/`, el
-comienzo del sitio.
+Las direcciones absolutas indican la ubicación de los archivos a partir
+de la carpeta donde están guardados, representados por la primera `/`
+(la "raíz" del árbol).
 
-Las `/` son separadores de directorios ("carpetas"), entonces si vemos
-una URL `/directorio/subdirectorio/recursos.png`, quiere decir que en la
-raíz (la primera `/`) del sitio, hay un directorio/carpeta llamado
-`directorio` y dentro otro directorio llamado `subdirectorio`.  Dentro
-de este último deberíamos encontrar un archivo llamado `recurso.png`.
-Si alguna de estas partes no existe, el servidor web dará un error 404 y
-la página se verá rota.
+En nuestro ejemplo entonces, la hoja de estilos estaría vinculada a la
+dirección `/assets/css/styles.css` en lugar de
+<https://sutty.nl/assets/css/styles.css>.  Es decir, le removimos la
+dirección.
 
-La ventaja de esto es que a partir de ahora podemos mover el sitio de
-`http://sitio.com` a `https://otrositio.org` sin que la ubicación de los
-recursos se vea afectada, porque los navegadores agregan automáticamente
-el protocolo y dominio en las URLs que no lo tienen.
+De esta forma, es posible cambiar de HTTP a HTTPS o de `sutty.nl`
+a `solidaridad.org` sin realizar cambios en los archivos del sitio.
+Como la dirección ignora la ubicación web, podemos mover los archivos
+entre distintas ubicaciones sin preocuparnos por hacer cambios.
 
-La desventaja es que el sitio solo funciona con un servidor web y solo a
-partir de la raíz (la primera `/`), es decir que no puede verse desde un
-subdirectorio (moverlo de `http://sitio.com` a
-`https://otrositio.org/sitio` por ejemplo), porque los recursos van a
-ser buscados siempre en la raíz.
+Sin embargo, el sitio solo funciona correctamente si lo movemos de una
+ubicación web a otra manteniendo el mismo nivel de ubicación.  Si
+copiáramos el sitio a <https://solidaridad.org/sitios/sutty/>, la raíz
+de los archivos está en `/sitios/sutty/`, pero la ubicación la sigue
+buscando en `/assets/css/styles.css`.  Si el sitio `solidaridad.org` no
+tiene un archivo en esa ubicación, las políticas de privacidad de Sutty
+no van a tener diseño --y si hubiera un archivo, ¡tendría el diseño
+equivocado!
 
-Esto hace imposible permitir la descarga del sitio para navegarlo
-localmente, o que en un caso de censura o DDOS otra gente se puede
-solidarizar subiendo copias de nuestro sitio al suyo.  En el caso de la
-web distribuida, al menos con IPFS, los sitios van a estar ubicados
-dentro de un "subdirectorio" cuyo nombre cambia por cada vez que se
-modifica el sitio.  Todo esto hace que podamos independizar el sitio de
-un dominio específico, pero aun no evita la dependencia de un servidor
-web.
+Y aun así, todavía no podemos descargarnos el sitio a nuestra
+computadora y navegarlo.
 
-## URLs relativas
+
+### Direcciones relativas
 
 Para que un sitio sea realmente transportable y su conjunto de archivos
-pueda moverse por toda la web sin romperse, tenemos que usar URLs
+pueda moverse por toda la web sin romperse, tenemos que usar direcciones
 relativas.
 
-Estas URLs, además del protocolo y dominio, eliminan la raíz del sitio.
-Esto hace que los recursos en lugar de ser absolutos a la ubicación del
-sitio (los recursos se buscan siempre a partir de la raíz), sean
-relativos a la página actual (que también es un recurso).  Si estamos
-navegando la página `https://otrositio.org/subdirectorio/pagina.html` y
-esta vincula a una imagen `imagenes/imagen.png`, la URL de la imagen
-será completada por el navegador a
-`https://otrositio.org/subdirectorio/imagenes/imagen.png`.  Si lo
-estuviéramos viendo con un navegador de archivos, tendríamos un
-directorio/carpeta llamado `subdirectorio` y dentro otro llamado
-`imagenes` junto a un archivo `pagina.html`.  Dentro del directorio
-`imagenes` habrá un archivo `imagen.png`.
+Estas direcciones no tienen una raíz absoluta.  Los archivos se vinculan
+entre sí por su ubicación actual en un árbol de directorios que
+desconocen.  De esta forma, el archivo
+`politicas-de-privacidad/index.html` vincula
+a `../assets/css/styles.css`.  Los `..` representan el directorio
+anterior, sin importar su nombre y se pueden combinar para moverse
+varios niveles hacia atrás --`../../../../`.
 
-Las estructuras de directorios se suelen representar en árboles, donde
-cada nivel representa archivos y directorios dentro del mismo directorio
-superior.  En nuestro caso, el árbol del sitio sería:
+Esta forma es un poco más compleja, pero nos da flexibilidad a la hora
+de transportar un sitio.  Podemos guardar los archivos en
+<https://sutty.nl>, <https://sutty.neocities.org>,
+<https://solidaridad.org/sitios/sutty> o `C:\Users\sutty`
+o `/home/alguien/sitios/copias/sutty` y el sitio va a seguir
+funcionando.
 
-```bash
-/
-  subdirectorio/
-    imagenes/
-      imagen.png
-    pagina.html
-```
+Esta estrategia es muy importante para la característica que estábamos
+buscando porque nos permite copiar el sitio de un lugar a otro sin
+hacerle modificaciones.
 
-Así visualizamos que `imagenes ` y `pagina.html` están en el mismo
-nivel, mientras que `imagen.png` está un nivel más abajo, dentro de
-`imagenes`.  En el caso de las URLs absolutas, la ubicación sería
-`/subdirectorio/imagenes/imagen.png`.
 
-Las URLs relativas pueden ser más complejas para referirnos a un recurso
-que se encuentre en niveles anteriores, usamos `..` acompañados de una
-`/` por cada nivel.  Por ejemplo, si desde `pagina.html` necesitamos el
-recurso `hoja_de_estilos.css` ubicado en la raíz, lo llamaríamos por
-`../hoja_de_estilos.css`, porque se encuentra en un nivel anterior y al
-mismo que `subdirectorio`.  Si usáramos URLs absolutas, vincularíamos
-por `/hoja_de_estilos.css`.
+## Cómo lo logramos
 
-```bash
-/
-  hoja_de_estilos.css
-  subdirectorio/
-    imagenes/
-      imagen.png
-    pagina.html
-```
+Decíamos que es muy importante pero también agrega complejidad, porque
+cada archivo tiene que saber dónde están ubicados los otros archivos en
+relación a sí mismo.
 
-Otro ejemplo es cuando queremos vincular a un recurso que está en otro
-directorio, es decir tenemos que bajar hasta el nivel común y luego
-subir.  Para llamar al recurso absoluto `/otro/recurso.jpg` desde
-`pagina.html`, usaríamos la URL relativa `../otro/recurso.jpg`.
+En el desarrollo de esta característica llevamos a cabo un aprendizaje
+sobre distintas tecnologías/posibilidades web que estaban cayendo en
+desuso.
 
-Con las URLs relativas, cada página web tiene que saber dónde está
-ubicada para poder encontrar los recursos necesarios.  Esto hace que su
-implementación sea más compleja y por lo general se prefieran las URLs
-absolutas.  Pero como su ventaja principal es que podemos mover toda la
-raíz del sitio a un subdirectorio y que todo siga funcionando, creemos
-que vale la pena.
-
-```bash
-/
-  sitio
-    hoja_de_estilos.css
-    subdirectorio/
-      imagenes/
-        imagen.png
-      pagina.html
-```
-
-Por ejemplo, ahora creamos un directorio `sitio` en la raíz y movimos
-todos los archivos dentro suyo.  La URL absoluta
-`/subdirectorio/imagenes/imagen.png` dejó de funcionar porque ahora es
-`/sitio/subdirectorio/imagenes/imagen.png`.  Sin embargo la URL relativa
-`imagenes/imagen.png` se mantuvo igual, porque es independiente de la
-raíz.  Lo mismo para `../hoja_de_estilos.css`.
-
-## Jekyll
-
-No todos los generadores de sitios, tanto estáticos como dinámicos, son
-capaces de soportar URLs relativas.  Jekyll, nuestro generador de sitios
-estáticos preferido, es uno de los que no.
+En principio, no todos los generadores de sitios, tanto estáticos como
+dinámicos, son capaces de generar ubicaciones relativas.  Jekyll, el
+motor de Sutty, se cuenta entre los que no, pero es posible indicarle
+cómo hacerlo.
 
 Una respuesta ha sido la de Rico Sta. Cruz, en su artículo [_Relative
 paths in Jekyll_](https://ricostacruz.com/til/relative-paths-in-jekyll)
-donde sugiere un pedacito de código en formato Liquid (el de las
-plantillas de Jekyll) que es capaz de obtener la URL relativa al recurso
-actual.
+(ubicaciones relativas en Jekyll) donde sugiere un código que es capaz
+de obtener la ubicación relativa a la página actual.
 
-```liquid
-{% assign base = '' %}
-{% assign depth = page.url | split: '/' | size | minus: 1 %}
-{% if    depth <= 1 %}{% assign base = '.' %}
-{% elsif depth == 2 %}{% assign base = '..' %}
-{% elsif depth == 3 %}{% assign base = '../..' %}
-{% elsif depth == 4 %}{% assign base = '../../..' %}{% endif %}
-```
+Sin embargo, este código tiene sus limitaciones, porque hay que
+expandirlo a la cantidad de niveles necesarios para un sitio --que nunca
+sabemos cuáles van a ser.  Además, implica readaptar todas las
+plantillas para poder usar este esquema --un trabajo engorroso, aunque
+menor que adaptar todo un sitio.
 
-Luego la variable `base` puede usarse adelante de cada URL para volverla
-relativa.  Sin embargo esta propuesta tiene dos problemas.  Por un lado,
-tiene un límite de niveles, por lo que si tuviéramos más, tendríamos que
-agregarlos.  En términos tecno-estéticos, podría ser considerada poco
-"elegante".  El segundo problema es que implica modificar todas las
-plantillas de Jekyll para prefijar cualquier URL con la variable `base`.
+Nos dio la inspiración para que desarrollar nuestro propio complemento,
+que encuentra la ubicación relativa de forma automática y flexible, sin
+que le tengamos que indicar manualmente la ubicación, con cambios
+mínimos a las plantillas (que podrían ser automatizables también).
 
-Contraproponemos una versión que encuentra la posición relativa
-dinámicamente e involucra menos cambios en nuestras plantillas.
+Logramos esto aprovechando un atributo de las páginas web llamado
+`<base>` ([documentación en Mozilla Web
+Docs](https://developer.mozilla.org/es/docs/Web/HTML/Elemento/base),
+aunque la versión en [inglés es más
+completa](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base)),
+que indica la ubicación relativa base para todos los archivos vinculados
+al documento actual.  Con esto, solo necesitamos calcular la distancia
+del archivo hasta la carpeta raíz e intercambiarlos por los `..`
+necesarios.
 
-```liquid
-<!DOCTYPE html>
-<html>
-  <head>
-{% assign base = '' %}
-{% assign depth = page.url | split: '/' %}
-{% for dots in depth offset: 1 %}
-  {% assign base = base | append: '../' %}
-{% endfor %}
-    <base href="{{ base }}" />
-  </head>
-</html>
-```
+Otra cosa que necesitábamos cambiar es que las direcciones generadas por
+Jekyll ya no fueran absolutas.  Esto fue solo complementar el código de
+Jekyll para remover la `/` inicial de todas las direcciones.
 
-El código en sí es lo escrito dentro del tag HTML `<head>`, que se
-encuentra solo para saber su ubicación en el código de la plantilla.  Es
-decir, hay que colocarlo una sola vez.
+Estos dos simples cambios nos permiten generar sitios que se pueden
+transportar sin modificaciones, cumpliendo con nuestro primer objetivo.
 
-Lo que hace es decidir en base a la cantidad de `/` en la URL actual la
-cantidad de niveles hasta la raíz y agregar los `..` correspondientes.
-Luego, aprovechando la etiqueta `<base>` de HTML, le indica a los
-navegadores que todas las URLs relativas van a estar referidas a esa
-URL.  Lo que hace internamente el navegador es prefijar las URLs
-relativas con la URL provista en `<base>`.[^base]
+## El complemento
 
-[^base]: [Aquí está la documentación para la etiqueta
-`<base>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base).
-Vinculamos a la versión en inglés porque la documentación en castellano
-está desactualizada.
-
-Luego, en nuestra plantillas, eliminamos la primera `/` de todas las
-URLs.  En el caso de los recursos, solo eliminamos la `/` al principio.
-En el caso de las URLs de los posts, que suelen llamarse con el código
-Liquid `{{ post.url }}`, usamos el filtro `remove_first`:
-
-```liquid
-<a href="{{ post.url | remove_first: '/' }}">{{ post.title }}</a>
-```
-
-Este código genera una URL relativa a un post en particular.
-
-Si nuestra plantilla usa la variable `baseurl` en la configuración,
-también quitamos la `/` del principio.  Lo mismo cuando vinculamos
-imágenes y otros recursos en los artículos Markdown y en otros recursos
-como CSS y JS.
-
-## A tener en cuenta
-
-Las soluciones elegantes no siempre aplican a todos los casos.  Algunas
-cosas a tener en cuenta que nos pueden dificultar el desarrollo del
-sitio:
-
-* Si vamos a usar links `#id` para saltar de un elemento a otro dentro
-  de la misma página, por ejemplo en una tabla de contenido para ir a un
-  subtítulo, el link tiene que incluir la URL de la página actual, de lo
-  contrario el navegador lo autocompleta a la URL relativa y nos va a
-  llevar a cualquier lado.
-
-  ```html
-  <a href="#menu">Ir al menú</a>
-  ```
-
-  Este link en lugar de llevarnos al menú sin cambiar de página, nos
-  puede llevar al elemento con `id` "menu" en la página principal.
-
-  ```html
-  <a href="pagina.html#menu">Ir al menú</a>
-  ```
-
-  Este link es correcto y nos va a llevar al menú en la página actual.
-  Sin embargo, va a forzar la recarga de la página en lugar de dar un
-  salto.
-
-  [Hay formas de imitar este comportamiento utilizando
-  JavaScript](https://stackoverflow.com/questions/8108836/make-anchor-links-refer-to-the-current-page-when-using-base).
-
-* Al parecer, Internet Explorer no soporta URLs relativas en la etiqueta
-  `<base>`, con lo que si esperamos visitantes utilizando esos
-  navegadores, el sitio no les va a funcionar correctamente.  En este
-  sentido recomendamos una no-solución en la forma de un boicot activo
-  contra Internet Explorer, ya que es uno de los navegadores que menos
-  respeta los estándares web a la vez que es el más inseguro.  Este
-  boicot puede darse usando una condición específica para Internet
-  Explorer que invite a lxs visitantes a instalar Mozilla Firefox.
-
-* Si usamos las etiquetas especiales [OpenGraph](http://ogp.me) y
-  [Twitter
-  Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started)
-  para proveer meta-información, todavía tenemos que utilizar URLs
-  completas (con protocolo y dominio) para referirnos al sitio.  En el
-  caso de Jekyll, esto se logra definiendo la URL base en una variable
-  de la configuración `_config.yml` y utilizándola en las etiquetas
-  necesarias.
-
-Si estos puntos no nos convencen, todavía podemos usar la definición de
-la variable Liquid `base` que proponemos, descartando la etiqueta
-`<base>` y prefijando todas las URLs con `{{base}}` según la propuesta
-de Rico Sta. Cruz.
+En Sutty trabajamos constantemente con software libre y nuestro
+compromiso es liberar todo el software que escribamos.  En este sentido,
+este aprendizaje que hicimos quedó plasmado en un complemento que
+llamamos
+[jekyll-relative-urls](https://rubygems.org/gems/jekyll-relative-urls)
+que cualquier sitio utilizando Jekyll puede instalar y utilizar, aun
+cuando no se aloje en Sutty.
