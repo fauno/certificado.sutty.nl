@@ -1,0 +1,38 @@
+---
+redirect:
+  type: hidden
+  value: 'https://sutty.nl/es/gracias/'
+name:
+  type: string
+  label:
+    es: Pseudónimo, nick, alias, nombre elegido
+    en: Pen name, nick, alias, chosen name
+pronouns:
+  type: string
+  label:
+    es: Pronombres
+    en: Pronouns
+contact:
+  type: string
+  label:
+    es: Forma de contacto (correo, telegram, etc.)
+    en: Contact form (e-mail, telegram, etc.)
+  required: true
+body:
+  type: text
+  label:
+    es: Mensaje
+    en: Message
+  required: true
+consent:
+  type: boolean
+  label:
+    es: Comprendo las políticas de privacidad de Sutty
+    en: I understand Sutty's privacy policy
+  required: true
+  value: Sí
+submit:
+  type: submit
+  label:
+    es: Enviar
+    en: Send

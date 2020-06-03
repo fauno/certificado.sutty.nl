@@ -1,0 +1,5 @@
+{%- assign name = include.field[0] -%}
+{%- assign id = include.field[1].id | default: name -%}
+{%- assign value = include.field[1].value -%}
+
+<input type="hidden" value="{{ value }}" name="{{ name }}" id="{{ id }}" />

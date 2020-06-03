@@ -1,38 +1,6 @@
-<form method="post" action="https://api.sutty.nl/v1/sutty.nl..sutty.nl/contact">
-  {% for input in site.data[site.lang].contact.form %}
-    {% assign name = input[0] %}
-    {% assign field = input[1] %}
-
-    <div class="field">
-      <div class="control">
-        {% if field.type == 'textarea' %}
-          {% include label.html required=field.required content=field.label %}
-          <textarea class="textarea" name="{{ name }}"></textarea>
-        {% elsif field.type == 'checkbox' %}
-          <label class="label" for="{{ name }}">
-            <input type="checkbox" name="{{ name }}"
-                   value="{{ field.value }}"
-                   {% if field.required %}required{% endif %} />
-            {{ field.label }}
-          </label>
-        {% else %}
-          {% if input.type != 'hidden' %}
-            {% include label.html
-                       required=field.required
-                       content=field.label %}
-          {% endif %}
-          <input class="input" type="{{ field.type }}" name="{{ name }}"
-                 value="{{ field.value }}"
-                 {% if field.required %}required{% endif %} />
-        {% endif %}
-
-      </div>
-    </div>
-  {% endfor %}
-
-  <div class="field">
-    <input type="submit"
-           class="button white-fg black-bg"
-           value="{{ site.data[site.lang].contact.submit }}" />
-  </div>
+<form method="post" action="https://api.sutty.nl/v1/sutty.nl..sutty.nl/contact/contacto">
+  {%- for field in site.data.forms.contacto -%}
+    {% assign template = field[1].type | append: '.html' %}
+    {% include {{ template }} field=field %}
+  {%- endfor -%}
 </form>
