@@ -1,0 +1,18 @@
+<section class="hero is-fullheight">
+  <div class="hero-body">
+    {%- for locale in site.locales -%}
+      {%- assign i18n = site.data[locale] -%}
+      <div class="container" lang="{{ locale }}" dir="{{ i18n.dir }}">
+        <a href="https://sutty.nl/{{ locale }}/">
+          {% include sutty_color.svg %}
+        </a>
+
+        <h1 class="title">{{ i18n[include.error].title }}</h1>
+
+        <h2 class="subtitle">
+          {{ i18n[include.error].help | markdownify }}
+        </h2>
+      </div>
+    {%- endfor -%}
+  </div>
+</section>

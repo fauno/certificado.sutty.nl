@@ -205,17 +205,6 @@ post:
     - numeral.svg
     - circunflejo.svg
     - nuflo.svg
-site_not_found:
-  title: Sitio no encontrado
-  help: |
-    El sitio al que quieres acceder todavía no existe.  Si es tu sitio,
-    tienes que usar el botón "Publicar todos los cambios" desde
-    [Sutty](https://panel.sutty.nl/sites).
-page_not_found:
-  title: Página no encontrada
-  help: |
-    Lo sentimos, la página web que estás buscando no existe.  ¿Quizás te
-    interese algo de nuestro blog?
 pricing:
   id: precios
   table:
@@ -272,3 +261,32 @@ gracias:
     respondiéndote en breve :)
 
     [Seguir leyendo el sitio >>](blog/)
+error_428:
+  title: Envío retenido
+  help: |
+    ¡Espera un minuto antes de reintentar!
+
+    Por políticas de cuidados y contra el _spam_, solo permitimos el
+    envío del formulario de contacto una vez por minuto.  Si lo enviaste
+    muy rápido, por favor espera tan solo 1 minuto antes de recargar la
+    página para reintentar :)
+error_503:
+  title: Envío retenido
+  help: |
+    ¡Espera un minuto antes de reintentar!
+
+    Por políticas de cuidados y contra el _spam_, solo permitimos el
+    envío del formulario de contacto una vez por minuto.  Si lo enviaste
+    muy rápido, por favor espera tan solo 1 minuto antes de recargar la
+    página para reintentar :)
+page_not_found:
+  title: Página no encontrada
+  help: |
+    Lo sentimos, la página web que estás buscando no existe.  ¿Quizás te
+    interese algo de nuestro blog?
+site_not_found:
+  title: Sitio no encontrado
+  help: |
+    El sitio al que quieres acceder todavía no existe.  Si es tu sitio,
+    tienes que usar el botón "Publicar todos los cambios" desde
+    [Sutty](https://panel.sutty.nl/sites).

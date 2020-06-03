@@ -201,17 +201,6 @@ post:
     - numeral.svg
     - circunflejo.svg
     - nuflo.svg
-site_not_found:
-  title: Site not found
-  help: |
-    The site you want to visit doesn't exist yet.  If it's your site,
-    you'll have to use the "Publish all changes" button at
-    [Sutty](https://panel.sutty.nl/sites).
-page_not_found:
-  title: Page not found
-  help: |
-    We're sorry, the page you're looking for doesn't exist.  Maybe
-    you're interested in our blog?
 pricing:
   id: pricing
   table:
@@ -268,3 +257,30 @@ gracias:
     shortly :)
 
     [Keep reading >>](blog/)
+error_428:
+  title: Form delayed
+  help: |
+    Wait a minute before retrying!
+
+    We practice mutual care and dislike _spam_, so we only allow sending
+    the form once per minute.  If you were too quick, please wait only
+    a minute before reloading the page :)
+error_503:
+  title: Form delayed
+  help: |
+    Wait a minute before retrying!
+
+    We practice mutual care and dislike _spam_, so we only allow sending
+    the form once per minute.  If you were too quick, please wait only
+    a minute before reloading the page :)
+site_not_found:
+  title: Site not found
+  help: |
+    The site you want to visit doesn't exist yet.  If it's your site,
+    you'll have to use the "Publish all changes" button at
+    [Sutty](https://panel.sutty.nl/sites).
+page_not_found:
+  title: Page not found
+  help: |
+    We're sorry, the page you're looking for doesn't exist.  Maybe
+    you're interested in our blog?

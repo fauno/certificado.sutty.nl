@@ -10,9 +10,9 @@ Encabezado de un post, pasar como
 
   {% assign words = include.page.content | number_of_words %}
   {% if words < 360 %}
-    1 {{ i18n.post.one_minute }}
+    1 {{ site.i18n.post.one_minute }}
   {% else %}
-    {{ words | divided_by: 180 }} {{ i18n.post.minutes }}
+    {{ words | divided_by: 180 }} {{ site.i18n.post.minutes }}
   {% endif %}
 </time>
 
