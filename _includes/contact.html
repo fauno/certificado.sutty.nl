@@ -1,5 +1,5 @@
-<img src="https://api.sutty.nl/v1/sutty.nl..sutty.nl/contact/cookie.png">
-<form method="post" action="https://api.sutty.nl/v1/sutty.nl..sutty.nl/contact/contacto">
+<img src="https://api.sutty.nl/v1/sites/sutty.nl..sutty.nl/contact/cookie.png">
+<form method="post" action="https://api.sutty.nl/v1/sites/sutty.nl..sutty.nl/contact/contacto">
   {%- for field in site.data.forms.contacto -%}
     {% assign template = field[1].type | append: '.html' %}
     {% include {{ template }} field=field %}
