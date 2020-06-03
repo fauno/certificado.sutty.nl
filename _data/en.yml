@@ -159,33 +159,6 @@ archivable:
 contact:
   id: contact
   title: "Do you want to say or ask us something?  Go ahead!  We're delighted to read you."
-  form:
-    site:
-      type: hidden
-      value: sutty.nl
-    redirect:
-      type: hidden
-      value: 'https://sutty.nl/en/thanks/'
-    name:
-      type: text
-      label: Pen name, nick, alias, chosen name
-    pronouns:
-      type: text
-      label: Pronouns
-    contact:
-      type: text
-      label: Contact form (e-mail, telegram, etc.)
-      required: true
-    body:
-      type: textarea
-      label: Message
-      required: true
-    gdpr:
-      type: checkbox
-      label: I understand Sutty's privacy policy
-      required: true
-      value: 'Yes'
-  submit: Send
 form:
   required: '*'
 blog:

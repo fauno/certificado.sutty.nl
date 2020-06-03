@@ -160,33 +160,6 @@ archivable:
 contact:
   id: contacto
   title: ¿Querés preguntarnos o comentarnos algo? ¡Adelante! Nos encanta que nos escriban.
-  form:
-    site:
-      type: hidden
-      value: sutty.nl
-    redirect:
-      type: hidden
-      value: 'https://sutty.nl/es/gracias/'
-    name:
-      type: text
-      label: Pseudónimo, nick, alias, nombre elegido
-    pronouns:
-      type: text
-      label: Pronombres
-    contact:
-      type: text
-      label: Forma de contacto (correo, telegram, etc.)
-      required: true
-    body:
-      type: textarea
-      label: Mensaje
-      required: true
-    gdpr:
-      type: checkbox
-      label: Comprendo las políticas de privacidad de Sutty
-      required: true
-      value: Sí
-  submit: Enviar
 form:
   required: '*'
 blog:

@@ -1,0 +1,33 @@
+{%- assign name = include.field[0] -%}
+{%- assign id = include.field[1].id | default: name -%}
+{%- assign label = include.field[1].label[site.locale] -%}
+{%- assign help = include.field[1].help[site.locale] -%}
+{%- assign autocomplete = include.field[1].autocomplete -%}
+
+<div class="field">
+  <div class="control">
+    <label class="label" for="{{ id }}">
+      <input
+        {% if help %}
+          aria-describedby="help-{{ id }}"
+        {% endif %}
+        {% if include.field[1].required %}
+          required
+        {% endif %}
+        {% if autocomplete %}
+          autocomplete="{{ autocomplete }}"
+        {% endif %}
+        type="checkbox"
+        name="{{ name }}"
+        id="{{ id }}" />
+
+      {{ label }}
+    </label>
+
+    {%- if help -%}
+      <small id="help-{{ id }}" class="form-text">
+        {{ help }}
+      </small>
+    {%- endif -%}
+  </div>
+</div>
