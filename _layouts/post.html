@@ -31,6 +31,8 @@ layout: default
         {{ content }}
 
         <footer>
+          <hr />
+
           {% if page.next %}<a href="{{ page.next.url }}">&lt; {{ page.next.title }}</a>{% endif %}
           {% if page.previous %}<a href="{{ page.previous.url }}">{{ page.previous.title }} &gt;</a>{% endif %}
         </footer>
