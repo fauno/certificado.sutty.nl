@@ -179,6 +179,9 @@ footer:
     - href: mailto:hi@sutty.nl
       text: hi@sutty.nl
       title: 'Escribinos :)'
+    - href: xmpp:sutty@riseup.net
+      text: XMPP
+      title: 'Escribinos :)'
     - href: https://0xacab.org/sutty
       text: Código fuente
       title: '¡Sutty es software libre!'
