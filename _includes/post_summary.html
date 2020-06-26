@@ -4,8 +4,10 @@ Encabezado de un post, pasar como
 {% include post_summary.html page=page %}
 {% endcomment %}
 
-<time datetime="{{ include.page.date }}" class="heading">
-  {{ include.page.date | date: i18n.date }}
+<p class="heading">
+  <time datetime="{{ include.page.date }}" class="dt-published" itemprop="datePublished">
+    {{ include.page.date | date: i18n.date }}
+  </time>
   /
 
   {% assign words = include.page.content | number_of_words %}
@@ -14,10 +16,12 @@ Encabezado de un post, pasar como
   {% else %}
     {{ words | divided_by: 180 }} {{ site.i18n.post.minutes }}
   {% endif %}
-</time>
+</p>
 
-<h1 class="title">
-  <a href="{{ include.page.url }}">{{ include.page.title }}</a>
+<h1 class="title p-name" itemprop="name headline">
+  <a class="u-url" itemprop="url" href="{{ include.page.url }}">{{ include.page.title }}</a>
 </h1>
 
-{{ include.page.description | markdown }}
+<div class="p-summary" itemprop="description">
+  {{ include.page.description | markdownify }}
+</div>
