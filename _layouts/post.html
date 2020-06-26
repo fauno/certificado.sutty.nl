@@ -26,6 +26,10 @@ layout: default
             {%- endfor -%}
             <img itemprop="image" src="{{ page.image.path | thumbnail: 800 }}" alt="{{ page.image.description }}"/>
           </picture>
+        {%- else -%}
+          <div hidden itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <span itemprop="url" class="u-photo">{{ site.url }}/{{ site.logo }}</span>
+          </div>
         {%- endif -%}
 
         <div class="e-content" itemprop="articleBody">
@@ -89,9 +93,12 @@ layout: default
           {%- endfor -%}
 
           <div hidden class="h-card" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-            <a itemprop="url" href="{{ site.url }}">
-              <span class="p-name" itemprop="name">{{ site.name }}</span>
-            </a>
+            <link itemprop="url" href="{{ site.url }}"/>
+            <span class="p-name" itemprop="name">{{ site.title }}</span>
+
+            <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+              <span itemprop="url" class="u-photo">{{ site.url }}/{{ site.logo }}</span>
+            </div>
           </div>
         </footer>
       </div>
