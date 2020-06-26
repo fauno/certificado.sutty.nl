@@ -1,16 +1,16 @@
 {% assign banner = site.posts | where: 'layout', 'banner' | first %}
 
 {% if banner %}
-  <article class="message is-info">
+  <article class="message is-info" itemscope itemprop="SpecialAnnouncement" itemtype="https://schema.org/SpecialAnnouncement">
     <header class="message-header">
-      {{ banner.title }}
-      <time datetime="{{ banner.date }}">
+      <span itemprop="name">{{ banner.title }}</span>
+      <time datetime="{{ banner.date }}" itemprop="datePosted">
         {{ banner.date | date: site.i18n.date }}
       </time>
     </header>
 
-    <div class="message-body">
-      {{ banner.description | markdown }}
+    <div class="message-body" itemprop="text">
+      {{ banner.description | markdownify }}
     </div>
   </article>
 {% endif %}

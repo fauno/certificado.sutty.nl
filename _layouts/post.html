@@ -8,7 +8,7 @@ layout: default
   {% include menu.html %}
   {% include banner.html %}
 
-  <article id="{{ page.id }}">
+  <article id="{{ page.id }}" class="h-entry" itemscope itemtype="http://schema.org/Article">
     <div class="columns is-centered">
       <div class="column is-one-third">
         <header>
@@ -28,13 +28,30 @@ layout: default
           </picture>
         {%- endif -%}
 
-        {{ content }}
+        <div class="e-content" itemprop="articleBody">
+          {{ content }}
+        </div>
 
         <footer>
           <hr />
 
-          {% if page.next %}<a href="{{ page.next.url }}">&lt; {{ page.next.title }}</a>{% endif %}
-          {% if page.previous %}<a href="{{ page.previous.url }}">{{ page.previous.title }} &gt;</a>{% endif %}
+          {%- assign posts = site.posts | where: 'layout', 'post' -%}
+          {%- assign next = posts | next_post: page -%}
+          {%- assign prev = posts | previous_post: page -%}
+
+          {% if next %}<a href="{{ next.url }}" rel="next">&lt; {{ next.title }}</a>{% endif %}
+          {% if prev %}<a href="{{ prev.url }}" rel="prev">{{ prev.title }} &gt;</a>{% endif %}
+
+          {%- if page.uuid -%}
+            <span hidden itemprop="identifier">{{ page.uuid }}</span>
+          {%- endif -%}
+
+          {%- if page.tags %}
+            <span itemprop="keywords" hidden>{{ page.tags | join: ', ' }}</span>
+            {%- for tag in page.tags -%}
+              <span hidden class="h-category">{{ tag }}</span>
+            {%- endfor -%}
+          {%- endif -%}
         </footer>
       </div>
     </div>
