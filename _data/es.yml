@@ -185,6 +185,8 @@ footer:
     - href: https://0xacab.org/sutty
       text: Código fuente
       title: '¡Sutty es software libre!'
+    - href: https://rubygems.org/profiles/sutty
+      text: Ruby Gems
     - href: https://todon.nl/@sutty
       text: Fediverso
       title: '¡Nos vemos en el fediverso!'

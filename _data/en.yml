@@ -184,6 +184,8 @@ footer:
     - href: https://0xacab.org/sutty
       text: Source code
       title: 'Sutty is free software!'
+    - href: https://rubygems.org/profiles/sutty
+      text: Ruby Gems
     - href: https://todon.nl/@sutty
       text: Fediverse
       title: "You'll find us in the Fediverse!"
