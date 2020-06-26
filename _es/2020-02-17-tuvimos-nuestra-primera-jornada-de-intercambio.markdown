@@ -2,8 +2,8 @@
 title: "¡Tuvimos nuestra Primera Jornada de Intercambio!"
 description: Primera Jornada de Feedback de Sutty. Desarrollo colaborativo-participativo comunitario
 image:
-description: 'Participantes de la Jornada reunides, haciendo la actividad; proyector en el fondo, pizarra con cartulinas de la actividad '
-path: public/62wv8ntxrblkrbc2xllixkmmp1w0/photo_2020-02-11_19-44-51 (2).jpg
+  description: 'Participantes de la Jornada reunides, haciendo la actividad; proyector en el fondo, pizarra con cartulinas de la actividad '
+  path: public/62wv8ntxrblkrbc2xllixkmmp1w0/photo_2020-02-11_19-44-51 (2).jpg
 tags:
 - Feedback
 - Jornada de Intercambio

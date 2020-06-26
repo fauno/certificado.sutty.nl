@@ -7,7 +7,7 @@ alojado en otro/s lugar/es, para mantener copias fuera de línea y/o para compar
 entre pares (alojamiento distribuido).\r\nEsta característica de Sutty viene habilitada
 por defecto. Al final del artículo explicamos cómo aprovecharla."
 image:
-description: ''
+  description: ''
 permalink: sitios-web-transportables/
 tags:
 - sitios transportables

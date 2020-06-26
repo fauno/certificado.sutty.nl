@@ -4,7 +4,7 @@ description: Nuestra experiencia con Twitter
 author:
 - Sutty
 image:
-description: ''
+  description: ''
 categories:
 - Guías
 - Comunicación

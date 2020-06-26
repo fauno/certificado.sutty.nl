@@ -2,7 +2,7 @@
 title: Repercusiones sobre la Aplicación Cuid.Ar en Argentina
 description: 'Aplicación Cuid.Ar: ¿qué sabemos? ¿qué tendríamos que saber?'
 image:
-description: ''
+  description: ''
 order: 10
 layout: post
 uuid: 47901a37-3bac-456a-bf1e-6cc6765eacff

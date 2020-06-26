@@ -2,7 +2,7 @@
 title: Plantilla para Donaciones
 description: Una nueva plantilla de Sutty para campañas de donación, apoyo a iniciativas colectivas o particulares y aportes para la economía social y solidaria y redes de apoyo entre pares
 image:
-description: ''
+  description: ''
 categories:
 - Plantillas
 tags:

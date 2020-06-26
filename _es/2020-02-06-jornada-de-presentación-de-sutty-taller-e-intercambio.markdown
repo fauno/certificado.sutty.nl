@@ -4,8 +4,8 @@ description: Les invitamos a encontrarnos este martes 11 de febrero en el Centro
 author:
 - Sutty
 image:
-description: Flyer con la información de la jornada de presentación de Sutty en Tierra Violeta
-path: public/m8ykhzw2bwqts7aw1pagwd4duneg/text1241.png
+  description: Flyer con la información de la jornada de presentación de Sutty en Tierra Violeta
+  path: public/m8ykhzw2bwqts7aw1pagwd4duneg/text1241.png
 categories:
 - Taller
 tags:
