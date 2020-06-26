@@ -1,7 +1,7 @@
 ---
 title: Presentación de Sutty
 author:
-- f@sutty.nl
+- Sutty
 categories:
 - Sutty
 layout: post

@@ -1,6 +1,8 @@
 ---
 title: Repercusiones sobre la Aplicación Cuid.Ar en Argentina
 description: 'Aplicación Cuid.Ar: ¿qué sabemos? ¿qué tendríamos que saber?'
+author:
+- Sutty
 image:
   description: ''
 order: 10

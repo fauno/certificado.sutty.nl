@@ -24,7 +24,7 @@ layout: default
             {%- for size in site.images.sizes -%}
               <source srcset="{{ page.image.path | thumbnail: size }}" media="(max-width: {{ size | plus: 1 }}px)" />
             {%- endfor -%}
-            <img src="{{ page.image.path | thumbnail: 800 }}" alt="{{ page.image.description }}"/>
+            <img itemprop="image" src="{{ page.image.path | thumbnail: 800 }}" alt="{{ page.image.description }}"/>
           </picture>
         {%- endif -%}
 
@@ -64,7 +64,7 @@ layout: default
 
             <footer class="card-footer">
               <p class="card-footer-item">
-              <a href="{{ prev.url }}" rel="prev">{{ site.i18n.post.prev }}</a>
+                <a href="{{ prev.url }}" rel="prev">{{ site.i18n.post.prev }}</a>
               </p>
             </footer>
           </div>
@@ -79,6 +79,20 @@ layout: default
               <span hidden class="h-category">{{ tag }}</span>
             {%- endfor -%}
           {%- endif -%}
+
+          {%- for author in page.author -%}
+            <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">
+                {{ author | escape }}
+              </span>
+            </span>
+          {%- endfor -%}
+
+          <div hidden class="h-card" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+            <a itemprop="url" href="{{ site.url }}">
+              <span class="p-name" itemprop="name">{{ site.name }}</span>
+            </a>
+          </div>
         </footer>
       </div>
     </div>
