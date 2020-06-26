@@ -1,13 +1,10 @@
 ---
-title: "¿Cómo se construye una página web que resista eventualidades, ataques, sobrecargas
-y proteja nuestro trabajo? - sitios web transportables, te lo explicamos."
-description: "Con \"transportable\" nos referimos a la característica que permite
-que el sitio web pueda ser descargado como una serie de archivos, ya sea para ser
-alojado en otro/s lugar/es, para mantener copias fuera de línea y/o para compartirlo
-entre pares (alojamiento distribuido).\r\nEsta característica de Sutty viene habilitada
-por defecto. Al final del artículo explicamos cómo aprovecharla."
+title: "¿Cómo se construye un sitio web que resista eventualidades, ataques, sobrecargas y nos proteja?"
+description: "Los sitios tienen que ser transportables.  Con \"transportable\" nos referimos a la característica que permite que el sitio web pueda ser descargado como una serie de archivos, ya sea para ser alojado en otro/s lugar/es, para mantener copias fuera de línea y/o para compartirlo entre pares (alojamiento distribuido).\r\nEsta característica de Sutty viene habilitada por defecto. Al final del artículo explicamos cómo aprovecharla."
 image:
   description: ''
+author:
+- Sutty
 permalink: sitios-web-transportables/
 tags:
 - sitios transportables

@@ -1,6 +1,8 @@
 ---
 title: Preguntas Frecuentes
 description: Respuestas a las Preguntas Frecuentes acerca de Sutty, su uso y tecnología.
+author:
+- Sutty
 image:
   description: ''
 categories:

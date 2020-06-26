@@ -1,6 +1,7 @@
 ---
 title: Términos de servicio
-author: Sutty
+author:
+- Sutty
 layout: post
 description: ¿Qué condiciones debemos cumplir para ser usuaries de Sutty?
 permalink: terminos-de-servicio/

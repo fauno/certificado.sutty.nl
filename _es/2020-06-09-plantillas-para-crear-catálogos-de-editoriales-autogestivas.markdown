@@ -1,6 +1,8 @@
 ---
 title: Plantillas para Crear Catálogos de Editoriales Autogestivas
 description: Un nuevo template para la economía social y solidaria inspirado en proyectos de edición
+author:
+- Sutty
 image:
   description: ''
 categories:
