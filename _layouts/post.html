@@ -39,8 +39,35 @@ layout: default
           {%- assign next = posts | next_post: page -%}
           {%- assign prev = posts | previous_post: page -%}
 
-          {% if next %}<a href="{{ next.url }}" rel="next">&lt; {{ next.title }}</a>{% endif %}
-          {% if prev %}<a href="{{ prev.url }}" rel="prev">{{ prev.title }} &gt;</a>{% endif %}
+          <div class="card">
+            <div class="card-content">
+              <p class="title">{{ next.title }}</p>
+              <p class="subtitle">
+                {{ next.description }}
+              </p>
+            </div>
+
+            <footer class="card-footer">
+              <p class="card-footer-item">
+                <a href="{{ next.url }}" rel="next">{{ site.i18n.post.next }}</a>
+              </p>
+            </footer>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <p class="title">{{ prev.title }}</p>
+              <p class="subtitle">
+                {{ prev.description }}
+              </p>
+            </div>
+
+            <footer class="card-footer">
+              <p class="card-footer-item">
+              <a href="{{ prev.url }}" rel="prev">{{ site.i18n.post.prev }}</a>
+              </p>
+            </footer>
+          </div>
 
           {%- if page.uuid -%}
             <span hidden itemprop="identifier">{{ page.uuid }}</span>
