@@ -4,7 +4,7 @@ description: Nuestra experiencia con Twitter
 author:
 - Sutty
 image:
-  description: ''
+description: ''
 categories:
 - Guías
 - Comunicación
@@ -21,6 +21,162 @@ usuaries:
 - 1
 ---
 
+Nos tomó un tiempo decidir usar Twitter. Por un lado nos da un poco de rabia tener que usar plataformas corporativas para poder comunicarnos, por otro nos da ansiedad encontrarnos de golpe con mucha gente e incluso de yapa y sin advertencia de contenido, con personas que nos han violentado.
+
+Al final y con la gran ayuda de nuestra compañera comunicadora Ana (además la creadora de [LunarApp](http://lunarcomunidad.com/)) nos decidimos porque también hay muchas cosas interesantes sucediendo (y ya que estábamos, también tenemos FOMO --miedo a estar perdiéndonos de cosas, pero no les recomendamos la explicación de Wikipedia en castellano) y para que Sutty se sostenga, tenemos que reconocernos y ayudarnos con otres :
+
+Así que al final seguimos los [consejos piratas para la apostasía de redes sociales](https://utopia.partidopirata.com.ar/zines/apostatemos_de_las_redes_asociales.html) y [estamos en Twitter](https://twitter.com/SuttyWeb) pero seguimos en el [Fediverso](https://todon.nl/@sutty) (¡vengan!) e inspirades por el ["Que no nos acosen por Facebook"](https://utopia.partidopirata.com.ar/zines/que_no_nos_acosen_por_facebook.html), revisamos todas las opciones y nos configuramos la cuenta así:
+
+En el sitio de la cuenta fuimos a [**Más \> Opciones y privacidad**](https://twitter.com/settings/account)
 
 
-<div>Nos tomó un tiempo decidir usar Twitter.&nbsp; Por un lado nos da un poco de rabia tener que usar plataformas corporativas para poder comunicarnos, por otro nos da ansiedad encontrarnos de golpe con mucha gente e incluso de yapa y sin advertencia de contenido, con personas que nos han violentado.<br><br>Al final y con la gran ayuda de nuestra compañera comunicadora Ana (además la creadora de <a href="http://lunarcomunidad.com/">LunarApp</a>) nos decidimos porque también hay muchas cosas interesantes sucediendo (y ya que estábamos, también tenemos FOMO --miedo a estar perdiéndonos de cosas, pero no les recomendamos la explicación de Wikipedia en castellano) y para que Sutty se sostenga, tenemos que reconocernos y ayudarnos con otres :)<br><br>Así que al final seguimos los <a href="https://utopia.partidopirata.com.ar/zines/apostatemos_de_las_redes_asociales.html">consejos piratas para la apostasía de redes sociales</a> y <a href="https://twitter.com/SuttyWeb">estamos en Twitter</a> pero seguimos en el <a href="https://todon.nl/@sutty">Fediverso</a> (¡vengan!) e inspirades por el <a href="https://utopia.partidopirata.com.ar/zines/que_no_nos_acosen_por_facebook.html">"Que no nos acosen por Facebook"</a>, revisamos todas las opciones y nos configuramos la cuenta así:<br><br>En el sitio de la cuenta fuimos a <a href="https://twitter.com/settings/account"><strong>Más &gt; Opciones y privacidad</strong></a><br><br></div><h1>Cuenta &gt; Ingreso y seguridad</h1><div><br><strong>Contraseña:</strong> Usamos una contraseña generada automáticamente con KeepassXC o algún otro gestor de contraseñas, mientras más larga mejor y no nos tenemos que agobiar recordando contraseñas :)<br><br><strong>Seguridad &gt; Autenticación en dos pasos: </strong>La autenticación en dos pasos permite solicitar un segundo factor para poder ingresar a nuestra cuenta.&nbsp; Como con la tarjeta de débito en el cajero automático, tenemos la tarjeta pero sólo funciona con un PIN que sabemos.&nbsp; En el caso de 2FA (las siglas), sabemos nuestro correo, contraseña y además un código aleatorio que se envía o genera desde un dispositivo que tenemos (como el celular).<br><br>Es una medida extra de protección ya que solo con correo y contraseña es posible que si alguien obtiene acceso a nuestro correo pueda obtener acceso a nuestras cuentas.<br><br>Tienen la desventaja que siempre tenemos que tener acceso a nuestro dispositivo de autenticación, por lo que hicimos copias de seguridad.<br><br><strong>Mensaje de texto:</strong> No recomendamos recibir códigos de autenticación por SMS, ya que es un medio inseguro (es posible interceptar los mensajes de SMS) o alguien con nuestro celular puede obtenerlos también.<br><br><strong>App de autenticación:</strong> Podemos utilizar la app FreeOTP+ (disponible en <a href="https://f-droid.org/">FDroid</a>) para generar códigos de autenticación.&nbsp; Twitter nos va a pedir que escaneemos un código QR desde la app, pero también nos&nbsp; guardamos el QR como una imagen en nuestro gestor de contraseñas.&nbsp; De esta forma tenemos un resguardo si perdiésemos acceso a nuestro celular.<br><br><strong>Llave de seguridad:</strong> Es un dispositivo USB que genera códigos de seguridad automáticamente :O<br><br><strong>Código de backup:</strong> Es una contraseña aleatoria que sirve como resguardo si perdemos acceso a los dispositivos de autenticación.&nbsp; Solo puede ser usado una vez, así que si lo llegásemos a usar, tendríamos que volver a esta sección y anotar el siguiente (¡en nuestro gestor de contraseñas!)<br><br><strong>Contraseña temporal:</strong> Son contraseñas distintas a la real que podemos usar en aplicaciones que nos piden acceso a la cuenta de Twitter.&nbsp; ¡Así no le damos nuestra contraseña real a nadie!<br><br></div><h1>Datos y permisos</h1><div><br><strong>Tus datos de twitter:</strong> Podríamos descargar toda la información que tienen de nosotres<br><br><strong>Aplicaciones y sesiones:</strong> Podemos ver todas las sesiones abiertas y cerrar las que no reconozcamos o no queramos más.&nbsp; Cuando veamos alguna extraña vamos a hacer una captura de pantalla, aunque Twitter no muestra las direcciones IP.<br><br></div><h1>Privacidad y seguridad &gt; Tuits</h1><div><br><strong>Proteger tus tuits:</strong> Activamos para que solo las personas que nos sigan puedan leer lo que decimos.&nbsp; Como esta es una cuenta de comunicación, la dejamos desactivada.<br><br><strong>Información de ubicación:</strong> Desactivamos para no compartirle nuestra ubicación.<br><br><strong>Eliminar información de ubicación:</strong> Eliminamos la que ya se hayan agarrado sin nuestro consentimiento.<br><br><strong>Etiquetado en fotos:</strong> Desactivamos para no permitir a otras personas que nos identifiquen en fotos.<br><br></div><h1>Mensajes directos</h1><div><br><strong>Recibir mensajes de cualquiera:</strong> Hay que desactivar para no recibir mensajes de desconocides, pero la dejamos para que nos hagan consultas :)<br><br><strong>Filtro de calidad:</strong> Twitter dice que puede filtrar mensajes que considere de "baja calidad" pero no es claro en cómo decide eso...<br><br><strong>Mostrar acuses de recibo:</strong> Ver o dejar que vean si leímos un mensaje. Lo deshabilitamos porque a veces leemos cosas fuera de hora pero decidimos responder en horario laboral :P<br><br></div><h1>Descubrir</h1><div><br><strong>Permitir que otras personas que sepan tu dirección de correo te encuentren en Twitter:</strong> Si hubiéramos creado la cuenta con una dirección personal lo hubiéramos desactivado, pero nuestro objetivo es que nos encuentren así que lo dejamos activo.<br><br><strong>Permitir que otras personas que sepan tu número de teléfono te encuentren en Twitter:</strong> Como todavía no tenemos un teléfono exclusivo para Sutty, este sí lo desactivamos, aunque nos hubiera gustado no tener que dárselos en primer lugar.<br><br><strong>Administrar contactos:</strong> Imaginamos que si hubiésemos usado la app oficial de Twitter ya se hubieran quedado con nuestra agenda de contactos.<br><br></div><h1>Seguridad</h1><div><br><strong>Mostrar medios con contenido sensible:</strong> Lo dejamos desactivado para no leer cosas violentas sin querer<br><br><strong>Marcar los medios que compartimos como contenido sensible:</strong> Lo habilitamos para no olvidarnos que si compartimos una imagen, tenemos que avisarle a otres de qué se trata y que puedan decidir si la quieren ver.<br><br><strong>Silenciades:</strong> Cuentas de Twitter que silenciamos.&nbsp; En esta sección también podemos agregar palabras que no queremos leer. Estamos pensando cuáles.<br><br><strong>Cuentas bloqueadas:</strong> Acá están las cuentas que bloqueamos, también se pueden importar listas de cuentas bloqueadas que nos compartamos. Al final bloqueamos preventivamente a cuentas que ya sabíamos que nos podíamos cruzar y le estamos pidiendo a amigues que nos avisen así no caemos en la curiosidad de leerles.<br><br></div><h1>Notificaciones</h1><div><br><strong>Filtro de calidad:</strong> Lo mismo que el anterior...<br><br><strong>Silenciar notificaciones: </strong>Acá podemos elegir cuáles notificaciones no recibir para que no nos atosiguen<br><br><strong>Silenciades:</strong> Lo mismo que en Seguridad. ¿Por qué querríamos recibir notificaciones de cuentas que silenciamos?<br><br><strong>Notificaciones push:</strong> Las notificaciones push se envían a través de proveedores como Google y Apple (también Mozilla, para notificaciones webpush).&nbsp; No sabemos aún con qué nivel de privacidad Twitter envía las notificaciones, potencialmente estos proveedores podrían leer el contenido, así que recomendamos desactivarlas.<br><br><strong>SMS:</strong> Desactivamos para no recibir notificaciones por SMS.&nbsp; Además quedan guardadas en nuestro proveedor de telefonía.<br><br><strong>Correo:</strong> Desactivamos para no recibir correos o elegir cuáles queremos recibir. No habíamos hecho casi nada y ya nos habían mandado como 20 correos.<br><br></div><h1>Contenido &gt; Explorar</h1><div><br><strong>Opciones de búsqueda:</strong><br><br></div><ul><li><strong>Esconder contenido sensible:</strong> Activamos para no recibir contenido marcado como sensible en los resultados</li><li><strong>Eliminar cuentas silenciadas y bloqueadas:</strong> Activamos para no ver a la gente bloqueada en los resultados (¡por qué!)</li><li><strong>Tendencias:</strong> Desactivamos porque las tendencias pueden resultarnos sensibles (muchas lo son)</li></ul><h1>Idiomas</h1><div><br>Elegimos los idiomas que entendemos<br><br></div><h1>Seguridad</h1><div><br>Lo mismo que la sección anterior<br><br></div><h1>Personalización y datos personales</h1><div><br>Desactivamos para que Twitter no nos incluya en su análisis de perfil.&nbsp; Twitter nos pregunta si realmente lo queremos tener porque podríamos ver publicidades menos relevantes.&nbsp; Pero nosotres no queremos ver ninguna publicidad así que usamos <a href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/">µBlock Origin</a>.<br><br><strong>Compartir tus datos con terceros:</strong> ¡Desactivamos!<br><br><strong>Ver los datos de Twitter:</strong> Podemos explorar qué cosas sabe Twitter de nosotres<br><br></div><h1>Visualización</h1><div><br>Podemos cambiar el color y tamaño de tipografía acá.&nbsp; Nosotres usamos colores oscuros para protegernos la vista.<br><br></div><h1>Uso de datos</h1><div><br><strong>Ahorro de datos:</strong> Activamos para que Twitter sea menos activo<br><br></div><h1>Accesibilidad</h1><div><br>Tenemos varias opciones de accesibilidad acá:<br><br></div><ul><li><strong>Aumentar el contraste de color:</strong> Para poder distinguir mejor textos del fondo</li><li><strong>Componer descripciones de imágenes:</strong> Para que el lector de pantalla describa mejor las imágenes</li><li><strong>Reducir movimiento:</strong> Para que no nos mareen las animaciones, aunque igual nos mareamos con esta opción desactivada</li></ul><h1>Clientes de Twitter</h1><div>Como nunca habíamos usado Twitter personalmente, estuvimos probando varios programas para interactuar con la plataforma:<br><br></div><ul><li><a href="https://twitter.com/"><strong>Cliente web oficial</strong></a><strong>:</strong> nos marearon las animaciones y al final lo sacamos completamente porque el uso de memoria del <a href="https://firefox.com/">navegador</a> pasó del 60 al 10% cuando cerramos la pestaña</li><li><strong>Andstatus:</strong>&nbsp; Nos lo bajamos en el celular desde FDroid y nos gustó porque es lacónico y no mareante. Lo configuramos para que revise mensajes una vez por día.</li><li><a href="https://wiki.bitlbee.org/HowtoTwitter"><strong>Bitlbee</strong></a><strong>: </strong>es un programa muy lindo que se conecta con distintos sistemas de mensajería y los convierte a mensajes de IRC, nuestro protocolo de mensajería favorito.&nbsp; Lo tuvimos que abandonar enseguida porque parece que Twitter cambió la forma en que permite que otros programas se conecten y las personas que desarrollan Bitlbee no tuvieron el tiempo aun.</li><li><a href="https://ibboard.co.uk/cawbird/"><strong>Cawbird</strong></a><strong>:</strong> Ahora estamos probando este y nos resulta cómodo porque lo podemos usar con teclado, aunque esta diagramado para ventanas pequeñas y a algunes de nosotres nos gusta maximizarlas para no distraernos</li></ul><div>Lo que estaríamos buscando, a ver si nos recomiendan algo, es un programa que no nos maree ni nos atosigue con información y que podamos usar cómodamente para poder seguir compartiendo lo que hacemos en Sutty y encontrándonos con compañeres.&nbsp; ¿Habrá alguno? &nbsp; ¿Cuál nos recomiendan?</div><div><br></div>
+# Cuenta \> Ingreso y seguridad
+
+
+**Contraseña:** Usamos una contraseña generada automáticamente con KeepassXC o algún otro gestor de contraseñas, mientras más larga mejor y no nos tenemos que agobiar recordando contraseñas :)
+
+**Seguridad \> Autenticación en dos pasos:** La autenticación en dos pasos permite solicitar un segundo factor para poder ingresar a nuestra cuenta. Como con la tarjeta de débito en el cajero automático, tenemos la tarjeta pero sólo funciona con un PIN que sabemos. En el caso de 2FA (las siglas), sabemos nuestro correo, contraseña y además un código aleatorio que se envía o genera desde un dispositivo que tenemos (como el celular).
+
+Es una medida extra de protección ya que solo con correo y contraseña es posible que si alguien obtiene acceso a nuestro correo pueda obtener acceso a nuestras cuentas.
+
+Tienen la desventaja que siempre tenemos que tener acceso a nuestro dispositivo de autenticación, por lo que hicimos copias de seguridad.
+
+**Mensaje de texto:** No recomendamos recibir códigos de autenticación por SMS, ya que es un medio inseguro (es posible interceptar los mensajes de SMS) o alguien con nuestro celular puede obtenerlos también.
+
+**App de autenticación:** Podemos utilizar la app FreeOTP+ (disponible en [FDroid](https://f-droid.org/)) para generar códigos de autenticación. Twitter nos va a pedir que escaneemos un código QR desde la app, pero también nos guardamos el QR como una imagen en nuestro gestor de contraseñas. De esta forma tenemos un resguardo si perdiésemos acceso a nuestro celular.
+
+**Llave de seguridad:** Es un dispositivo USB que genera códigos de seguridad automáticamente :O
+
+**Código de backup:** Es una contraseña aleatoria que sirve como resguardo si perdemos acceso a los dispositivos de autenticación. Solo puede ser usado una vez, así que si lo llegásemos a usar, tendríamos que volver a esta sección y anotar el siguiente (¡en nuestro gestor de contraseñas!)
+
+**Contraseña temporal:** Son contraseñas distintas a la real que podemos usar en aplicaciones que nos piden acceso a la cuenta de Twitter. ¡Así no le damos nuestra contraseña real a nadie!
+
+
+# Datos y permisos
+
+
+**Tus datos de twitter:** Podríamos descargar toda la información que tienen de nosotres
+
+**Aplicaciones y sesiones:** Podemos ver todas las sesiones abiertas y cerrar las que no reconozcamos o no queramos más. Cuando veamos alguna extraña vamos a hacer una captura de pantalla, aunque Twitter no muestra las direcciones IP.
+
+
+# Privacidad y seguridad \> Tuits
+
+
+**Proteger tus tuits:** Activamos para que solo las personas que nos sigan puedan leer lo que decimos. Como esta es una cuenta de comunicación, la dejamos desactivada.
+
+**Información de ubicación:** Desactivamos para no compartirle nuestra ubicación.
+
+**Eliminar información de ubicación:** Eliminamos la que ya se hayan agarrado sin nuestro consentimiento.
+
+**Etiquetado en fotos:** Desactivamos para no permitir a otras personas que nos identifiquen en fotos.
+
+
+# Mensajes directos
+
+
+**Recibir mensajes de cualquiera:** Hay que desactivar para no recibir mensajes de desconocides, pero la dejamos para que nos hagan consultas :)
+
+**Filtro de calidad:** Twitter dice que puede filtrar mensajes que considere de "baja calidad" pero no es claro en cómo decide eso...
+
+**Mostrar acuses de recibo:** Ver o dejar que vean si leímos un mensaje. Lo deshabilitamos porque a veces leemos cosas fuera de hora pero decidimos responder en horario laboral :P
+
+
+# Descubrir
+
+
+**Permitir que otras personas que sepan tu dirección de correo te encuentren en Twitter:** Si hubiéramos creado la cuenta con una dirección personal lo hubiéramos desactivado, pero nuestro objetivo es que nos encuentren así que lo dejamos activo.
+
+**Permitir que otras personas que sepan tu número de teléfono te encuentren en Twitter:** Como todavía no tenemos un teléfono exclusivo para Sutty, este sí lo desactivamos, aunque nos hubiera gustado no tener que dárselos en primer lugar.
+
+**Administrar contactos:** Imaginamos que si hubiésemos usado la app oficial de Twitter ya se hubieran quedado con nuestra agenda de contactos.
+
+
+# Seguridad
+
+
+**Mostrar medios con contenido sensible:** Lo dejamos desactivado para no leer cosas violentas sin querer
+
+**Marcar los medios que compartimos como contenido sensible:** Lo habilitamos para no olvidarnos que si compartimos una imagen, tenemos que avisarle a otres de qué se trata y que puedan decidir si la quieren ver.
+
+**Silenciades:** Cuentas de Twitter que silenciamos. En esta sección también podemos agregar palabras que no queremos leer. Estamos pensando cuáles.
+
+**Cuentas bloqueadas:** Acá están las cuentas que bloqueamos, también se pueden importar listas de cuentas bloqueadas que nos compartamos. Al final bloqueamos preventivamente a cuentas que ya sabíamos que nos podíamos cruzar y le estamos pidiendo a amigues que nos avisen así no caemos en la curiosidad de leerles.
+
+
+# Notificaciones
+
+
+**Filtro de calidad:** Lo mismo que el anterior...
+
+**Silenciar notificaciones:** Acá podemos elegir cuáles notificaciones no recibir para que no nos atosiguen
+
+**Silenciades:** Lo mismo que en Seguridad. ¿Por qué querríamos recibir notificaciones de cuentas que silenciamos?
+
+**Notificaciones push:** Las notificaciones push se envían a través de proveedores como Google y Apple (también Mozilla, para notificaciones webpush). No sabemos aún con qué nivel de privacidad Twitter envía las notificaciones, potencialmente estos proveedores podrían leer el contenido, así que recomendamos desactivarlas.
+
+**SMS:** Desactivamos para no recibir notificaciones por SMS. Además quedan guardadas en nuestro proveedor de telefonía.
+
+**Correo:** Desactivamos para no recibir correos o elegir cuáles queremos recibir. No habíamos hecho casi nada y ya nos habían mandado como 20 correos.
+
+
+# Contenido \> Explorar
+
+
+**Opciones de búsqueda:**
+
+
+- **Esconder contenido sensible:** Activamos para no recibir contenido marcado como sensible en los resultados
+- **Eliminar cuentas silenciadas y bloqueadas:** Activamos para no ver a la gente bloqueada en los resultados (¡por qué!)
+- **Tendencias:** Desactivamos porque las tendencias pueden resultarnos sensibles (muchas lo son)
+
+# Idiomas
+
+
+Elegimos los idiomas que entendemos
+
+
+# Seguridad
+
+
+Lo mismo que la sección anterior
+
+
+# Personalización y datos personales
+
+
+Desactivamos para que Twitter no nos incluya en su análisis de perfil. Twitter nos pregunta si realmente lo queremos tener porque podríamos ver publicidades menos relevantes. Pero nosotres no queremos ver ninguna publicidad así que usamos [µBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/).
+
+**Compartir tus datos con terceros:** ¡Desactivamos!
+
+**Ver los datos de Twitter:** Podemos explorar qué cosas sabe Twitter de nosotres
+
+
+# Visualización
+
+
+Podemos cambiar el color y tamaño de tipografía acá. Nosotres usamos colores oscuros para protegernos la vista.
+
+
+# Uso de datos
+
+**Ahorro de datos:** Activamos para que Twitter sea menos activo
+
+# Accesibilidad
+
+Tenemos varias opciones de accesibilidad acá:
+
+- **Aumentar el contraste de color:** Para poder distinguir mejor textos del fondo
+- **Componer descripciones de imágenes:** Para que el lector de pantalla describa mejor las imágenes
+- **Reducir movimiento:** Para que no nos mareen las animaciones, aunque igual nos mareamos con esta opción desactivada
+
+# Clientes de Twitter
+
+Como nunca habíamos usado Twitter personalmente, estuvimos probando varios programas para interactuar con la plataforma:
+
+- [**Cliente web oficial**](https://twitter.com/) **:** nos marearon las animaciones y al final lo sacamos completamente porque el uso de memoria del [navegador](https://firefox.com/) pasó del 60 al 10% cuando cerramos la pestaña
+- **Andstatus:**  Nos lo bajamos en el celular desde FDroid y nos gustó porque es lacónico y no mareante. Lo configuramos para que revise mensajes una vez por día.
+- [**Bitlbee**](https://wiki.bitlbee.org/HowtoTwitter) **:** es un programa muy lindo que se conecta con distintos sistemas de mensajería y los convierte a mensajes de IRC, nuestro protocolo de mensajería favorito. Lo tuvimos que abandonar enseguida porque parece que Twitter cambió la forma en que permite que otros programas se conecten y las personas que desarrollan Bitlbee no tuvieron el tiempo aun.
+- [**Cawbird**](https://ibboard.co.uk/cawbird/) **:** Ahora estamos probando este y nos resulta cómodo porque lo podemos usar con teclado, aunque esta diagramado para ventanas pequeñas y a algunes de nosotres nos gusta maximizarlas para no distraernos
+
+Lo que estaríamos buscando, a ver si nos recomiendan algo, es un programa que no nos maree ni nos atosigue con información y que podamos usar cómodamente para poder seguir compartiendo lo que hacemos en Sutty y encontrándonos con compañeres. ¿Habrá alguno?  ¿Cuál nos recomiendan?

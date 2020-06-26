@@ -59,7 +59,7 @@ image:
         Describe the main image for blind or partially sighted users and
         search engines
 content:
-  type: 'content'
+  type: 'markdown_content'
   label:
     es: 'Contenido del artículo'
     en: 'Post content'

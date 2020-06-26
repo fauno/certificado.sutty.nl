@@ -1,8 +1,8 @@
 ---
 ---
 
-{% node_module bulma/css/bulma.min.css %}
-{% node_module bulma-pricingtable/dist/css/bulma-pricingtable.min.css %}
+@import "bulma/bulma";
+@import "bulma-pricingtable/src/sass/index";
 
 @import 'variables';
 @import 'fg';

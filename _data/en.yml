@@ -206,6 +206,8 @@ post:
     - numeral.svg
     - circunflejo.svg
     - nuflo.svg
+  next: Read next article
+  prev: Read previous article
 pricing:
   id: pricing
   table:
