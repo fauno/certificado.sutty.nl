@@ -9,7 +9,7 @@ title:
     es: ''
     en: ''
 description:
-  type: 'text'
+  type: 'markdown'
   required: true
   label:
     es: 'Contenido del banner'
