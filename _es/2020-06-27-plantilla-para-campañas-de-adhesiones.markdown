@@ -2,6 +2,8 @@
 title: Plantilla para Campañas de Adhesiones
 description: Una nueva plantilla de Sutty diseñada por Librenauta para la colecta
   de adhesiones.
+author:
+- Sutty
 image:
   description: ''
 categories:
@@ -9,34 +11,30 @@ categories:
 tags:
 - Adhesiones
 - Jornada de Intercambio
-draft: true
 order: 14
 layout: post
 uuid: e2ccb087-8af7-4324-b0bb-4edbe5282ec9
 liquid: false
 usuaries:
 - 5
+- 1
 ---
 
 
 
 Ya está disponible la plantilla para sumar adhesiones en el marco de campañas o iniciativas que requieran de apoyo colectivo y demostración de fuerzas.
 
-Usando este template, podrán crear rápidamente un sitio web en el que podrán:
+Usando esta plantilla, podrán crear rápidamente un sitio web en el que podrán:
 
-* describir los detalles de su proyecto;
-
+* publicar el documento;
 
 * tener un formulario donde les visitantes/adherentes podrán sumar su adhesión, junto con otra información personal, organizacional y/o de contacto que considerara relevante, incluyendo su logo;
 
-
 * contar con una muestra de las firmas recolectadas hasta el momento, que pueden imprimir;
-
 
 * compartir su campaña a través de botones para redes sociales;
 
-
-* - ...y algunos otros detalles pensados especialmente que ¡les invitamos a descubrir!
+* ...y algunos otros detalles pensados especialmente que ¡les invitamos a descubrir!
 
 Nos alegra contarles que el diseño es de nuestre compañere Librenauta, con quien pensamos colaborativamente las funcionalidades disponibles.  Pueden ver más de sus creaciones y proyectos de cultura libre y cyborg en su [sitio](https://copiona.com) y también contribuir a través de su [billetera digital](https://copiona.com/donaunbit/).
 
