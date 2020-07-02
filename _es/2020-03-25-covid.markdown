@@ -1,6 +1,9 @@
 ---
 layout: banner
 title: COVID-19
+category: 'https://www.wikidata.org/wiki/Q81068910'
+zone: Ciberespacio
+expires: 2021-01-01
 description: |
   Con la crisis del COVID-19 muchísimos sitios web de importancia vital
   se caen, porque no resisten los picos de visitas. En este contexto,

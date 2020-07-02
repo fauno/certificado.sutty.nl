@@ -17,6 +17,30 @@ description:
   help:
     es: 'Soporta markdown'
     en: 'Soporta markdown'
+category:
+  type: 'url'
+  label:
+    es: 'Categoría del anuncio'
+    en: 'Announcement category'
+  help:
+    es: 'https://schema.org/SpecialAnnouncement'
+    en: 'https://schema.org/SpecialAnnouncement'
+zone:
+  type: 'string'
+  label:
+    es: 'Zona de aplicación del anuncio'
+    en: 'Spatial coverage'
+  help:
+    es: ''
+    en: ''
+expires:
+  type: 'date'
+  label:
+    es: 'Fecha de expiración'
+    en: 'Expiration date'
+  help:
+    es: ''
+    en: ''
 draft:
   type: 'boolean'
   label:
@@ -33,4 +57,3 @@ order:
   help:
     es: 'La posición del artículo en la lista de artículos'
     en: 'The post position in the posts list'
----

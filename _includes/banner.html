@@ -7,10 +7,20 @@
       <time datetime="{{ banner.date }}" itemprop="datePosted">
         {{ banner.date | date: site.i18n.date }}
       </time>
+
+      &mdash;
+
+      <time datetime="{{ banner.expires }}" itemprop="expires">
+        {{ banner.expires | date: site.i18n.date }}
+      </time>
     </header>
 
     <div class="message-body" itemprop="text">
       {{ banner.description | markdownify }}
     </div>
+
+    <link itemprop="category" href="{{ banner.category }}" />
+
+    <span hidden itemprop="spatialCoverage">{{ banner.zone }}</span>
   </article>
 {% endif %}
