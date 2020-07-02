@@ -41,37 +41,41 @@ layout: default
 
           {%- assign posts = site.posts | where: 'layout', 'post' -%}
           {%- assign next = posts | next_post: page -%}
-          {%- assign prev = posts | previous_post: page -%}
+          {%- assign prev = posts | prev: page -%}
 
-          <div class="card">
-            <div class="card-content">
-              <p class="title">{{ next.title }}</p>
-              <p class="subtitle">
-                {{ next.description }}
-              </p>
+          {% if next %}
+            <div class="card">
+              <div class="card-content">
+                <p class="title">{{ next.title }}</p>
+                <p class="subtitle">
+                  {{ next.description }}
+                </p>
+              </div>
+
+              <footer class="card-footer">
+                <p class="card-footer-item">
+                  <a href="{{ next.url }}" rel="next">{{ site.i18n.post.next }}</a>
+                </p>
+              </footer>
             </div>
+          {% endif %}
 
-            <footer class="card-footer">
-              <p class="card-footer-item">
-                <a href="{{ next.url }}" rel="next">{{ site.i18n.post.next }}</a>
-              </p>
-            </footer>
-          </div>
+          {% if prev %}
+            <div class="card">
+              <div class="card-content">
+                <p class="title">{{ prev.title }}</p>
+                <p class="subtitle">
+                  {{ prev.description }}
+                </p>
+              </div>
 
-          <div class="card">
-            <div class="card-content">
-              <p class="title">{{ prev.title }}</p>
-              <p class="subtitle">
-                {{ prev.description }}
-              </p>
+              <footer class="card-footer">
+                <p class="card-footer-item">
+                  <a href="{{ prev.url }}" rel="prev">{{ site.i18n.post.prev }}</a>
+                </p>
+              </footer>
             </div>
-
-            <footer class="card-footer">
-              <p class="card-footer-item">
-                <a href="{{ prev.url }}" rel="prev">{{ site.i18n.post.prev }}</a>
-              </p>
-            </footer>
-          </div>
+          {% endif %}
 
           {%- if page.uuid -%}
             <span hidden itemprop="identifier">{{ page.uuid }}</span>
