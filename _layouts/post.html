@@ -41,7 +41,7 @@ layout: default
 
           {%- assign posts = site.posts | where: 'layout', 'post' -%}
           {%- assign next = posts | next_post: page -%}
-          {%- assign prev = posts | prev: page -%}
+          {%- assign prev = posts | prev_post: page -%}
 
           {% if next %}
             <div class="card">
