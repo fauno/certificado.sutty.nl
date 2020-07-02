@@ -6,7 +6,7 @@ module Jekyll
       # Busca el siguiente post al actual
       #
       # @see Jekyll::Document#next_doc
-      def next_post(input, post)
+      def prev_post(input, post)
         pos = index input, post
 
         input.at(pos + 1) if pos && pos < input.length - 1
@@ -15,7 +15,7 @@ module Jekyll
       # Busca el anterior post al actual
       #
       # @see Jekyll::Document#previous_doc
-      def previous_post(input, post)
+      def next_post(input, post)
         pos = index input, post
 
         input.at(pos - 1) if pos && pos.positive?
