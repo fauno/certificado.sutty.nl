@@ -4,7 +4,7 @@ description: A new theme for the social and solidarity economy inspired by publi
   projects
 image:
   description: Image of the New Template for Publishing Projects, Tierra del Sur website
-  path: public/txc7b2qa6gvcawufl14ll6773cn2/Screenshot_2020-07-17 Tierra del Sur Editorial.jpg
+  path: public/aw83ttxww5zz0ninboxq0hq27z0e/Screenshot_2020-07-17 Tierra del Sur Editorial.png
 categories:
 - templates
 order: 5
