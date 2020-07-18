@@ -1,9 +1,10 @@
 ---
 title: Sutty
-description: Sutty crea sitios seguros, veloces y visibles
+description: Sutty crea sitios seguros, veloces y visibles para organizaciones, colectivas
+  y activistas
 title_separator: "-"
 logo: assets/images/logo.png
-url: https://sutty.nl
+url: https://sutty.nl/
 plugins:
 - jekyll-locales
 - jekyll-drafts-as-metadata
@@ -43,16 +44,18 @@ turbolinks:
   enabled: false
 social:
   links:
-    - https://todon.nl/@sutty
-    - https://twitter.com/SuttyWeb
+  - https://todon.nl/@sutty
+  - https://twitter.com/SuttyWeb
 twitter:
   username: SuttyWeb
 author:
   twitter: SuttyWeb
 images:
   sizes:
-    - 576
-    - 768
-    - 992
-    - 1200
+  - 576
+  - 768
+  - 992
+  - 1200
 invitades: true
+theme: minima
+hostname: sutty.nl
