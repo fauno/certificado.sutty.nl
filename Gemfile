@@ -20,6 +20,7 @@ group :jekyll_plugins do
   gem 'jekyll-hardlinks'
   gem 'jekyll-images'
   gem 'jekyll-locales'
+  gem 'jekyll-onion-location'
   gem 'jekyll-purgecss',
       git: 'https://0xacab.org/sutty/jekyll/jekyll-purgecss.git'
   gem 'jekyll-relative-urls'
