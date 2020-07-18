@@ -69,6 +69,8 @@ GEM
       ruby-filemagic (~> 0.7)
       ruby-vips (~> 2)
     jekyll-locales (0.1.10)
+    jekyll-onion-location (0.1.0)
+      jekyll (~> 4)
     jekyll-relative-urls (0.0.4)
       jekyll (>= 3.8, < 5)
     jekyll-sass-converter (2.0.1)
@@ -173,6 +175,7 @@ DEPENDENCIES
   jekyll-hardlinks
   jekyll-images
   jekyll-locales
+  jekyll-onion-location
   jekyll-purgecss!
   jekyll-relative-urls
   jekyll-seo-tag

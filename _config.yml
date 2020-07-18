@@ -9,6 +9,7 @@ plugins:
 - jekyll-locales
 - jekyll-drafts-as-metadata
 - jekyll-commonmark
+- jekyll-onion-location
 - jekyll-relative-urls
 - jekyll-seo-tag
 - jekyll-purgecss
