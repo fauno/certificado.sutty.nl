@@ -17,7 +17,7 @@ usuaries:
 
 La red Tor es reconocida por permitir la navegación anónima de la Web. Puede usarse a través de su [navegador Tor](https://www.torproject.org/es/download/) para acceder a sitios web sin que se pueda detectar nuestra ubicación física y al mismo tiempo nos protege de otras técnicas de identificación y rastreo que atentan contra nuestro derecho al anonimato, a la privacidad y a [así como la posibilidad de elegir qué hacer con nuestros datos](https://utopia.partidopirata.com.ar/zines/salarios_por_facebook.html).
 
-Después de todo, no todos los servicios a los que accedemos cotidianamente adoptan [políticas de privacidad](https://docutopia.tupale.co/) consecuentes con estos derechos y los proveedores de Internet y otros intermediarios son capaces de saber qué sitios visitamos, aun cuando hacemos todo lo posible para que no suceda.
+Después de todo, no todos los servicios a los que accedemos cotidianamente adoptan [políticas de privacidad](https://sutty.nl/es/politica-de-privacidad/) consecuentes con estos derechos y los proveedores de Internet y otros intermediarios son capaces de saber qué sitios visitamos, aun cuando hacemos todo lo posible para que no suceda.
 
 Quienes alojamos sitios podemos facilitar esta navegación anónima alojándolos dentro de la red Tor, de forma que se reduzcan al mínimo las chances de exponernos. Esto se logra utilizando direcciones web sólo disponibles a través de Tor, llamadas *hidden services* (“servicios ocultos”) o más comúnmente *onions* (“cebollas”).
 
