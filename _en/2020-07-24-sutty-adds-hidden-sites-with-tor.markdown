@@ -4,6 +4,7 @@ description: 'We have joined Tor Network´s campaign #MoreOnionsPlease (#MoreOni
   to strengthen the anonymous web'
 image:
   description: ''
+permalink: hidden-sites-with-tor/
 order: 6
 layout: post
 uuid: aa579fcf-d9ef-48c8-98b7-4581d812abac
@@ -16,7 +17,7 @@ usuaries:
 
 The Tor network is known for allowing anonymous web browsing. By using the [Tor browser](https://www.torproject.org/es/download/), we can access websites without our physical location being detected. At the same time, it protects us from other identification and tracking techniques that violate our right to anonymity, privacy and as well as the possibility to [choose what is done with our data](http://wagesforfacebook.com/).
 
-After all, not all the services that we use daily adopt [privacy policies](privacy-policy/) that are consistent with these rights, or that function in a way that internet providers and other intermediaries are not able to know which sites we visit.  Even in cases where we do make an effort to prevent this.
+After all, not all the services that we use daily adopt [privacy policies](https://sutty.nl/en/privacy-policy/) that are consistent with these rights, or that function in a way that internet providers and other intermediaries are not able to know which sites we visit.  Even in cases where we do make an effort to prevent this.
 
 Those of us who host sites can facilitate this anonymous navigation by hosting them within the Tor network, so as to minimize the chances of exposing our information and data.
 
