@@ -11,11 +11,12 @@ uuid: aa579fcf-d9ef-48c8-98b7-4581d812abac
 liquid: false
 usuaries:
 - 5
+- 1
 ---
 
 
 
-The Tor network is known for allowing anonymous web browsing. By using the [Tor browser](https://www.torproject.org/es/download/), we can access websites without our physical location being detected. At the same time, it protects us from other identification and tracking techniques that violate our right to anonymity, privacy and as well as the possibility to [choose what is done with our data](http://wagesforfacebook.com/).
+The Tor network is known for allowing anonymous web browsing. By using the [Tor browser](https://www.torproject.org/download/), we can access websites without our physical location being detected. At the same time, it protects us from other identification and tracking techniques that violate our right to anonymity, privacy and as well as the possibility to [choose what is done with our data](http://wagesforfacebook.com/).
 
 After all, not all the services that we use daily adopt [privacy policies](https://sutty.nl/en/privacy-policy/) that are consistent with these rights, or that function in a way that internet providers and other intermediaries are not able to know which sites we visit.  Even in cases where we do make an effort to prevent this.
 
@@ -37,9 +38,7 @@ After almost 9 hours of collective *hacking* we incorporated the option to enabl
 
 As always, everything we develop is free and anti-fascist software.
 
-If you like our work, we invite you to help us support it by making a [contribution](https://donaciones.sutty.nl/en/) or [hiring us](index.html#contact) to develop a project. We can also convert an existing site, both its design and content, to Sutty, adding our characterizing security, speed, and other features.
-
-\:)
+If you like our work, we invite you to help us support it by making a [contribution](https://donaciones.sutty.nl/en/) or [hiring us](index.html#contact) to develop a project. We can also convert an existing site, both its design and content, to Sutty, adding our characterizing security, speed, and other features :)
 
 ## What still needs to be done
 
@@ -57,7 +56,7 @@ You'll notice that you can browse the same version of the site without using the
 
 * The location and IP address of Onions are hidden. Sites on Sutty will still be accessible through their public address (e.g. https://mysite.sutty.nl) through any browser.
 
-* Traffic between Tor users and Onions is encrypted end-to-end, regardless of whether or not HTTPS is used ( which we use in Sutty!).
+* Traffic between Tor users and Onions is encrypted end-to-end, regardless of whether or not HTTPS is used (which we use in Sutty!).
 
 * Onion addresses are generated automatically. This prevents some types of attacks, such as machine in the middle (MITM) where an address masquerading as another to redirect visits.
 
