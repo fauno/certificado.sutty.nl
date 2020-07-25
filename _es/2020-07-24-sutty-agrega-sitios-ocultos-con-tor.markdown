@@ -21,13 +21,13 @@ Después de todo, no todos los servicios a los que accedemos cotidianamente adop
 
 Quienes alojamos sitios podemos facilitar esta navegación anónima alojándolos dentro de la red Tor, de forma que se reduzcan al mínimo las chances de exponernos. Esto se logra utilizando direcciones web sólo disponibles a través de Tor, llamadas *hidden services* (“servicios ocultos”) o más comúnmente *onions* (“cebollas”).
 
-Durante el mes de Julio, el proyecto Tor ha lanzado la campaña “[Más onions por favor](https://blog.torproject.org/more-onions-porfavor)” para promover la adopción de este tipo de direcciones.
+Durante el mes de Julio, el proyecto Tor ha lanzado la campaña “[More onions por favor](https://blog.torproject.org/more-onions-porfavor)” para promover la adopción de este tipo de direcciones.
 
 **A partir de hoy, todos los sitios alojados en Sutty pueden usar la opción *Alojar como servicio oculto en Tor* en su configuración para activar esta alternativa anónima de alojamiento.**
 
 Esto permite que les visitantes que lleguen a un sitio utilizando el navegador Tor, tengan la opción de cambiarse automáticamente a la dirección alternativa y a partir de ese momento solo acceder a nuestros sitios a través de ella.
 
-> **¡Atención!** Esta “onionizacion” no anonimiza a les autores del sitio o la identificación de su alojamiento en Sutty. Pueden recurrir a otras estrategias para mantener el anonimato de les autores, como valerse de una dirección de correo anónima al registrarse. Solo requerimos que cumplan con nuestros [términos de servicio](https://docutopia.tupale.co/) y [código de convivencia](https://docutopia.tupale.co/) ;)
+> **¡Atención!** Esta “onionizacion” no anonimiza a les autores del sitio o la identificación de su alojamiento en Sutty. Pueden recurrir a otras estrategias para mantener el anonimato de les autores, como valerse de una dirección de correo anónima al registrarse. Solo requerimos que cumplan con nuestros [términos de servicio](https://sutty.nl/es/terminos-de-servicio/) y [código de convivencia](https://sutty.nl/es/codigo-de-convivencia/) ;)
 
 ## **Cómo lo logramos**
 
@@ -35,7 +35,7 @@ En una jornada de *hackeo* colectivo de casi 9 horas, agregamos la capacidad a
 
 Como siempre, todo lo que desarrollamos es software libre y antifascista.
 
-> Si aprecian nuestro trabajo, les invitamos a ayudarnos a sostenerlo haciendo un [aporte a voluntad](https://donaciones.sutty.nl/) o [contratándonos para desarrollar un proyecto](https://docutopia.tupale.co/). También podemos convertir un sitio existente, con diseño y contenido, agregándole seguridad, velocidad y todas las características de Sutty :)
+> Si aprecian nuestro trabajo, les invitamos a ayudarnos a sostenerlo haciendo un [aporte a voluntad](https://donaciones.sutty.nl/) o [contratándonos para desarrollar un proyecto](https://sutty.nl/es/index.html#contacto). También podemos convertir un sitio existente, con diseño y contenido, agregándole seguridad, velocidad y todas las características de Sutty :)
 
 ## **Qué falta**
 
@@ -49,13 +49,13 @@ Notarán que pueden navegar por la misma versión del sitio sin recurrir al onio
 
 * Los servicios Onion pueden ser accedidos **únicamente** a través de Tor.
 
-* La ubicación y la dirección IP de los Onion están ocultos. Los sitios en Sutty van a seguir siendo accesibles a través de su dirección pública (por ej: [https://misitio.sutty.nl](https://misitio.sutty.nl/)), a través de cualquier navegador.
+* La ubicación y la dirección IP de los Onion están ocultos. Los sitios en Sutty van a seguir siendo accesibles a través de su dirección pública (por ej: https://adhesiones.sutty.nl/), a través de cualquier navegador.
 
 * El tráfico entre les usuaries de Tor y los Onions está cifrado punta a punta, independientemente de si se usa o no HTTPS (¡en Sutty usamos!).
 
 * Las direcciones onion se generan automáticamente. Esto evita ataques como “de máquina en el medio”, es decir que una dirección se haga pasar por otra para redireccionar las visitas.
 
-* ¿Aumenta la seguridad/ cuidados digitales? Sí.
+* ¿Aumenta la seguridad/cuidados digitales? Sí.
 
 * ¿Podremos publicar sitios totalmente anónimos? Por ahora, no. Esperamos poder ofrecerlo próximamente. Sí cuentan con la opción de difundir únicamente la dirección onion de su sitio. Pero es importante considerar que Sutty utiliza otras herramientas para que el sitio esté indexable y posicione alto (esté más visible) en buscadores.
 
