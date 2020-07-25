@@ -6,6 +6,9 @@ description: With what care does this site handles personal data of its users an
 permalink: privacy-policy/
 categories:
 - Sutty
+uuid: 7a6f73f2-b199-4de6-8348-a026782cd2c9
+locales:
+- a6c94a0c-1bfd-4fe3-9555-40448aa18e2b
 ---
 
 > We use "them" as neutral pronoun to refer to people regardless of

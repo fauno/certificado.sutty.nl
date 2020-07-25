@@ -6,6 +6,9 @@ description: "Which are the conditions for Sutty's users?"
 permalink: terms-of-service/
 categories:
 - Sutty
+uuid: a37dfaf7-7214-4d3e-a142-b9029ea04e02
+locales:
+- d5d3ca28-a8cb-426d-8930-e0b37db47230
 ---
 
 

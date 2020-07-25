@@ -16,6 +16,9 @@ uuid: 70f03dd2-c37c-49ea-b2c6-a9296b6650c2
 liquid: false
 usuaries:
 - 5
+uuid: 5f5f6c1f-979b-4b70-a161-84a8dbbc1488
+locales:
+- ae0031b7-00a7-4313-a73d-9122869b759b
 ---
 
 Sutty busca que proyectos colectivos y solidarios puedan acceder a la tecnología web más segura, eficiente y liviana que hay disponible, basada en Software Libre y sus principios éticos, a la hora de crear sus sitios web. Tras una [jornada de intercambio con distintxs colectivxs y diseñadorxs](https://sutty.nl/tuvimos-nuestra-primera-jornada-de-intercambio/), nos propusieron que creáramos plantillas (templates o themes) orientadas directamente a funcionalidades específicas que este tipo de proyectos requieren. Las plantillas, templates o themes son bases de diseño que, en nuestro caso, permiten cubrir necesidades de comunicación y no solo estéticas. De esta manera, les creadorxs de contenido pueden alcanzar sus objetivos más rápidamente.

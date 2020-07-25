@@ -7,6 +7,9 @@ description: ¿Cuáles son los cuidados de este sitio con respecto a sus usuarie
 permalink: politica-de-privacidad/
 categories:
 - Sutty
+uuid: a6c94a0c-1bfd-4fe3-9555-40448aa18e2b
+locales:
+- 7a6f73f2-b199-4de6-8348-a026782cd2c9
 ---
 
 > Utilizamos la e como pronombre neutro para referirnos a personas

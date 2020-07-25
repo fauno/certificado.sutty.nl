@@ -5,6 +5,9 @@ title: Code for sharing
 author: Sutty
 layout: post
 permalink: code-of-conduct/
+uuid: f1b57c69-1e1a-4e78-b288-42c5af0c5ad0
+locales:
+- 6e0d60aa-9cc3-48f8-a603-07b61bb19750
 ---
 
 # Code for sharing

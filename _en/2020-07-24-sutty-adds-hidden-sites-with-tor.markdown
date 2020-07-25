@@ -14,6 +14,9 @@ liquid: false
 usuaries:
 - 1
 - 5
+uuid: 1769c8b4-2b26-4897-9b3c-7f38f30d83a3
+locales:
+- b2195303-b342-49fa-a9e9-e6e570d07644
 ---
 
 

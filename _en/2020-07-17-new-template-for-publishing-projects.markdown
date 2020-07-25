@@ -13,6 +13,9 @@ uuid: 3caaf619-8dd7-48f0-ba23-f1ff3b2b54b1
 liquid: false
 usuaries:
 - 5
+uuid: ae0031b7-00a7-4313-a73d-9122869b759b
+locales:
+- 5f5f6c1f-979b-4b70-a161-84a8dbbc1488
 ---
 
 

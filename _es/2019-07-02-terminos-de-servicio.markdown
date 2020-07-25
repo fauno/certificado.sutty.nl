@@ -7,6 +7,9 @@ description: ¿Qué condiciones debemos cumplir para ser usuaries de Sutty?
 permalink: terminos-de-servicio/
 categories:
 - Sutty
+uuid: d5d3ca28-a8cb-426d-8930-e0b37db47230
+locales:
+- a37dfaf7-7214-4d3e-a142-b9029ea04e02
 ---
 
 > Utilizamos la e como pronombre neutro para referirnos a personas

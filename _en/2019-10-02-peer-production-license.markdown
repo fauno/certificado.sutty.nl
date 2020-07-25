@@ -7,6 +7,9 @@ layout: post
 liquid: false
 usuaries:
 - 1
+uuid: 016c09f9-d66d-46c6-b2c2-f99fff36e617
+locales:
+- 4f6a1ccc-b535-4d70-a71f-6aaf68a11dfe
 ---
 
 

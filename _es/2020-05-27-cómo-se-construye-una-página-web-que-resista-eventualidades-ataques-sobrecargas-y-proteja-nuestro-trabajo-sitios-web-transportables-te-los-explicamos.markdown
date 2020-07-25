@@ -19,6 +19,9 @@ uuid: 165d8fb6-afc5-4ad9-be4b-915db4fbe7c6
 liquid: false
 usuaries:
 - 5
+uuid: 34f2ea01-60a6-4fcb-8e54-da7308febd39
+locales:
+- 4413676e-2b6e-4f08-8cd4-b4913a726699
 ---
 
 ## Introducción
