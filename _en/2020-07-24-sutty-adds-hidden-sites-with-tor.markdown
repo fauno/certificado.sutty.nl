@@ -1,7 +1,9 @@
 ---
 title: Sutty adds hidden sites with Tor
-description: 'We have joined Tor Network´s campaign #MoreOnionsPlease (#MoreOnionsPorFavor)
-  to strengthen the anonymous web'
+description: 'We have joined Tor Network´s campaign #MoreOnionsPorFavor to strengthen
+  the anonymous web'
+author:
+- Sutty
 image:
   description: ''
 permalink: hidden-sites-with-tor/
@@ -10,8 +12,8 @@ layout: post
 uuid: aa579fcf-d9ef-48c8-98b7-4581d812abac
 liquid: false
 usuaries:
-- 5
 - 1
+- 5
 ---
 
 
@@ -54,7 +56,7 @@ You'll notice that you can browse the same version of the site without using the
 
 * Onion services can be accessed **only** through Tor.
 
-* The location and IP address of Onions are hidden. Sites on Sutty will still be accessible through their public address (e.g. https://mysite.sutty.nl) through any browser.
+* The location and IP address of Onions are hidden. Sites on Sutty will still be accessible through their public address (e.g. https://adhesiones.sutty.nl/en/) through any browser.
 
 * Traffic between Tor users and Onions is encrypted end-to-end, regardless of whether or not HTTPS is used (which we use in Sutty!).
 
