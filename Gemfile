@@ -19,6 +19,7 @@ group :jekyll_plugins do
   gem 'jekyll-gzip'
   gem 'jekyll-hardlinks'
   gem 'jekyll-images'
+  gem 'jekyll-linked-posts'
   gem 'jekyll-locales'
   gem 'jekyll-onion-location'
   gem 'jekyll-purgecss',
