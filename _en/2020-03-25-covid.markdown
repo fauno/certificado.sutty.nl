@@ -5,9 +5,9 @@ category: 'https://www.wikidata.org/wiki/Q81068910'
 zone: Cyberspace
 expires: 2021-01-01
 description: |
-  During the COVID-19 crisis, many web sites of vital importance are
-  down because they can't resists the amout of visits.  In this context,
-  static websites are key --they're resilient and accessible.  You can
-  count with Sutty to publish (or move to) solidary and resistent web
-  sites!
+  Due to the COVID-19 pandemic, many websites of vital importance are
+  down because they cannot withstand the intensified traffic mass
+  thereby.  Given these circumstances, static websites are useful due to
+  their resilience and accessibility.  You can count on Sutty to publish
+  (or rework extant resources into) solidary and resistent websites!
 ---
