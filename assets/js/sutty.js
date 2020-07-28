@@ -1,8 +1,6 @@
 ---
 ---
 
-{% turbolinks %}
-
 document.addEventListener('turbolinks:load', function() {
   document.querySelectorAll('a.navbar-burger').forEach(function(el) {
 

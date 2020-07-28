@@ -10,6 +10,7 @@ plugins:
 - jekyll-drafts-as-metadata
 - jekyll-commonmark
 - jekyll-onion-location
+- jekyll-linked-posts
 - jekyll-relative-urls
 - jekyll-seo-tag
 - jekyll-purgecss
@@ -42,7 +43,8 @@ locales:
 redirect: false
 permalink: ":title/"
 turbolinks:
-  enabled: false
+  enabled: true
+  url: turbolinks.js
 social:
   links:
   - https://todon.nl/@sutty
@@ -60,3 +62,5 @@ images:
 invitades: true
 hostname: sutty.nl
 onion-location: qycyz2r2otmwzwxbosidx4wh44vrj2bpgyprtwyddy3h2qdpubx5i7id.onion
+linked_fields:
+- locales
