@@ -5,8 +5,8 @@ redirect:
 name:
   type: string
   label:
-    es: Pseudónimo, nick, alias, nombre elegido
-    en: Pen name, nick, alias, chosen name
+    es: Nombre, pseudónimo, alias
+    en: Name, nickname, alias
 pronouns:
   type: string
   label:
