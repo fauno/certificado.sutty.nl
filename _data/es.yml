@@ -175,6 +175,9 @@ footer:
     - href: codigo-de-convivencia/
       title: Leé nuestro código de convivencia
       text: Código de convivencia
+    - href: https://donaciones.sutty.nl
+      title: Ir a nuestro sitios de donaciones y colaboración
+      text: Apoyá nuestro trabajo
   social:
     - href: mailto:hi@sutty.nl
       text: hi@sutty.nl
@@ -297,3 +300,8 @@ site_not_found:
     El sitio al que quieres acceder todavía no existe.  Si es tu sitio,
     tienes que usar el botón "Publicar todos los cambios" desde
     [Sutty](https://panel.sutty.nl/sites).
+support:
+  text: "Te invitamos a visitar nuestro sitio de donaciones y colaboraciones y descubrir cómo podés apoyar nuestro trabajo."
+  button:
+    text: Apoyá nuestro trabajo
+    url: https://donaciones.sutty.nl/

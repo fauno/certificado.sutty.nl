@@ -174,6 +174,9 @@ footer:
     - href: code-of-conduct/
       title: Codes of conduct stablish a floor for caring spaces that enable participation to everyone.
       text: Code of conduct
+    - href: https://donaciones.sutty.nl/en/
+      title: Visit our donations and collaborations website
+      text: Support our work
   social:
     - href: mailto:hi@sutty.nl
       text: hi@sutty.nl
@@ -291,3 +294,8 @@ page_not_found:
   help: |
     We're sorry, the page you're looking for doesn't exist.  Maybe
     you're interested in our blog?
+support:
+  text: "You're welcome to visit our donations and collaborations website to discover how you can support our work."
+  button:
+    text: Support our work
+    url: https://donaciones.sutty.nl/en/

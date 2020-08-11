@@ -36,6 +36,16 @@ layout: default
           {{ content }}
         </div>
 
+        <aside class="message is-primary">
+          <div class="message-body">
+            {{ site.i18n.support.text | markdownify }}
+
+            <a href="{{ site.i18n.support.button.url }}" class="button is-primary">
+              {{ site.i18n.support.button.text }}
+            </a>
+          </div>
+        </aside>
+
         <footer>
           <hr />
 
