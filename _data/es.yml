@@ -258,7 +258,7 @@ pricing:
       - Optimización para celulares
     footer:
       class: 'black-bg white-fg is-responsive'
-      href: 'index.html#contacto'
+      href: 'https://donaciones.sutty.nl/'
       text: Con tu ayuda seguimos agregando más
 gracias:
   id: gracias
