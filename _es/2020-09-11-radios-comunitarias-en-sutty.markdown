@@ -9,7 +9,6 @@ image:
   path: 
 categories:
 - Plantilas
-draft: true
 order: 18
 locales:
 - cb42bc4f-ef83-4eca-b1f0-10ad3e5260e1
@@ -21,6 +20,7 @@ usuaries:
 ---
 
 
+
 Ya está disponible en Sutty una plantilla para alojar radios comunitarias.  Les invitamos a visitar el [sitio de demostración](https://radio.sutty.nl/).
 
 Desarrollamos esta plantilla en base a conversaciones que fuimos teniendo con compas comunicadorxs, especialmente de la [Red Nacional de Medios Alternativos](https://rnma.org.ar/).  La presentamos el 29 de agosto de 2020 durante el [17mo Encuentro de la Comunicación Comunitaria, Alternativa y Popular](https://www.instagram.com/p/CEdF80hJj5e/), donde participamos en la mesa de Software Libre.
@@ -29,7 +29,7 @@ Desarrollamos esta plantilla en base a conversaciones que fuimos teniendo con co
 
 Con esta plantilla pueden:
 
-* Agregar todas las direcciones del _streaming_ de la radio, de forma que si una esta caída, la radio siga funcionando.
+* Agregar todas las direcciones del *streaming* de la radio, de forma que si una esta caída, la radio siga funcionando.
 
 * Al navegar por el sitio la radio no se corta.
 
