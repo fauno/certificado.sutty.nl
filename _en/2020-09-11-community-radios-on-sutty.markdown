@@ -19,7 +19,7 @@ usuaries:
 ---
 
 
-A new theme for hosting community radios is available on the Sutty.
+A new theme for hosting community radios is available on the Sutty.  We invite you to [visit the demo site](https://radio.sutty.nl/).
 
 We developed this theme based on conversations we've been having with _compas_ from independent media, specially from [Red Nacional de Medios Alternativos](https://rnma.org.ar/) \[Alternative Media's National Network\].  It was presented on August 29, 2020, during the [17mo Encuentro de la Comunicación Comunitaria, Alternativa y Popular](https://www.instagram.com/p/CEdF80hJj5e/) \[17th Meeting for Community, Alternative and Popular Communication\], where we were invited to the Free Software panel.
 

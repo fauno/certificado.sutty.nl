@@ -21,7 +21,7 @@ usuaries:
 ---
 
 
-Ya está disponible en Sutty una plantilla para alojar radios comunitarias.
+Ya está disponible en Sutty una plantilla para alojar radios comunitarias.  Les invitamos a visitar el [sitio de demostración](https://radio.sutty.nl/).
 
 Desarrollamos esta plantilla en base a conversaciones que fuimos teniendo con compas comunicadorxs, especialmente de la [Red Nacional de Medios Alternativos](https://rnma.org.ar/).  La presentamos el 29 de agosto de 2020 durante el [17mo Encuentro de la Comunicación Comunitaria, Alternativa y Popular](https://www.instagram.com/p/CEdF80hJj5e/), donde participamos en la mesa de Software Libre.
 
