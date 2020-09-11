@@ -4,8 +4,9 @@ description: Lanzamiento del sitio ConVozContamos.com
 author:
 - Sutty
 image:
-  description: ''
-  path: 
+  path: public/ccaegxtpho6by76z254vb82dptve/Contamos con voz.png
+  description: Captura de la portada del sitio
+permalink: lanzamiento-convozcontamos/
 categories:
 - Sitios
 order: 19
@@ -15,6 +16,7 @@ liquid: false
 usuaries:
 - 1
 ---
+
 
 
 > "Pensamos esta página, ConVozContamos como un espacio seguro donde mujeres, adolescentes, personas con capacidad de gestar, profesionales de salud u otras personas involucradas puedan contar sus experiencias con sus abortos o los abortos que acompañaron. Este sitio es un espacio seguro para todas nosotras, para contar nuestras experiencias con nuestros abortos, para revelar los obstáculos que enfrentamos cuando queremos acceder a nuestros derechos y cómo recibimos ayuda." -- [Con Voz Contamos](https://convozcontamos.com/)
@@ -27,7 +29,7 @@ Algunas de las funcionalidades de Sutty que protegen este sitio y a sus visitant
 
 1. El sitio es transportable, se pueden distribuir copias de seguridad si hubiera algún ataque.
 
-2. El sitio es estático y por lo tanto mucho menos vulnerable: no hay un gestor de contenidos potencialmente vulnerable a ataques de denegación de servicio (DOS y DDOS), modificación de contenido (_deface_) y otros. No se puede atacar directamente.
+2. El sitio es estático y por lo tanto mucho menos vulnerable: no hay un gestor de contenidos potencialmente vulnerable a ataques de denegación de servicio (DOS y DDOS), modificación de contenido (*deface*) y otros. No se puede atacar directamente.
 
 3. La única posibilidad de dañar el sitio es ingresar al servidor y modificar sus archivos, proceso mucho mucho mucho más difí­cil, más laborioso y previsto en nuestras medidas de auto-defensa.
 
@@ -38,4 +40,3 @@ Algunas de las funcionalidades de Sutty que protegen este sitio y a sus visitant
 6. Sutty también protege la privacidad de quienes visitan el sitio, ya que no registramos información de las personas que navegan este sitio web. Así prevemos que puedan exponerse a otros tipos de violencia.
 
 7. No guardamos las historias enviadas en el formulario de contacto del navegador ni en el servidor, la comunicación entre personas que cuentan su historia y el equipo de #ConVozContamos es directa.
-
