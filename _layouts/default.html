@@ -26,12 +26,32 @@
     <link rel="webmention" href="https://webmention.io/sutty.nl/webmention" />
     <link rel="pingback" href="https://webmention.io/sutty.nl/xmlrpc" />
 
+    {% comment %}
+      TODO: Esto es excesivamente complejo, porque tenemos varios casos donde podemos acceder a la URL en el otro idioma:
+
+      * Artículos con vínculo a sus traducciones (usando jekyll-linked-posts)
+      * Páginas con sus permalinks traducidos en su front-matter (por ejemplo pricing.html)
+      * Páginas sin permalinks traducidos (por ejemplo la raíz del sitio, el blog)
+
+      jekyll-locales debería encargarse de informar a cada página cuales son las URLs de sus traducciones.
+
+      La URL tiene que estar completa porque los indexadores no usan URLs relativas.
+    {% endcomment %}
     {%- if page.locales -%}
       {% for locale in page.locales %}
-        <link
-          rel="alternate"
-          hreflang="{{ locale.collection }}"
-          href="{{ site.url }}{{ locale.collection }}/{{ locale.url }}" />
+        {% if locale.collection %}
+          <link
+            rel="alternate"
+            hreflang="{{ locale.collection }}"
+            href="{{ site.url }}{{ locale.collection }}/{{ locale.url }}" />
+        {% else %}
+          {% for l in locale %}
+            <link
+              rel="alternate"
+              hreflang="{{ l[0] }}"
+              href="{{ site.url }}{{ l[0] }}/{{ l.permalink }}" />
+          {% endfor %}
+        {% endif %}
       {% endfor %}
     {%- else -%}
       {% for locale in site.locales %}
@@ -39,7 +59,7 @@
         <link
           rel="alternate"
           hreflang="{{ locale }}"
-          href="{{ site.url }}{{ locale }}/" />
+          href="{{ site.url }}{{ locale }}/{{ page.url }}" />
       {% endfor %}
     {%- endif -%}
   </head>
