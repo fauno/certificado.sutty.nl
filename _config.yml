@@ -27,6 +27,8 @@ exclude:
 - Dockerfile
 - Gemfile
 - Gemfile.lock
+include:
+- .well-known/mta-sts.txt
 markdown: CommonMark
 commonmark:
   options:
