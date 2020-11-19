@@ -1,0 +1,5 @@
+version: STSv1
+mode: testing
+mx: anarres.sutty.nl
+mx: athshe.sutty.nl
+max_age: 604800
