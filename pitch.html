@@ -1,0 +1,31 @@
+---
+layout: default
+sitemap: false
+---
+
+<section class="section">
+  {% include menu.html %}
+
+  <article class="columns is-centered">
+    <div class="column is-half">
+      <video controls>
+        <source src="public/pitch_v2.mp4" type="video/mp4"/>
+        <track
+          default
+          label="Castellano"
+          kind="captions"
+          srclang="es"
+          src="public/pitch_v2.vtt" />
+        <track
+          label="English"
+          kind="captions"
+          srclang="en"
+          src="public/pitch_v2.en.vtt" />
+      </video>
+
+      <p>There're captions available in English!  Enable them on the [CC] button :)</p>
+
+      {% include contact.html %}
+    </div>
+  </article>
+</section>
