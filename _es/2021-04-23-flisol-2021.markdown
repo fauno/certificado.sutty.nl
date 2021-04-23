@@ -1,0 +1,13 @@
+---
+title: FLISoL 2021
+description: Presentación de Sutty en el FLISoL Ranchero 2021
+next_url: https://docutopia.tupale.co/p/sutty:flisol2021
+permalink: flisol21/
+layout: redirection
+uuid: 38643b2a-40da-4fc1-ab58-e4057a468a0e
+liquid: false
+usuaries:
+- 1
+last_modified_at: 2021-04-23 13:53:15.577478553 +00:00
+---
+
