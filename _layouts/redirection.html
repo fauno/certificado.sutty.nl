@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}" dir="{{ site.dir }}">
+  <head>
+    <meta charset="UTF-8">
+    <base href="{% base %}" />
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <meta name="theme-color" content="white"/>
+    <meta name="color-scheme" content="light"/>
+    <meta name="referrer" content="origin">
+
+    <meta http-equiv="refresh" content="0;url={{ page.next_url }}/" />
+
+    <title>{{ page.title }}</title>
+    <link rel='preload' as='style' href='{{ 'assets/css/styles.css' | asset }}'/>
+    <link href='{{ 'assets/css/styles.css' | asset }}' rel='stylesheet'>
+
+    <link rel="canonical" href="{{ page.next_url }}" />
+    <meta property="og:url" content="{{ page.next_url }}" />
+
+    {% seo %}
+  </head>
+
+  <body>
+    <section class="section">
+      <div class="container is-flex space-between is-fullheight">
+        <div class="columns is-centered">
+          <div class="column is-one-third">
+            {% include sutty_color.svg %}
+
+            <a
+              href="{{ page.next_url }}"
+              rel="noopener noreferrer"
+              class="button white-fg black-bg">
+              {{ page.description }}
+            </a>
+
+          </div>
+        </div>
+        {% include footer.html %}
+      </div>
+    </section>
+  </body>
+</html>
