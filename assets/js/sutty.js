@@ -22,4 +22,23 @@ document.addEventListener('turbolinks:load', function() {
       _navbar.classList.toggle('is-active');
     });
   });
+
+  document.querySelectorAll('input[type="submit"]').forEach(submit => {
+    submit.disabled = true;
+    submit.dataset.value = submit.value;
+
+    submit.dataset.interval = setInterval(() => {
+      const delay = parseInt(submit.dataset.delay);
+
+      if (delay == 0) {
+        clearInterval(parseInt(submit.dataset.interval));
+        submit.disabled = false;
+        submit.value = submit.dataset.value;
+      } else {
+        submit.dataset.delay = delay - 1;
+        submit.value = submit.dataset.value + ' (' + delay + ')';
+      }
+    }, 1000);
+
+  });
 });
