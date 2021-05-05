@@ -6,8 +6,8 @@ layout: default
     html {
       scroll-snap-points-y: repeat(100%);
       scroll-snap-destination: 0 0;
-      scroll-snap-type: y mandatory;
-      scroll-snap-type: mandatory;
+      scroll-snap-type: y proximity;
+      scroll-snap-type: proximity;
     }
 
     section {
@@ -23,7 +23,10 @@ Esto se va a convertir en el plugin de I18n
 
 <section id="{{ i18n.index.id }}" class="section sutty">
   {% include menu.html %}
-  {% include banner.html %}
+
+  <div style="position:absolute">
+    {% include banner.html %}
+  </div>
 
   <div class="container">
     <div class="columns is-vcentered is-fullheight">
