@@ -1,13 +1,19 @@
 ---
-layout: banner
 title: COVID-19
-category: 'https://www.wikidata.org/wiki/Q81068910'
-zone: Cyberspace
-expires: 2021-01-01
 description: |
   Due to the COVID-19 pandemic, many websites of vital importance are
   down because they cannot withstand the intensified traffic mass
   thereby.  Given these circumstances, static websites are useful due to
   their resilience and accessibility.  You can count on Sutty to publish
   (or rework extant resources into) solidary and resistent websites!
+category: https://www.wikidata.org/wiki/Q81068910
+zone: Cyberspace
+expires: 2021-01-01
+order: 4
+layout: banner
+uuid: 81a3af58-570f-4795-94ee-b319eb5d17b1
+liquid: false
+usuaries: []
+last_modified_at: 2021-06-27 17:33:37.167767486 +00:00
 ---
+

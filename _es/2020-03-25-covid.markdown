@@ -1,13 +1,19 @@
 ---
-layout: banner
 title: COVID-19
-category: 'https://www.wikidata.org/wiki/Q81068910'
-zone: Ciberespacio
-expires: 2021-01-01
 description: |
   Con la crisis del COVID-19 muchísimos sitios web de importancia vital
   se caen, porque no resisten los picos de visitas. En este contexto,
   los sitios web estáticos son clave por su resiliencia
   y accesibilidad. ¡Cuenten con Sutty para generar (o migrar a) sitios
   solidarios y resistentes!
+category: https://www.wikidata.org/wiki/Q81068910
+zone: Ciberespacio
+expires: 2021-01-01
+order: 8
+layout: banner
+uuid: dc85b61a-a552-4ea9-b3c4-ca5a5c85e697
+liquid: false
+usuaries: []
+last_modified_at: 2021-06-27 17:33:37.154592908 +00:00
 ---
+
