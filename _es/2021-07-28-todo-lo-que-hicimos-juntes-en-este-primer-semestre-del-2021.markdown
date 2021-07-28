@@ -15,7 +15,8 @@ uuid: 72b88e44-a2e2-4ab0-8f88-8ab5501d25e4
 liquid: false
 usuaries:
 - 356
-last_modified_at: 2021-07-28 02:04:37.144917867 +00:00
+- 5
+last_modified_at: 2021-07-28 02:10:31.439632873 +00:00
 ---
 
 <p>
@@ -43,8 +44,8 @@ Al 30 de junio 2021 hay más de 300 sitios creados a través de Sutty. En estos 
  una tasa 3 veces más rápida que los 300 milisegundos que indica Google 
 en sus Google vitals como tope para cargar un sitio y que no resulte 
 “lento”.</p><p><strong>Contribuciones</strong>:
-Dimos una charla en el <strong>Festival Latinoamericano de Instalación de Software Libre, FLISOL ranchero en Ciudad de México</strong>, abril 2021, que pueden ver aquí <a href="https://archive.org/details/sutty-flisol-2021">https://archive.org/details/sutty-flisol-2021</a></p><p>Realizamos más de <strong>19 colaboraciones a proyectos de Software libre</strong>
- que utilizan Jekyll. Creamos y aportamos 38 plugins / complementos que 
+Dimos una charla en el <strong>Festival Latinoamericano de Instalación de Software Libre, FLISOL ranchero en Ciudad de México</strong>, abril 2021, que pueden ver aquí <a href="https://archive.org/details/sutty-flisol-2021">https://archive.org/details/sutty-flisol-2021</a></p><p><a>Realizamos más de <strong>19 colaboraciones a proyectos de Software libre</strong>
+ que utilizan Jekyll. Creamos y aportamos 38 plugins / </a>complementos que 
 resuelven o mejoran asuntos específicos de Jekyll, y nuestros aportes de
  optimización fueron incluidos en la versión 4.2, <a href="https://github.com/jekyll/jekyll/releases/tag/v4.2.0">https://github.com/jekyll/jekyll/releases/tag/v4.2.0</a> su último lanzamiento.</p><p><strong>Formación</strong>:
 Participamos de dos cursos de cooperativismo de plataforma:</p><ul>
@@ -56,16 +57,16 @@ Participamos de dos cursos de cooperativismo de plataforma:</p><ul>
 </li>
 </ul><p><strong>Alianzas</strong>:</p><ul>
 <li>
-Conocimos y nos aliamos con <a>Hypha Coop</a> y Distributed Press, para empezar a bancar la web distribuida en Sutty
+Conocimos y nos aliamos con<a href="https://hypha.coop/"> Hypha Coop</a> y <a href="https://distributed.press/">Distributed Press</a> para empezar a bancar la web distribuida en Sutty
 </li>
 <li>
 Recibimos una donación de compas de <a href="http://anagora.org">anagora.org</a> para apoyar nuestro trabajo.
 </li>
 <li>
-Seguimos trabajando con Cooperativa de diseño (ARG) y nos aliamos con collabo.studio en Barcelona (ES).
+Seguimos trabajando con <a href="cooperativadedisenio.com">Cooperativa de Diseño</a> y nos aliamos con <a href="https://www.collabo.studio/">Collabo Studio</a>.
 </li>
 </ul><ol><li id="fn1">¿Se preguntan qué es la <em>modalidad ayuda mutua</em>? Quienes crean su tienda mediante la gestora de Sutty, <strong>no deben pagar un costo mensual</strong> por la misma <strong>hasta alcanzar un mínimo nivel de facturación propio</strong>.
  Creemos que este acuerdo ayuda a las iniciativas comerciales 
 incipientes a desarrollarse y sostenerse durante las posibles crisis o 
-fluctuaciones en sus ingresos. <a href="https://docutopia.tupale.co/#fnref1">↩︎</a>
+fluctuaciones en sus ingresos.
 </li></ol>
