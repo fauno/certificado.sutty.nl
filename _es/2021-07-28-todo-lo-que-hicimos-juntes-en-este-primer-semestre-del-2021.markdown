@@ -4,8 +4,10 @@ description: Informe semestral de Sutty 2021.
 author:
 - Sutty
 image:
-  description: ''
-  path:
+  path: public/lh51z7asojbjbsz4hr98kkjppowx/cifras-reporte3.png
+  description: 19 colaboraciones a proyectos de software libre que utilizan jekill.
+    38 plugins/complementos que resuelven o mejoran asuntos específicos de jekill.
+    Nuestro aporte al Software Libre/ 1er semestre 2021
 categories: []
 tags: []
 order: 22
@@ -14,9 +16,9 @@ layout: post
 uuid: 72b88e44-a2e2-4ab0-8f88-8ab5501d25e4
 liquid: false
 usuaries:
-- 356
 - 5
-last_modified_at: 2021-07-28 02:10:31.439632873 +00:00
+- 356
+last_modified_at: 2021-07-28 02:13:12.321466582 +00:00
 ---
 
 <p>
@@ -29,7 +31,7 @@ grado de conocimiento técnico. Les usuaries de Sutty <a href="https://www.sutty
  y especialmente protegidos frente a ataques. Sus sitios pueden incluir 
 una tienda para comercio electrónico, que ofrecemos en modalidad <strong>ayuda mutua</strong><sup><a href="https://docutopia.tupale.co/#fn1" id="fnref1">[1]</a></sup>.
  Por eso sabemos que nuestro trabajo potencia la presencia, la seguridad
- y la libertad de expresión a organizaciones y colectivas activistas.</p><figure data-multimedia=""><img data-multimedia-inner="" src="https://panel.sutty.nl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaWdnIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0d0094f70004ca17a9814d063cc627f26c4a40c7/cifras-reporte1.png" alt=""><figcaption>95% de las visitas a nuestros sitios se resuelven en 0 cero milisegundos: carita sonriente</figcaption></figure><figure data-multimedia=""><img data-multimedia-inner="" src="https://panel.sutty.nl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaWtnIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a8e4bdc6e9b8dadd024bc65d3a042634375e6e2e/cifras-reporte2.png" alt=""><figcaption>4% de las restantes visitas se resuelven en menos de 100 milisegundos. 3 veces más rápido que el tope de Google vitals.</figcaption></figure><p><strong>Proyectos</strong>:
+ y la libertad de expresión a organizaciones y colectivas activistas.</p><figure data-multimedia=""><img data-multimedia-inner="" src="https://panel.sutty.nl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaWdnIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0d0094f70004ca17a9814d063cc627f26c4a40c7/cifras-reporte1.png" alt=""></figure><figure data-multimedia=""><img data-multimedia-inner="" src="https://panel.sutty.nl/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaWtnIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a8e4bdc6e9b8dadd024bc65d3a042634375e6e2e/cifras-reporte2.png" alt=""><figcaption>4% de las restantes visitas se resuelven en menos de 100 milisegundos. 3 veces más rápido que el tope de Google vitals.</figcaption></figure><p><strong>Proyectos</strong>:
 Además de ofrecer de forma gratuita la gestora sitios web para quienes lo necesiten, realizamos <strong>desarrollos a medida</strong>, con <strong>maquetación</strong> y <strong>funcionalidades específicas</strong> para diversos proyectos. Esto incluye <strong>migrar</strong> desde otras tecnologías, como Wordpress, con diseño y contenido hacia la gestión de Sutty, <strong>implementar diseños</strong> realizados por la Cooperativa de Diseño, trabajar en <strong>sitios estáticos</strong> en general y en <strong>webapps</strong>.</p><p>En
  este semestre estuvimos trabajando y acompañando un montón de 
 proyectos que iremos anunciando en nuestras redes en la medida que 
