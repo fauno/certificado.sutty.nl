@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64.535" height="65.602" viewBox="0 0 17.075 17.357" aria-labelledby="title desc">
-  <title id="title">{{ include.title | escape }}</title>
-  <desc id="desc">{{ include.desc | escape }}</desc>
-  <path d="M10.02 11.29l.47 6.067H6.585l.518-6.068-5.127 3.528L0 11.289l5.598-2.587L0 6.068 1.976 2.54l5.127 3.528L6.585 0h3.905l-.518 6.02 5.174-3.48 1.929 3.528-5.645 2.634 5.645 2.587-1.929 3.528z"/>
-</svg>
