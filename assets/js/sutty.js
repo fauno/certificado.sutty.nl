@@ -2,6 +2,28 @@
 ---
 
 document.addEventListener('turbolinks:load', function() {
+  const form = document.querySelector('#contact');
+
+  if (form) {
+    let uuid = window.localStorage.uuid
+    if (!uuid) {
+      uuid = ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c => (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16))
+      window.localStorage.uuid = uuid
+    }
+
+    const data = new FormData();
+    data.append('fingerprint', uuid);
+
+    fetch('https://contacto.sutty.nl/api/v1/form_config',
+          { credentials: 'omit', method: 'POST', body: data })
+          .then(r => r.json())
+          .then(r => {
+            form.action = r.endpoint;
+            form.fingerprint.value = uuid;
+            form.token.value = r.token;
+          })
+  }
+
   document.querySelectorAll('a.navbar-burger').forEach(function(el) {
 
     const _toggler = el;

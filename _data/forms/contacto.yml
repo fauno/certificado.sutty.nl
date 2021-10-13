@@ -2,21 +2,29 @@
 redirect:
   type: hidden
   value: 'https://sutty.nl/es/gracias/'
-name:
+token:
+  type: hidden
+  value: ''
+fingerprint:
+  type: hidden
+  value: ''
+title:
   type: string
   label:
     es: Nombre, pseudónimo, alias
     en: Name, nickname, alias
-pronouns:
+  required: true
+name:
   type: string
   label:
-    es: Pronombres
-    en: Pronouns
-contact:
-  type: string
+    es: Pronombres (por ej. ella, ellx, él)
+    en: Pronouns (ie. she, them, he)
+  required: true
+email:
+  type: email
   label:
-    es: Forma de contacto (correo, telegram, etc.)
-    en: Contact form (e-mail, telegram, etc.)
+    es: Correo electrónico
+    en: E-mail
   required: true
 body:
   type: text
