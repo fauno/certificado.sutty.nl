@@ -1,0 +1,7 @@
+User-Agent: *
+Allow: /
+
+Host: sutty.nl
+
+Sitemap: https://sutty.nl/es/sitemap.xml
+Sitemap: https://sutty.nl/en/sitemap.xml
