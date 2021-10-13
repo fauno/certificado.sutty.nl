@@ -1,160 +1,43 @@
 ---
 layout: default
 ---
-<style>
-  @media screen and (min-width: 1088px) {
-    html {
-      scroll-snap-points-y: repeat(100%);
-      scroll-snap-destination: 0 0;
-      scroll-snap-type: y proximity;
-      scroll-snap-type: proximity;
-    }
 
-    section {
-      scroll-snap-align: start;
-    }
-  }
-</style>
-
-{% comment %}
-Esto se va a convertir en el plugin de I18n
-{% endcomment %}
-{% assign i18n = site.data[site.lang] %}
-
-<section id="{{ i18n.index.id }}" class="section sutty">
+<section class="section sutty">
   {% include menu.html %}
 
   <div class="container">
     <div class="columns is-vcentered is-fullheight">
       <div class="column">
-        <h1 class="title magenta-fg">{{ i18n.index.intro | escape }}</h1>
+        <h1 class="title magenta-fg">{{ i18n.index.intro }}</h1>
 
-        {% for p in i18n.index.description %}
-        {{ p | markdown }}
-        {% endfor %}
+        {{ i18n.index.description | markdownify }}
+
+        <div>
+          <a href="public/x1.cer" class="button white-fg black-bg">
+            {{ i18n.index.download }}
+          </a>
+
+          <br/>
+
+          <small>{{ i18n.index.downloaded }}</small>
+
+          <details>
+            <summary>{{ i18n.index.question }}</summary>
+
+            {{ i18n.index.answer | markdownify }}
+          </details>
+        </div>
       </div>
 
       <div class="column has-text-centered">
-        {% include sutty.svg %}
+        <video src="public/x11.mp4" controls></video>
       </div>
     </div>
   </div>
   {% include corners.html %}
 </section>
-
-<section id="{{ i18n.description.id }}" class="section black-bg white-fg">
-  {% include menu.html %}
-  <div class="container">
-    <div class="columns is-vcentered is-fullheight">
-      <div class="column is-narrow has-text-centered">
-        {% include menor.svg %}
-      </div>
-
-      <div class="column">
-        <h1 class="title is-uppercase white-fg">{{ i18n.description.sites }}</h1>
-
-        <p class="is-uppercase">{{ i18n.adjetivos | join: '. ' }}</p>
-      </div>
-
-      <div class="column is-narrow has-text-centered">
-        {% include barra.svg %}
-      </div>
-
-      <div class="column">
-        <h1 class="title white-fg">{{ i18n.description.for }}</h1>
-
-        {% for part in i18n.gramatica %}
-          <p>
-            {% if part == 'adverbios' %}<strong>{% endif %}
-            {{ i18n[part] | join: ', ' }}
-            {% if part == 'adverbios' %}</strong>{% endif %}
-          </p>
-        {% endfor %}
-      </div>
-
-      <div class="column is-narrow has-text-centered">
-        {% include mayor.svg %}
-      </div>
-    </div>
-  </div>
-  {% include corners.html %}
-</section>
-
-{% comment %}
-Segmentos explicativos principales, uno por pantalla
-{% endcomment %}
-{% for section in i18n.index.sections.main %}
-<section id="{{ i18n[section].id }}" class="main">
-  {% include menu.html %}
-  <div class="container">
-    <div class="columns is-vcentered is-centered is-fullheight">
-      <div class="column is-one-third">
-        {% assign file = i18n[section].symbol.file %}
-        {% assign title = i18n[section].symbol.title %}
-        {% include {{file}} title=title %}
-        <h1 class="title">{{ i18n[section].title }}</h1>
-      </div>
-
-      <div class="column is-half">
-        <h2 class="subtitle">{{ i18n[section].subtitle }}</h2>
-        {% for p in i18n[section].description %}
-        {{ p | markdown }}
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-  {% include corners.html %}
-</section>
-{% endfor %}
-
-{% comment %}
-Segmentos explicativos ocupando una pantalla entera agrupados de a dos.
-{% endcomment %}
-
-{% for section in i18n.index.sections.secondary %}
-{% assign new_section = forloop.index | modulo: 2 %}
-{% comment %}
-Abrir la sección si el segmento es impar
-{% endcomment %}
-{% if new_section == 1 %}
-<section class="section secondary {{ i18n[section].bg }}">
-  {% include menu.html %}
-  <div class="columns is-vcentered is-fullheight">
-    <div>{% comment %}Solo centrar este elemento completo{% endcomment %}
-{% endif %}
-  <div id="{{ i18n[section].id }}">
-    <div class="columns is-centered">
-      <div class="column is-narrow has-text-right-desktop">
-        {% assign file = i18n[section].symbol.file %}
-        {% assign title = i18n[section].symbol.title %}
-        {% include {{file}} title=title %}
-      </div>
-
-      <div class="column is-two-fifths">
-        <h1 class="title">{{ i18n[section].title }}</h1>
-        <h2 class="subtitle is-uppercase">{{ i18n[section].subtitle }}</h2>
-      </div>
-
-      <div class="column is-two-fifths {% if new_section == 1 %}has-border-bottom{% endif %}">
-        {% for p in i18n[section].description %}
-        {{ p | markdown }}
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-
-{% comment %}
-Cerrar la sección si el segmento es par
-{% endcomment %}
-{% if new_section == 0 %}
-    </div>
-  </div>
-  {% include corners.html %}
-</section>{% endif %}
-{% endfor %}
 
 <section id="{{ i18n.contact.id }}" class="section">
-  {% include menu.html %}
   <div class="container">
     <div class="columns is-vcentered is-fullheight">
       <div class="column is-two-fifths">
@@ -165,25 +48,4 @@ Cerrar la sección si el segmento es par
       </div>
     </div>
   </div>
-  {% include corners.html %}
-</section>
-
-<section id="{{ i18n.blog.id }}" class="section">
-  {% include menu.html %}
-  <div class="container is-flex space-between is-fullheight">
-    <div class="columns is-vcentered">
-      <div class="column">
-        <div class="columns">
-          {% assign posts = site.posts | where: 'layout', 'post' %}
-          {% for page in posts limit: 3 %}
-          <div class="column">
-            {% include post_summary.html page=page %}
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-    {% include footer.html %}
-  </div>
-  {% include corners.html %}
 </section>

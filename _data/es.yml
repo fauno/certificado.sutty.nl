@@ -11,15 +11,11 @@ menu:
   title: Menú principal
   items:
     - title: Inicio
-      href: ''
+      href: 'https://sutty.nl/'
     - title: Blog
-      href: blog/
-    - title: Precios
-      href: precios/
+      href: 'https://sutty.nl/blog/'
     - title: Escribinos
-      href: 'index.html#contacto'
-    - title: English
-      href: ../en/
+      href: '#contacto'
     - title: Creá tu sitio
       href: 'https://panel.sutty.nl/'
       css:
@@ -62,21 +58,18 @@ isologo:
 index:
   id: inicio
   title: Inicio
-  intro: Sutty crea sitios seguros, veloces y visibles
-  description:
-    - 'Hace tiempo que sentimos la urgencia de contar con **sitios web que garanticen nuestra seguridad**, que no sean censurables, que **visibilicen nuestras luchas** de manera coherente y cuyos contenidos puedan ser auto-gestionados.'
-    - '¡Por eso desarrollamos Sutty!'
-    - 'Sutty incorpora las técnicas para sitios web que son vanguardia entre las élites tecnológicas y las acerca a nuestros objetivos políticos, volviéndolas accesibles para que nuestras colectivas expresen sus voces.'
-    - '**Sutty está pensada para potenciar la presencia, la seguridad y la libertad de expresión a organizaciones y colectivas activistas.**'
-  sections:
-    main:
-      - static
-      - invulnerable
-    secondary:
-      - sustainable
-      - visible
-      - accesible
-      - archivable
+  intro: "Instalá el certificado Let's Encrypt"
+  description: 'Seguí los pasos del video para recuperar acceso a millones de sitios web.'
+  download: Instalar el certificado
+  downloaded: Descargado desde x1.i.lencr.org
+  question: ¿Por qué tengo que hacer esto?
+  answer: |
+    En octubre de 2021, los navegadores de sistemas operativos no
+    actualizados, como Windows 7, Vista y XP, dejaron de reconocer los
+    certificados validados por Let's Encrypt.
+
+    Esto dejó fuera de acceso millones de sitios que confían en Let's
+    Encrypt para asegurar que la navegación en Internet.
 description:
   id: descripcion
   title: Descripción
@@ -308,3 +301,7 @@ support:
   button:
     text: Apoyá nuestro trabajo
     url: https://donaciones.sutty.nl/
+certificado:
+  title: Instalá el certificado para volver a acceder a los sitios web
+  summary: ¿Por qué pasó esto?
+  details: 
